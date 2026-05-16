@@ -1,0 +1,916 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DAILY PLAVE</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css">
+  <style>
+    :root {
+      --bg:             #f7f4ff;
+      --surface:        #ffffff;
+      --surface-2:      #f0ebff;
+      --border:         #e2d8f5;
+      --border-light:   #ede8fa;
+      --text-primary:   #2e2055;
+      --text-secondary: #7a6b9e;
+      --text-muted:     #b4a9cc;
+      --accent:         #9575d0;
+      --accent-deep:    #7c5cbf;
+      --accent-light:   #c9b6ed;
+      --accent-bg:      #ede8ff;
+      --read-opacity:   0.38;
+
+      /* 커뮤니티 파스텔 색상 */
+      --dc-bg:      #dbeafe; --dc-text:      #1d4ed8;
+      --theqoo-bg:  #ede9fe; --theqoo-text:  #6d28d9;
+      --newduck-bg: #fce7f3; --newduck-text: #9d174d;
+      --instiz-bg:  #fee2e2; --instiz-text:  #b91c1c;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: 'Pretendard', sans-serif;
+      background: var(--bg);
+      color: var(--text-primary);
+      min-height: 100vh;
+      line-height: 1.6;
+    }
+
+    /* ── Hero ── */
+    .hero {
+      background: linear-gradient(150deg, #ece8ff 0%, #f8f2ff 50%, #fdf0ff 100%);
+      padding: 44px 20px 36px;
+      text-align: center;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .hero-badge {
+      display: inline-block;
+      background: var(--accent-bg);
+      color: var(--accent-deep);
+      font-size: 12px;
+      font-weight: 600;
+      padding: 5px 14px;
+      border-radius: 20px;
+      letter-spacing: 0.3px;
+      border: 1px solid var(--accent-light);
+    }
+
+    h1 {
+      font-size: clamp(26px, 6vw, 38px);
+      font-weight: 800;
+      letter-spacing: -1px;
+      margin-bottom: 12px;
+      background: linear-gradient(90deg, var(--accent-deep), #b07ee8);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    .mood-bar {
+      margin: 18px auto 0;
+      max-width: 580px;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 11px 18px;
+      font-size: 13.5px;
+      color: var(--text-secondary);
+      box-shadow: 0 1px 6px rgba(149,117,208,0.08);
+    }
+
+    .mood-bar strong { color: var(--accent-deep); font-weight: 700; }
+
+    /* ── Layout ── */
+    .container {
+      max-width: 1080px;
+      margin: 0 auto;
+      padding: 36px 16px 36px;
+    }
+
+    .section-title {
+      font-size: 13.5px;
+      font-weight: 700;
+      color: var(--text-muted);
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      margin-bottom: 18px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .section-title::after {
+      content: '';
+      flex: 1;
+      height: 1px;
+      background: var(--border);
+    }
+
+    /* ── Issue cards ── */
+    .issues-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 14px;
+      margin-bottom: 36px;
+    }
+
+    @media (max-width: 760px) { .issues-grid { grid-template-columns: repeat(2, 1fr); } }
+    @media (max-width: 480px) { .issues-grid { grid-template-columns: 1fr; } }
+
+    .issue-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 20px;
+      transition: box-shadow 0.2s, transform 0.2s, border-color 0.2s;
+      box-shadow: 0 1px 4px rgba(149,117,208,0.07);
+    }
+
+    .issue-card:hover {
+      box-shadow: 0 4px 16px rgba(149,117,208,0.15);
+      border-color: var(--accent-light);
+      transform: translateY(-2px);
+    }
+
+    .source-chips {
+      display: flex;
+      gap: 4px;
+      flex-wrap: wrap;
+      margin-bottom: 10px;
+    }
+
+    .source-chip {
+      font-size: 10px;
+      font-weight: 700;
+      padding: 2px 8px;
+      border-radius: 10px;
+      letter-spacing: 0.1px;
+    }
+
+    .chip-dc      { background: var(--dc-bg);      color: var(--dc-text); }
+    .chip-theqoo  { background: var(--theqoo-bg);  color: var(--theqoo-text); }
+    .chip-newduck { background: var(--newduck-bg); color: var(--newduck-text); }
+    .chip-instiz  { background: var(--instiz-bg);  color: var(--instiz-text); }
+
+    .issue-title {
+      font-size: 16px;
+      font-weight: 700;
+      color: var(--text-primary);
+      margin-bottom: 8px;
+      margin-top: 2px;
+      line-height: 1.45;
+    }
+
+    .issue-summary {
+      font-size: 13px;
+      color: var(--text-secondary);
+      line-height: 1.7;
+    }
+
+    /* ── Tables ── */
+    .tables-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 18px;
+      margin-bottom: 0;
+    }
+
+    @media (max-width: 560px) { .tables-grid { grid-template-columns: 1fr; } }
+
+    .table-block { min-width: 0; }
+
+    .table-header {
+      font-size: 13px;
+      font-weight: 700;
+      margin-bottom: 8px;
+      padding: 7px 12px;
+      border-radius: 10px;
+    }
+
+    .table-header.dc      { background: var(--dc-bg);      color: var(--dc-text); }
+    .table-header.theqoo  { background: var(--theqoo-bg);  color: var(--theqoo-text); }
+    .table-header.newduck { background: var(--newduck-bg); color: var(--newduck-text); }
+    .table-header.instiz  { background: var(--instiz-bg);  color: var(--instiz-text); }
+
+    .posts-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 13px;
+    }
+
+    .posts-table thead th {
+      padding: 7px 8px;
+      text-align: left;
+      color: var(--text-muted);
+      border-bottom: 2px solid var(--border);
+      font-weight: 600;
+      white-space: nowrap;
+    }
+
+    .posts-table tbody td {
+      padding: 8px 8px;
+      border-bottom: 1px solid var(--border-light);
+      vertical-align: middle;
+    }
+
+    .posts-table tbody tr:last-child td { border-bottom: none; }
+    .posts-table tbody tr:hover { background: var(--surface-2); }
+
+    .rank {
+      color: var(--text-muted);
+      width: 24px;
+      text-align: center;
+      font-weight: 600;
+    }
+
+    .stat {
+      color: var(--text-muted);
+      width: 42px;
+      text-align: right;
+      white-space: nowrap;
+    }
+
+    .post-title { max-width: 0; }
+
+    .post-title a {
+      color: var(--text-primary);
+      text-decoration: none;
+      display: block;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      transition: color 0.15s;
+    }
+
+    .post-title a:hover { color: var(--accent-deep); text-decoration: underline; }
+
+    /* 읽은 글 */
+    .posts-table tbody tr.read td { opacity: var(--read-opacity); }
+    .posts-table tbody tr.read .post-title a { text-decoration: line-through; }
+    .posts-table tbody tr.read:hover td { opacity: 0.6; }
+
+    /* ── Mobile ── */
+    @media (max-width: 480px) {
+      .hero { padding: 32px 16px 24px; }
+      .issues-grid { grid-template-columns: 1fr; }
+      .container { padding: 24px 12px 40px; }
+    }
+
+    /* ── Footer ── */
+    footer {
+      background: linear-gradient(150deg, #ece8ff 0%, #f8f2ff 50%, #fdf0ff 100%);
+      text-align: center;
+      padding: 36px 16px 56px;
+      font-size: 12px;
+      color: var(--text-muted);
+      border-top: 1px solid var(--border);
+    }
+
+    /* ── 상대 시간 ── */
+    #time-ago {
+      color: var(--text-muted);
+      font-size: 12px;
+    }
+
+    /* ── 맨 위로 버튼 ── */
+    #top-btn {
+      position: fixed;
+      bottom: 28px;
+      left: 50%;
+      transform: translateX(-50%);
+      background: none;
+      border: none;
+      padding: 0;
+      font-size: 15px;
+      cursor: pointer;
+      transition: opacity 0.25s;
+      opacity: 0;
+      pointer-events: none;
+      z-index: 100;
+    }
+
+    #top-btn.visible {
+      opacity: 1;
+      pointer-events: auto;
+    }
+
+    /* ── 이슈 카드 필터링 ── */
+    .issue-card {
+      cursor: pointer;
+    }
+
+    .issue-card.selected {
+      border-color: var(--accent);
+      box-shadow: 0 0 0 3px rgba(149,117,208,0.18), 0 4px 16px rgba(149,117,208,0.15);
+    }
+
+    .posts-table tbody tr.dimmed td {
+      opacity: 0.15;
+    }
+
+    .posts-table tbody tr.match .post-title a {
+      color: var(--accent-deep);
+      font-weight: 700;
+    }
+
+    /* ── 아카이브 내비 ── */
+    .archive-nav {
+      margin: 16px auto 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 12px;
+    }
+
+    .archive-nav select {
+      background: var(--surface);
+      color: var(--text-secondary);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 6px 14px;
+      font-size: 12px;
+      cursor: pointer;
+      outline: none;
+      font-family: inherit;
+      text-align: center;
+    }
+
+    .archive-nav select option {
+      direction: ltr;
+      text-align: left;
+    }
+
+  </style>
+</head>
+<body>
+
+<div class="hero">
+  <h1>DAILY PLAVE</h1>
+  <div class="hero-badge">2026년 05월 15일 · 디시인사이드 37개 · 더쿠 228개 · 뉴덕 90개 · 인스티즈 344개</div>
+  <div class="mood-bar">
+    <strong>DAILY RECAP · </strong>은호 생일 키트·웨딩링 굿즈 수령 열기와 예준 챌린지·스크린X 앙코르 소식이 겹치며 설렘과 행복 에너지가 넘치는 하루
+  </div>
+
+  <div class="archive-nav">
+    <select id="archive-sel">
+      <option value="" selected>LATEST</option>
+      <option value="archive/2026-05-14.html">2026-05-14</option>
+    </select>
+  </div>
+</div>
+
+<div class="container">
+
+  <div class="section-title">이슈 요약</div>
+  <div class="issues-grid">
+    
+        <div class="issue-card" data-keywords="생킷,웨딩링,반지,은호생일">
+          <div class="source-chips"><span class="source-chip chip-dc">디시</span><span class="source-chip chip-theqoo">더쿠</span><span class="source-chip chip-newduck">뉴덕</span><span class="source-chip chip-instiz">인티</span></div>
+          <h3 class="issue-title">은호 생일 키트 & 웨딩링 굿즈</h3>
+          <p class="issue-summary">은호 생일 키트(생킷)와 웨딩링(반지) 굿즈 수령 후기, 실착 방법, 품절 여부, 양도 등 관련 글이 전 커뮤니티에서 폭발적으로 쏟아지고 있습니다. 반지를 목걸이·팔찌·귀걸이로 활용하는 창의적인 착용법도 화제이며, 배송 지연이나 품질 관련 문의도 활발히 이루어지고 있습니다.</p>
+        </div>
+        <div class="issue-card" data-keywords="예준,전체관람가,챌린지,루시">
+          <div class="source-chips"><span class="source-chip chip-dc">디시</span><span class="source-chip chip-theqoo">더쿠</span><span class="source-chip chip-newduck">뉴덕</span><span class="source-chip chip-instiz">인티</span></div>
+          <h3 class="issue-title">예준 전체관람가 챌린지</h3>
+          <p class="issue-summary">예준의 '전체관람가' 보컬 챌린지 영상이 공개되어 큰 반응을 얻고 있으며, LUCY(루시) 측에서 댓글을 달아주며 선배 아티스트와의 훈훈한 교류가 화제입니다. 챌린지 영상 속 도미노 이스터에그가 뒤늦게 발견되어 팬들의 반응이 뜨겁습니다.</p>
+        </div>
+        <div class="issue-card" data-keywords="스크린X,앙코르,대쉬퀀텀리프,영화관">
+          <div class="source-chips"><span class="source-chip chip-dc">디시</span><span class="source-chip chip-theqoo">더쿠</span><span class="source-chip chip-newduck">뉴덕</span><span class="source-chip chip-instiz">인티</span></div>
+          <h3 class="issue-title">아시아투어 앙코르 스크린X 영화</h3>
+          <p class="issue-summary">플레이브 아시아 투어 [DASH: Quantum Leap] 앙코르 인 시네마 SCREENX 트레일러가 공개되어 큰 기대감을 모으고 있습니다. CGV 예매 성공 후기 및 예매 개시 시간 공지 관련 글이 올라오며 팬들의 관심이 집중되고 있습니다.</p>
+        </div>
+        <div class="issue-card" data-keywords="다음주스케줄,냥냥즈,은호생일방송,봉준호">
+          <div class="source-chips"><span class="source-chip chip-dc">디시</span><span class="source-chip chip-theqoo">더쿠</span><span class="source-chip chip-newduck">뉴덕</span><span class="source-chip chip-instiz">인티</span></div>
+          <h3 class="issue-title">다음주 스케줄 공개</h3>
+          <p class="issue-summary">다음 주 화요일 봉준호 관련 일정, 목요일 냥냥즈(노아·밤비) 스케줄, 일요일 은호 생일 방송 등 주간 스케줄이 공개되어 팬들이 기대감을 표하고 있습니다. 특히 냥냥즈 컴백 소식에 많은 관심이 쏠리고 있습니다.</p>
+        </div>
+        <div class="issue-card" data-keywords="은호,다마고치,라방,라디치">
+          <div class="source-chips"><span class="source-chip chip-dc">디시</span><span class="source-chip chip-theqoo">더쿠</span><span class="source-chip chip-newduck">뉴덕</span><span class="source-chip chip-instiz">인티</span></div>
+          <h3 class="issue-title">은호 다마고치 화제</h3>
+          <p class="issue-summary">은호의 다마고치 관련 언급이 라이브 방송 이후 커뮤니티에서 화제가 되어, 팬들이 다마고치 종류 예상 및 성장 후기를 공유하고 있습니다. 전체 인기글에도 오를 만큼 팬덤 내 유머 코드로 자리잡으며 훈훈한 반응을 얻고 있습니다.</p>
+        </div>
+        <div class="issue-card" data-keywords="칼파투,포카교환,MD,굿즈">
+          <div class="source-chips"><span class="source-chip chip-dc">디시</span><span class="source-chip chip-newduck">뉴덕</span><span class="source-chip chip-instiz">인티</span></div>
+          <h3 class="issue-title">칼파투 앨범 MD 교환·양도</h3>
+          <p class="issue-summary">칼파투(칼로스·파블로·투이) 포카 앨범 교환 및 굿즈 MD 수령 일정 문의 글이 다수 올라오며 팬들 사이에서 활발한 거래가 이루어지고 있습니다. 칼파투 뱃지 키링 제작 등 자체 제작 굿즈 아이디어도 공유되고 있습니다.</p>
+        </div>
+  </div>
+
+  <div class="section-title">커뮤니티별 인기글 TOP 15</div>
+  <div class="tables-grid">
+
+    <div class="table-block">
+      <div class="table-header dc">💙 디시인사이드</div>
+      <table class="posts-table">
+        <thead><tr>
+          <th class="rank">#</th><th>제목</th><th class="stat">조회</th><th class="stat">댓글</th>
+        </tr></thead>
+        <tbody>
+        <tr>
+          <td class="rank">1</td>
+          <td class="post-title"><a class="post-link" href="https://gall.dcinside.com/mgallery/board/view/?id=plave&no=115980&page=1" target="_blank" rel="noopener">예준 전체관람가 챌린지 with 루.시.님</a></td>
+          <td class="stat">2,455</td>
+          <td class="stat">17</td>
+        </tr>
+        <tr>
+          <td class="rank">2</td>
+          <td class="post-title"><a class="post-link" href="https://gall.dcinside.com/mgallery/board/view/?id=plave&no=115985&page=1" target="_blank" rel="noopener">옞 챌린지에 선배님 댓 + 더 달아주심</a></td>
+          <td class="stat">1,368</td>
+          <td class="stat">3</td>
+        </tr>
+        <tr>
+          <td class="rank">3</td>
+          <td class="post-title"><a class="post-link" href="https://gall.dcinside.com/mgallery/board/view/?id=plave&no=115981&page=1" target="_blank" rel="noopener">옞 진성은 뭔가뭔가임</a></td>
+          <td class="stat">1,076</td>
+          <td class="stat">3</td>
+        </tr>
+        <tr>
+          <td class="rank">4</td>
+          <td class="post-title"><a class="post-link" href="https://gall.dcinside.com/mgallery/board/view/?id=plave&no=115974&page=2" target="_blank" rel="noopener">열받아서 뚫어버림</a></td>
+          <td class="stat">858</td>
+          <td class="stat">9</td>
+        </tr>
+        <tr>
+          <td class="rank">5</td>
+          <td class="post-title"><a class="post-link" href="https://gall.dcinside.com/mgallery/board/view/?id=plave&no=115999&page=1" target="_blank" rel="noopener">은호 언더스탠드 200만</a></td>
+          <td class="stat">840</td>
+          <td class="stat">5</td>
+        </tr>
+        <tr>
+          <td class="rank">6</td>
+          <td class="post-title"><a class="post-link" href="https://gall.dcinside.com/mgallery/board/view/?id=plave&no=115994&page=1" target="_blank" rel="noopener">미친플러팅</a></td>
+          <td class="stat">829</td>
+          <td class="stat">5</td>
+        </tr>
+        <tr>
+          <td class="rank">7</td>
+          <td class="post-title"><a class="post-link" href="https://gall.dcinside.com/mgallery/board/view/?id=plave&no=116002&page=1" target="_blank" rel="noopener">상비약으로 둬라</a></td>
+          <td class="stat">752</td>
+          <td class="stat">5</td>
+        </tr>
+        <tr>
+          <td class="rank">8</td>
+          <td class="post-title"><a class="post-link" href="https://gall.dcinside.com/mgallery/board/view/?id=plave&no=115976&page=1" target="_blank" rel="noopener">칼파투ㅋㅍa_종결</a></td>
+          <td class="stat">618</td>
+          <td class="stat">10</td>
+        </tr>
+        <tr>
+          <td class="rank">9</td>
+          <td class="post-title"><a class="post-link" href="https://gall.dcinside.com/mgallery/board/view/?id=plave&no=115982&page=1" target="_blank" rel="noopener">고음 미쳤나</a></td>
+          <td class="stat">619</td>
+          <td class="stat">1</td>
+        </tr>
+        <tr>
+          <td class="rank">10</td>
+          <td class="post-title"><a class="post-link" href="https://gall.dcinside.com/mgallery/board/view/?id=plave&no=115983&page=1" target="_blank" rel="noopener">옞 목소리 넘 청량하고 시원해서 선풍기 필요없다</a></td>
+          <td class="stat">601</td>
+          <td class="stat">1</td>
+        </tr>
+        <tr>
+          <td class="rank">11</td>
+          <td class="post-title"><a class="post-link" href="https://gall.dcinside.com/mgallery/board/view/?id=plave&no=115997&page=1" target="_blank" rel="noopener">다음주 스케쥴</a></td>
+          <td class="stat">472</td>
+          <td class="stat">6</td>
+        </tr>
+        <tr>
+          <td class="rank">12</td>
+          <td class="post-title"><a class="post-link" href="https://gall.dcinside.com/mgallery/board/view/?id=plave&no=115979&page=1" target="_blank" rel="noopener">흥삼이도 집나감</a></td>
+          <td class="stat">442</td>
+          <td class="stat">5</td>
+        </tr>
+        <tr>
+          <td class="rank">13</td>
+          <td class="post-title"><a class="post-link" href="https://gall.dcinside.com/mgallery/board/view/?id=plave&no=115978&page=1" target="_blank" rel="noopener">효도송 들을수록 꽤괜</a></td>
+          <td class="stat">419</td>
+          <td class="stat">2</td>
+        </tr>
+        <tr>
+          <td class="rank">14</td>
+          <td class="post-title"><a class="post-link" href="https://gall.dcinside.com/mgallery/board/view/?id=plave&no=116001&page=1" target="_blank" rel="noopener">카베준ㅋㅋㅋㅋㅋㅋㅋㅋ</a></td>
+          <td class="stat">382</td>
+          <td class="stat">0</td>
+        </tr>
+        <tr>
+          <td class="rank">15</td>
+          <td class="post-title"><a class="post-link" href="https://gall.dcinside.com/mgallery/board/view/?id=plave&no=116000&page=1" target="_blank" rel="noopener">시그뱃지로 키링만들기</a></td>
+          <td class="stat">372</td>
+          <td class="stat">5</td>
+        </tr></tbody>
+      </table>
+    </div>
+
+    <div class="table-block">
+      <div class="table-header theqoo">💜 더쿠</div>
+      <table class="posts-table">
+        <thead><tr>
+          <th class="rank">#</th><th>제목</th><th class="stat">조회</th><th class="stat">댓글</th>
+        </tr></thead>
+        <tbody>
+        <tr>
+          <td class="rank">1</td>
+          <td class="post-title"><a class="post-link" href="https://theqoo.net/plave/4203525648?page=10" target="_blank" rel="noopener">[#LUCY] 한 편의 만화 같은📕 #PLAVE #예준 님의 #전체관람가</a></td>
+          <td class="stat">1,415</td>
+          <td class="stat">67</td>
+        </tr>
+        <tr>
+          <td class="rank">2</td>
+          <td class="post-title"><a class="post-link" href="https://theqoo.net/plave/4203656723?page=8" target="_blank" rel="noopener">근데 봉구도 진짜 은호 아끼나봐</a></td>
+          <td class="stat">1,288</td>
+          <td class="stat">23</td>
+        </tr>
+        <tr>
+          <td class="rank">3</td>
+          <td class="post-title"><a class="post-link" href="https://theqoo.net/plave/4203151783?page=12" target="_blank" rel="noopener">일본 이번주에 갔다온거지?</a></td>
+          <td class="stat">1,236</td>
+          <td class="stat">10</td>
+        </tr>
+        <tr>
+          <td class="rank">4</td>
+          <td class="post-title"><a class="post-link" href="https://theqoo.net/plave/4203211404?page=11" target="_blank" rel="noopener">울먹이는 어떤 애였을지 궁금하다</a></td>
+          <td class="stat">1,246</td>
+          <td class="stat">3</td>
+        </tr>
+        <tr>
+          <td class="rank">5</td>
+          <td class="post-title"><a class="post-link" href="https://theqoo.net/plave/4203592411?page=9" target="_blank" rel="noopener">어제 라방 브라이언 부분 알고보니까 진짜개애ㅐㅐㅐㅐ웃김</a></td>
+          <td class="stat">1,211</td>
+          <td class="stat">14</td>
+        </tr>
+        <tr>
+          <td class="rank">6</td>
+          <td class="post-title"><a class="post-link" href="https://theqoo.net/plave/4203950121?page=4" target="_blank" rel="noopener">그 반지 줄 원래 이래?</a></td>
+          <td class="stat">1,155</td>
+          <td class="stat">13</td>
+        </tr>
+        <tr>
+          <td class="rank">7</td>
+          <td class="post-title"><a class="post-link" href="https://theqoo.net/plave/4203715440?page=7" target="_blank" rel="noopener">CU 반택 집근처에 자주쓴 지점이 있는데 눈치줘서</a></td>
+          <td class="stat">1,123</td>
+          <td class="stat">18</td>
+        </tr>
+        <tr>
+          <td class="rank">8</td>
+          <td class="post-title"><a class="post-link" href="https://theqoo.net/plave/4203204735?page=12" target="_blank" rel="noopener">ㅋㅋ노아 ㄷㅁㄱㅊ 멤버들 흥미 떨어지면 주워쓴다는게</a></td>
+          <td class="stat">1,164</td>
+          <td class="stat">4</td>
+        </tr>
+        <tr>
+          <td class="rank">9</td>
+          <td class="post-title"><a class="post-link" href="https://theqoo.net/plave/4204069045?page=3" target="_blank" rel="noopener">💙💜💗❤️🖤 이거 색상은 무슨 기준이야...??</a></td>
+          <td class="stat">1,110</td>
+          <td class="stat">14</td>
+        </tr>
+        <tr>
+          <td class="rank">10</td>
+          <td class="post-title"><a class="post-link" href="https://theqoo.net/plave/4203207349?page=11" target="_blank" rel="noopener">색 못보는 사람도 있어요.</a></td>
+          <td class="stat">1,107</td>
+          <td class="stat">4</td>
+        </tr>
+        <tr>
+          <td class="rank">11</td>
+          <td class="post-title"><a class="post-link" href="https://theqoo.net/plave/4203923642?page=4" target="_blank" rel="noopener">반지 이렇게도 쓸 수 있다</a></td>
+          <td class="stat">1,058</td>
+          <td class="stat">12</td>
+        </tr>
+        <tr>
+          <td class="rank">12</td>
+          <td class="post-title"><a class="post-link" href="https://theqoo.net/plave/4203193763?page=12" target="_blank" rel="noopener">연습생뱅 때도 본인 키우기 어렵다고 했었는데ㅋㅋ</a></td>
+          <td class="stat">1,069</td>
+          <td class="stat">3</td>
+        </tr>
+        <tr>
+          <td class="rank">13</td>
+          <td class="post-title"><a class="post-link" href="https://theqoo.net/plave/4204041261?page=3" target="_blank" rel="noopener">이거 약간 번따각인가...</a></td>
+          <td class="stat">1,030</td>
+          <td class="stat">11</td>
+        </tr>
+        <tr>
+          <td class="rank">14</td>
+          <td class="post-title"><a class="post-link" href="https://theqoo.net/plave/4203660537?page=8" target="_blank" rel="noopener">PLAVE Asia Tour [DASH: Quantum Leap] Encore in Cinemas SCREENX 트레일러</a></td>
+          <td class="stat">988</td>
+          <td class="stat">16</td>
+        </tr>
+        <tr>
+          <td class="rank">15</td>
+          <td class="post-title"><a class="post-link" href="https://theqoo.net/plave/4203534564?page=9" target="_blank" rel="noopener">유행하는 입덕직캠 프롬프트에 플리 넣어봄</a></td>
+          <td class="stat">977</td>
+          <td class="stat">16</td>
+        </tr></tbody>
+      </table>
+    </div>
+
+    <div class="table-block">
+      <div class="table-header newduck">🩷 뉴덕</div>
+      <table class="posts-table">
+        <thead><tr>
+          <th class="rank">#</th><th>제목</th><th class="stat">조회</th><th class="stat">댓글</th>
+        </tr></thead>
+        <tbody>
+        <tr>
+          <td class="rank">1</td>
+          <td class="post-title"><a class="post-link" href="https://newduck.net/board_gLxy54/124771024/page/2" target="_blank" rel="noopener">으노 생킷 반지(웨딩링) 실착 후기</a></td>
+          <td class="stat">423</td>
+          <td class="stat">18</td>
+        </tr>
+        <tr>
+          <td class="rank">2</td>
+          <td class="post-title"><a class="post-link" href="https://newduck.net/board_gLxy54/124750655/page/5" target="_blank" rel="noopener">은호 생킷 양도해</a></td>
+          <td class="stat">385</td>
+          <td class="stat">25</td>
+        </tr>
+        <tr>
+          <td class="rank">3</td>
+          <td class="post-title"><a class="post-link" href="https://newduck.net/board_gLxy54/124766068/page/3" target="_blank" rel="noopener">블샵에서 웨딩링 받은 오리들은 도대체 언제 주문건이야??</a></td>
+          <td class="stat">352</td>
+          <td class="stat">30</td>
+        </tr>
+        <tr>
+          <td class="rank">4</td>
+          <td class="post-title"><a class="post-link" href="https://newduck.net/board_gLxy54/124743694/page/5" target="_blank" rel="noopener">은호 다마고치 라슈라디치?로 예상하던데</a></td>
+          <td class="stat">330</td>
+          <td class="stat">12</td>
+        </tr>
+        <tr>
+          <td class="rank">5</td>
+          <td class="post-title"><a class="post-link" href="https://newduck.net/board_gLxy54/124755940/page/4" target="_blank" rel="noopener">오늘 은호생킷 또는 쿠키 십카페앞 직거래 양도</a></td>
+          <td class="stat">278</td>
+          <td class="stat">17</td>
+        </tr>
+        <tr>
+          <td class="rank">6</td>
+          <td class="post-title"><a class="post-link" href="https://newduck.net/board_gLxy54/124757253/page/4" target="_blank" rel="noopener">공연장 점점 커지는거 봐</a></td>
+          <td class="stat">289</td>
+          <td class="stat">13</td>
+        </tr>
+        <tr>
+          <td class="rank">7</td>
+          <td class="post-title"><a class="post-link" href="https://newduck.net/board_gLxy54/124770094/page/2" target="_blank" rel="noopener">둥지에서 배송지변경으로 양도 안되지?</a></td>
+          <td class="stat">272</td>
+          <td class="stat">15</td>
+        </tr>
+        <tr>
+          <td class="rank">8</td>
+          <td class="post-title"><a class="post-link" href="https://newduck.net/board_gLxy54/124777095" target="_blank" rel="noopener">뜨개오리는 반지 실착이 어려워...</a></td>
+          <td class="stat">283</td>
+          <td class="stat">10</td>
+        </tr>
+        <tr>
+          <td class="rank">9</td>
+          <td class="post-title"><a class="post-link" href="https://newduck.net/board_gLxy54/124743857/page/5" target="_blank" rel="noopener">(소심발언) 플레이브 퍼컬은 블랙이라고 생각합니다</a></td>
+          <td class="stat">270</td>
+          <td class="stat">10</td>
+        </tr>
+        <tr>
+          <td class="rank">10</td>
+          <td class="post-title"><a class="post-link" href="https://newduck.net/board_gLxy54/124756133/page/4" target="_blank" rel="noopener">[#LUCY] 한 편의 만화 같은📕 #PLAVE #예준 님의 #전체관람가 #루시 #플레이브 ...</a></td>
+          <td class="stat">240</td>
+          <td class="stat">19</td>
+        </tr>
+        <tr>
+          <td class="rank">11</td>
+          <td class="post-title"><a class="post-link" href="https://newduck.net/board_gLxy54/124765119/page/3" target="_blank" rel="noopener">다음주 스케줄</a></td>
+          <td class="stat">261</td>
+          <td class="stat">11</td>
+        </tr>
+        <tr>
+          <td class="rank">12</td>
+          <td class="post-title"><a class="post-link" href="https://newduck.net/board_gLxy54/124776689" target="_blank" rel="noopener">웨딩링 이제 므모한테 줘썽</a></td>
+          <td class="stat">255</td>
+          <td class="stat">11</td>
+        </tr>
+        <tr>
+          <td class="rank">13</td>
+          <td class="post-title"><a class="post-link" href="https://newduck.net/board_gLxy54/124757645/page/4" target="_blank" rel="noopener">ㅂㅍㅂ)대박 챙피ㅠㅠㅠㅠ</a></td>
+          <td class="stat">252</td>
+          <td class="stat">12</td>
+        </tr>
+        <tr>
+          <td class="rank">14</td>
+          <td class="post-title"><a class="post-link" href="https://newduck.net/board_gLxy54/124767152/page/2" target="_blank" rel="noopener">십캎 은호 생일 키트 아직 품절 안됐어???</a></td>
+          <td class="stat">266</td>
+          <td class="stat">4</td>
+        </tr>
+        <tr>
+          <td class="rank">15</td>
+          <td class="post-title"><a class="post-link" href="https://newduck.net/board_gLxy54/124773164/page/2" target="_blank" rel="noopener">굿즈 중에 늦어서 이렇게 힘든 거 처음이야</a></td>
+          <td class="stat">246</td>
+          <td class="stat">9</td>
+        </tr></tbody>
+      </table>
+    </div>
+
+    <div class="table-block">
+      <div class="table-header instiz">❤️ 인스티즈</div>
+      <table class="posts-table">
+        <thead><tr>
+          <th class="rank">#</th><th>제목</th><th class="stat">조회</th><th class="stat">댓글</th>
+        </tr></thead>
+        <tbody>
+        <tr>
+          <td class="rank">1</td>
+          <td class="post-title"><a class="post-link" href="https://www.instiz.net/name_enter/99540457&category=644" target="_blank" rel="noopener">미디어[#LUCY] 한 편의 만화 같은📕 #PLAVE #예준 님의 #전체관람가</a></td>
+          <td class="stat">2,445</td>
+          <td class="stat">114</td>
+        </tr>
+        <tr>
+          <td class="rank">2</td>
+          <td class="post-title"><a class="post-link" href="https://www.instiz.net/name_enter/99545510&category=644" target="_blank" rel="noopener">생킷 포카 3개 맞지?</a></td>
+          <td class="stat">573</td>
+          <td class="stat">38</td>
+        </tr>
+        <tr>
+          <td class="rank">3</td>
+          <td class="post-title"><a class="post-link" href="https://www.instiz.net/name_enter/99540159&category=644" target="_blank" rel="noopener">씨지브이 예매 성공했던 플둥</a></td>
+          <td class="stat">525</td>
+          <td class="stat">33</td>
+        </tr>
+        <tr>
+          <td class="rank">4</td>
+          <td class="post-title"><a class="post-link" href="https://www.instiz.net/name_enter/99542949&category=644" target="_blank" rel="noopener">마플감사모드보고 느낀거.. 진심 팬덤이 자낮이면</a></td>
+          <td class="stat">374</td>
+          <td class="stat">51</td>
+        </tr>
+        <tr>
+          <td class="rank">5</td>
+          <td class="post-title"><a class="post-link" href="https://www.instiz.net/name_enter/99542773&category=644" target="_blank" rel="noopener">마플여긴 그런사람들없지만 진심 감사해모드 버릴때가됐다</a></td>
+          <td class="stat">387</td>
+          <td class="stat">46</td>
+        </tr>
+        <tr>
+          <td class="rank">6</td>
+          <td class="post-title"><a class="post-link" href="https://www.instiz.net/name_enter?category=644" target="_blank" rel="noopener">플레이브/미디어</a></td>
+          <td class="stat">141</td>
+          <td class="stat">114</td>
+        </tr>
+        <tr>
+          <td class="rank">7</td>
+          <td class="post-title"><a class="post-link" href="https://www.instiz.net/name_enter/99541282&category=644" target="_blank" rel="noopener">2시떴다</a></td>
+          <td class="stat">416</td>
+          <td class="stat">14</td>
+        </tr>
+        <tr>
+          <td class="rank">8</td>
+          <td class="post-title"><a class="post-link" href="https://www.instiz.net/name_enter/99539457&category=644" target="_blank" rel="noopener">뿌뿌뿌이🎉</a></td>
+          <td class="stat">391</td>
+          <td class="stat">21</td>
+        </tr>
+        <tr>
+          <td class="rank">9</td>
+          <td class="post-title"><a class="post-link" href="https://www.instiz.net/name_enter/99545981&category=644" target="_blank" rel="noopener">ㅡ</a></td>
+          <td class="stat">401</td>
+          <td class="stat">11</td>
+        </tr>
+        <tr>
+          <td class="rank">10</td>
+          <td class="post-title"><a class="post-link" href="https://www.instiz.net/name_enter/99545257&category=644" target="_blank" rel="noopener">아니 나 유류세 더 오르기전에 비행기 예매해서 시카고 왔거든</a></td>
+          <td class="stat">362</td>
+          <td class="stat">21</td>
+        </tr>
+        <tr>
+          <td class="rank">11</td>
+          <td class="post-title"><a class="post-link" href="https://www.instiz.net/name_enter/99538473&category=644" target="_blank" rel="noopener">위버스 자동자막 파업사건</a></td>
+          <td class="stat">393</td>
+          <td class="stat">10</td>
+        </tr>
+        <tr>
+          <td class="rank">12</td>
+          <td class="post-title"><a class="post-link" href="https://www.instiz.net/name_enter/99538698&category=644" target="_blank" rel="noopener">순수체급 스파이라는 말이 너무 욱김ㅋㅋㅋㅋㅋㅋㅋㅋ</a></td>
+          <td class="stat">382</td>
+          <td class="stat">11</td>
+        </tr>
+        <tr>
+          <td class="rank">13</td>
+          <td class="post-title"><a class="post-link" href="https://www.instiz.net/name_enter/99540721&category=644" target="_blank" rel="noopener">플레이브 보컬 봄vs여름vs가을vs겨울 어느쪽?</a></td>
+          <td class="stat">285</td>
+          <td class="stat">38</td>
+        </tr>
+        <tr>
+          <td class="rank">14</td>
+          <td class="post-title"><a class="post-link" href="https://www.instiz.net/name_enter/99544924&category=644" target="_blank" rel="noopener">아니 전체인기글에 다마고치 글ㅋㅋㅋㅋㅋ</a></td>
+          <td class="stat">331</td>
+          <td class="stat">15</td>
+        </tr>
+        <tr>
+          <td class="rank">15</td>
+          <td class="post-title"><a class="post-link" href="https://www.instiz.net/name_enter/99543033&category=644" target="_blank" rel="noopener">웨딩밴드 귀걸이 헐</a></td>
+          <td class="stat">306</td>
+          <td class="stat">14</td>
+        </tr></tbody>
+      </table>
+    </div>
+
+  </div>
+</div>
+
+<footer>
+  <span class="hero-badge" style="margin-bottom:0">UPDATE <time id="update-time" datetime="2026-05-16T05:10:21+09:00">2026년 05월 16일 05:10</time><span id="time-ago"></span></span>
+</footer>
+
+<button id="top-btn" aria-label="맨 위로">🖤</button>
+
+<script>
+  const STORAGE_KEY = 'plave_read_posts';
+
+  function getReadSet() {
+    try { return new Set(JSON.parse(localStorage.getItem(STORAGE_KEY) || '[]')); }
+    catch { return new Set(); }
+  }
+
+  function saveReadSet(set) {
+    localStorage.setItem(STORAGE_KEY, JSON.stringify([...set]));
+  }
+
+  document.addEventListener('DOMContentLoaded', function () {
+
+    /* ── 읽은 글 표시 ── */
+    const readSet = getReadSet();
+    document.querySelectorAll('.post-link').forEach(function (a) {
+      const url = a.href;
+      const row = a.closest('tr');
+      if (readSet.has(url)) row.classList.add('read');
+      a.addEventListener('click', function () {
+        readSet.add(url);
+        saveReadSet(readSet);
+        row.classList.add('read');
+      });
+    });
+
+    /* ── 상대 시간 ── */
+    const timeEl  = document.getElementById('update-time');
+    const agoEl   = document.getElementById('time-ago');
+    if (timeEl && agoEl) {
+      const diff = Math.round((Date.now() - new Date(timeEl.getAttribute('datetime')).getTime()) / 60000);
+      let label;
+      if      (diff < 1)    label = '방금 전';
+      else if (diff < 60)   label = diff + '분 전';
+      else if (diff < 1440) label = Math.round(diff / 60) + '시간 전';
+      else                  label = Math.round(diff / 1440) + '일 전';
+      agoEl.textContent = ' (' + label + ')';
+    }
+
+    /* ── 맨 위로 버튼 ── */
+    const topBtn = document.getElementById('top-btn');
+    window.addEventListener('scroll', function () {
+      topBtn.classList.toggle('visible', window.scrollY > 300);
+    });
+    topBtn.addEventListener('click', function () {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+
+    /* ── 이슈 카드 필터링 ── */
+    const allRows = Array.from(document.querySelectorAll('.posts-table tbody tr'));
+    let activeCard = null;
+
+    function applyFilter(keywords) {
+      allRows.forEach(function (row) {
+        const titleEl = row.querySelector('.post-title a');
+        if (!titleEl) return;
+        const text  = titleEl.textContent;
+        const match = keywords.some(function (kw) { return text.includes(kw.trim()); });
+        row.classList.toggle('dimmed', !match);
+        row.classList.toggle('match',  match);
+      });
+    }
+
+    function resetFilter() {
+      allRows.forEach(function (row) {
+        row.classList.remove('dimmed', 'match');
+      });
+    }
+
+    document.querySelectorAll('.issue-card').forEach(function (card) {
+      card.addEventListener('click', function () {
+        if (activeCard === card) {
+          card.classList.remove('selected');
+          activeCard = null;
+          resetFilter();
+        } else {
+          if (activeCard) activeCard.classList.remove('selected');
+          activeCard = card;
+          card.classList.add('selected');
+          const keywords = (card.dataset.keywords || '').split(',').filter(Boolean);
+          applyFilter(keywords);
+        }
+      });
+    });
+
+    /* ── 아카이브 내비 ── */
+    const archiveSel = document.getElementById('archive-sel');
+    if (archiveSel) {
+      archiveSel.addEventListener('change', function () {
+        if (this.value) {
+          location.href = this.value;
+        } else {
+          location.href = 'index.html';
+        }
+      });
+    }
+
+  });
+</script>
+
+</body>
+</html>

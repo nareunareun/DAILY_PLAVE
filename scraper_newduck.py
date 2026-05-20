@@ -30,8 +30,11 @@ def _make_scraper():
     )
 
 def fetch_page(scraper, page=1):
-    params = {"page": page} if page > 1 else {}
-    resp = scraper.get(BOARD_URL, params=params, timeout=15)
+    if page > 1:
+        url = f"{BOARD_URL}/page/{page}"
+        resp = scraper.get(url, headers={"Referer": BOARD_URL}, timeout=15)
+    else:
+        resp = scraper.get(BOARD_URL, timeout=15)
     resp.raise_for_status()
     return resp.text
 

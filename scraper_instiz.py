@@ -36,7 +36,7 @@ def parse_posts(html, target_date_str, seen_links):
     rows = soup.select("tr[id^='list'], tr[id='detour']")
     
     for idx, row in enumerate(rows):
-        link_a = row.select_one("a[href]")
+        link_a = row.select_one("td.listsubject a[href]")
         if not link_a: continue
         
         raw_link = link_a.get("href", "")

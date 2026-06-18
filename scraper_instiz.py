@@ -32,7 +32,7 @@ def parse_posts(html, target_date_str, seen_links):
 
     rows = soup.select("tr[id^='list'], tr[id='detour']")
     
-    for idx, row in enumerate(rows):
+    for row in rows:
         link_a = row.select_one("td.listsubject a[href]")
         if not link_a: continue
         
@@ -77,7 +77,7 @@ def parse_posts(html, target_date_str, seen_links):
             continue 
         elif re.search(r"\d+\.\d+", date_text):
             # 상단 인기글(우회) 블록은 본문 목록과 중복되며 과거 글이어도
-            # 종료 신호로 보면 안 된다. 위치(idx) 대신 구조로 식별한다:
+            # 종료 신호로 보면 안 된다. 위치(순번) 대신 구조로 식별한다:
             # detour 행 또는 texthead_notice(=is_green_post)는 건너뛰기만 한다.
             if is_green_post or row.get("id") == "detour":
                 continue

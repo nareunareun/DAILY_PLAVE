@@ -21,9 +21,6 @@ def _parse_view(text):
     except ValueError:
         return 0
 
-def _score(post):
-    return post["reply_count"] * 0.7 + post["view_count"] * 0.3
-
 def _make_scraper():
     return cloudscraper.create_scraper(
         browser={"browser": "chrome", "platform": "windows", "mobile": False}
@@ -125,10 +122,6 @@ def collect_posts(max_pages=999):
             break
         if page < max_pages:
             time.sleep(0.8)
-
-    for post in all_posts:
-        post["score"] = round(_score(post), 2)
-    all_posts.sort(key=lambda p: p["score"], reverse=True)
 
     return all_posts, full_date_str
 

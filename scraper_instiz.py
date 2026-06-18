@@ -16,9 +16,6 @@ HEADERS = {
 KST = timezone(timedelta(hours=9))
 _TIME_RE = re.compile(r"^\d{2}:\d{2}$")
 
-def _score(post):
-    return post["reply_count"] * 0.7 + post["view_count"] * 0.3
-
 def fetch_page(page=1):
     params = {"category": CATEGORY}
     if page > 1:
@@ -155,9 +152,5 @@ def collect_posts(max_pages=999):
             break
             
         if page < max_pages: time.sleep(0.8)
-
-    for post in all_posts:
-        post["score"] = round(_score(post), 2)
-    all_posts.sort(key=lambda p: p["score"], reverse=True)
 
     return all_posts, full_date_str

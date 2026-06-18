@@ -15,9 +15,6 @@ HEADERS = {
 KST = timezone(timedelta(hours=9))
 _TIME_RE = re.compile(r"^\d{2}:\d{2}$")
 
-def _score(post):
-    return post["recommend_count"] * 0.5 + post["reply_count"] * 0.3 + post["view_count"] * 0.2
-
 def fetch_page(page=1):
     params = {"id": GALLERY_ID, "page": page}
     resp = requests.get(GALLERY_URL, headers=HEADERS, params=params, timeout=10)
@@ -118,9 +115,5 @@ def collect_posts(max_pages=999):
             print(f"  -> 오류: {e}")
             break
         if page < max_pages: time.sleep(0.8)
-
-    for post in all_posts:
-        post["score"] = round(_score(post), 2)
-    all_posts.sort(key=lambda p: p["score"], reverse=True)
 
     return all_posts, full_date_str

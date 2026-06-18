@@ -28,6 +28,12 @@ def main():
     from scraper_instiz import collect_posts as instiz_collect
     instiz_posts, _ = instiz_collect()
 
+    from scoring import rank_posts
+    dc_posts      = rank_posts(dc_posts,      "dcinside")
+    theqoo_posts  = rank_posts(theqoo_posts,  "theqoo")
+    newduck_posts = rank_posts(newduck_posts, "newduck")
+    instiz_posts  = rank_posts(instiz_posts,  "instiz")
+
     now_kst = datetime.now(KST)
     posts_data = {
         "collected_at": now_kst.isoformat(),

@@ -15,8 +15,8 @@ def build_prompt(posts_data):
     ]
     lines = []
     for key, label in sources:
-        for p in posts_data.get(key, {}).get("posts", [])[:50]:
-            lines.append(f"[{label}] {p['title']}")
+        for p in posts_data.get(key, {}).get("posts", []):
+            lines.append(f"[{label}] {p['title']} (댓글 {p.get('reply_count', 0)})")
     return "\n".join(lines)
 
 def summarize(posts_data, max_retries=5):
@@ -32,11 +32,16 @@ def summarize(posts_data, max_retries=5):
     prompt = f"""아래는 오늘({date}) 플레이브 팬 커뮤니티(디시인사이드, 더쿠, 뉴덕, 인스티즈) 게시글 제목 목록입니다.
 수집 시각: {collected_at}
 
-글 제목 목록 (각 출처 표시, 인기순):
+글 목록 (각 출처 표시, 반응순, 끝에 댓글 수 표기 — 해당 날짜 전체 게시물):
 {post_list}
 
 위 글 목록을 분석해서 네 커뮤니티를 통틀어 현재 화제가 되고 있는 이슈를 3~6개로 요약해주세요.
 출처가 한 곳에만 있더라도 중요하면 포함하고, 여러 커뮤니티에서 공통으로 언급되면 더 중요한 이슈로 다뤄주세요.
+각 글 끝의 (댓글 N)은 반응 강도를 나타냅니다. 댓글이 많은 글일수록 화제성이 크므로, 댓글 수가 많은 주제와 여러 커뮤니티에 공통으로 등장하는 주제를 우선적으로 중요 이슈로 다뤄주세요.
+
+[어투 규칙] 모든 'summary'와 'overall_mood' 문장은 반드시 존댓말로 작성하세요.
+문장은 '~합니다', '~입니다', '~네요', '~보입니다'처럼 정중한 종결어미로 끝내고,
+'~다', '~함', '~음', '~네', '~인 듯' 같은 반말·음슬체·개조식 종결은 절대 사용하지 마세요.
 
 응답 형식 (JSON):
 {{
@@ -44,13 +49,13 @@ def summarize(posts_data, max_retries=5):
     {{
       "rank": 1,
       "title": "이슈 제목 (15자 이내)",
-      "summary": "해당 이슈에 대한 설명 (2-3문장)",
+      "summary": "해당 이슈에 대한 설명 (2-3문장, 존댓말)",
       "keywords": ["키워드1", "키워드2"],
       "hot_level": "hot/warm/normal",
       "sources": ["디시", "더쿠", "뉴덕", "인스티즈"]
     }}
   ],
-  "overall_mood": "오늘 팬 커뮤니티 전체 분위기 한 줄 요약"
+  "overall_mood": "오늘 팬 커뮤니티 전체 분위기 한 줄 요약 (존댓말)"
 }}
 
 JSON만 응답하고 다른 텍스트는 포함하지 마세요."""

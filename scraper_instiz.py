@@ -76,7 +76,10 @@ def parse_posts(html, target_date_str, seen_links):
         elif _TIME_RE.match(date_text):
             continue 
         elif re.search(r"\d+\.\d+", date_text):
-            if is_green_post or idx < 15:
+            # 상단 인기글(우회) 블록은 본문 목록과 중복되며 과거 글이어도
+            # 종료 신호로 보면 안 된다. 위치(idx) 대신 구조로 식별한다:
+            # detour 행 또는 texthead_notice(=is_green_post)는 건너뛰기만 한다.
+            if is_green_post or row.get("id") == "detour":
                 continue
             else:
                 older_found = True

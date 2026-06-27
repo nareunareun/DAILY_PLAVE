@@ -1,0 +1,336 @@
+:root {
+      --bg:             #f7f4ff;
+      --surface:        #ffffff;
+      --surface-2:      #f0ebff;
+      --border:         #e2d8f5;
+      --border-light:   #ede8fa;
+      --text-primary:   #2e2055;
+      --text-secondary: #7a6b9e;
+      --text-muted:     #b4a9cc;
+      --accent:         #9575d0;
+      --accent-deep:    #7c5cbf;
+      --accent-light:   #c9b6ed;
+      --accent-bg:      #ede8ff;
+      --read-opacity:   0.38;
+
+      /* 커뮤니티 파스텔 색상 */
+      --dc-bg:      #dbeafe; --dc-text:      #1d4ed8;
+      --theqoo-bg:  #ede9fe; --theqoo-text:  #6d28d9;
+      --newduck-bg: #fce7f3; --newduck-text: #9d174d;
+      --instiz-bg:  #fee2e2; --instiz-text:  #b91c1c;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: 'Pretendard', sans-serif;
+      background: var(--bg);
+      color: var(--text-primary);
+      min-height: 100vh;
+      line-height: 1.6;
+    }
+
+    /* ── Hero ── */
+    .hero {
+      background: linear-gradient(150deg, #ece8ff 0%, #f8f2ff 50%, #fdf0ff 100%);
+      padding: 44px 20px 36px;
+      text-align: center;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .hero-badge {
+      display: inline-block;
+      background: var(--accent-bg);
+      color: var(--accent-deep);
+      font-size: 12px;
+      font-weight: 600;
+      padding: 5px 14px;
+      border-radius: 20px;
+      letter-spacing: 0.3px;
+      border: 1px solid var(--accent-light);
+    }
+
+    h1 {
+      font-size: clamp(26px, 6vw, 38px);
+      font-weight: 800;
+      letter-spacing: -1px;
+      margin-bottom: 12px;
+      background: linear-gradient(90deg, var(--accent-deep), #b07ee8);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    .mood-bar {
+      margin: 18px auto 0;
+      max-width: 580px;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 11px 18px;
+      font-size: 13.5px;
+      color: var(--text-secondary);
+      box-shadow: 0 1px 6px rgba(149,117,208,0.08);
+    }
+
+    .mood-bar strong { color: var(--accent-deep); font-weight: 700; }
+
+    /* ── Layout ── */
+    .container {
+      max-width: 1080px;
+      margin: 0 auto;
+      padding: 36px 16px 36px;
+    }
+
+    .section-title {
+      font-size: 13.5px;
+      font-weight: 700;
+      color: var(--text-muted);
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      margin-bottom: 18px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .section-title::after {
+      content: '';
+      flex: 1;
+      height: 1px;
+      background: var(--border);
+    }
+
+    /* ── Issue cards ── */
+    .issues-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 14px;
+      margin-bottom: 36px;
+    }
+
+    @media (max-width: 760px) { .issues-grid { grid-template-columns: repeat(2, 1fr); } }
+    @media (max-width: 480px) { .issues-grid { grid-template-columns: 1fr; } }
+
+    .issue-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 20px;
+      transition: box-shadow 0.2s, transform 0.2s, border-color 0.2s;
+      box-shadow: 0 1px 4px rgba(149,117,208,0.07);
+    }
+
+    .issue-card:hover {
+      box-shadow: 0 4px 16px rgba(149,117,208,0.15);
+      border-color: var(--accent-light);
+      transform: translateY(-2px);
+    }
+
+    .source-chips {
+      display: flex;
+      gap: 4px;
+      flex-wrap: wrap;
+      margin-bottom: 10px;
+    }
+
+    .source-chip {
+      font-size: 10px;
+      font-weight: 700;
+      padding: 2px 8px;
+      border-radius: 10px;
+      letter-spacing: 0.1px;
+    }
+
+    .chip-dc      { background: var(--dc-bg);      color: var(--dc-text); }
+    .chip-theqoo  { background: var(--theqoo-bg);  color: var(--theqoo-text); }
+    .chip-newduck { background: var(--newduck-bg); color: var(--newduck-text); }
+    .chip-instiz  { background: var(--instiz-bg);  color: var(--instiz-text); }
+
+    .issue-title {
+      font-size: 16px;
+      font-weight: 700;
+      color: var(--text-primary);
+      margin-bottom: 8px;
+      margin-top: 2px;
+      line-height: 1.45;
+    }
+
+    .issue-summary {
+      font-size: 13px;
+      color: var(--text-secondary);
+      line-height: 1.7;
+    }
+
+    /* ── Tables ── */
+    .tables-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 18px;
+      margin-bottom: 0;
+    }
+
+    @media (max-width: 560px) { .tables-grid { grid-template-columns: 1fr; } }
+
+    .table-block { min-width: 0; }
+
+    .table-header {
+      font-size: 13px;
+      font-weight: 700;
+      margin-bottom: 8px;
+      padding: 7px 12px;
+      border-radius: 10px;
+    }
+
+    .table-header.dc      { background: var(--dc-bg);      color: var(--dc-text); }
+    .table-header.theqoo  { background: var(--theqoo-bg);  color: var(--theqoo-text); }
+    .table-header.newduck { background: var(--newduck-bg); color: var(--newduck-text); }
+    .table-header.instiz  { background: var(--instiz-bg);  color: var(--instiz-text); }
+
+    .posts-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 13px;
+    }
+
+    .posts-table thead th {
+      padding: 7px 8px;
+      text-align: left;
+      color: var(--text-muted);
+      border-bottom: 2px solid var(--border);
+      font-weight: 600;
+      white-space: nowrap;
+    }
+
+    .posts-table tbody td {
+      padding: 8px 8px;
+      border-bottom: 1px solid var(--border-light);
+      vertical-align: middle;
+    }
+
+    .posts-table tbody tr:last-child td { border-bottom: none; }
+    .posts-table tbody tr:hover { background: var(--surface-2); }
+
+    .rank {
+      color: var(--text-muted);
+      width: 24px;
+      text-align: center;
+      font-weight: 600;
+    }
+
+    .stat {
+      color: var(--text-muted);
+      width: 42px;
+      text-align: right;
+      white-space: nowrap;
+    }
+
+    .post-title { max-width: 0; }
+
+    .post-title a {
+      color: var(--text-primary);
+      text-decoration: none;
+      display: block;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      transition: color 0.15s;
+    }
+
+    .post-title a:hover { color: var(--accent-deep); text-decoration: underline; }
+
+    /* 읽은 글 */
+    .posts-table tbody tr.read td { opacity: var(--read-opacity); }
+    .posts-table tbody tr.read .post-title a { text-decoration: line-through; }
+    .posts-table tbody tr.read:hover td { opacity: 0.6; }
+
+    /* ── Mobile ── */
+    @media (max-width: 480px) {
+      .hero { padding: 32px 16px 24px; }
+      .issues-grid { grid-template-columns: 1fr; }
+      .container { padding: 24px 12px 40px; }
+    }
+
+    /* ── Footer ── */
+    footer {
+      background: linear-gradient(150deg, #ece8ff 0%, #f8f2ff 50%, #fdf0ff 100%);
+      text-align: center;
+      padding: 36px 16px 56px;
+      font-size: 12px;
+      color: var(--text-muted);
+      border-top: 1px solid var(--border);
+    }
+
+    /* ── 상대 시간 ── */
+    #time-ago {
+      color: var(--text-muted);
+      font-size: 12px;
+    }
+
+    /* ── 맨 위로 버튼 ── */
+    #top-btn {
+      position: fixed;
+      bottom: 28px;
+      left: 50%;
+      transform: translateX(-50%);
+      background: none;
+      border: none;
+      padding: 0;
+      font-size: 15px;
+      cursor: pointer;
+      transition: opacity 0.25s;
+      opacity: 0;
+      pointer-events: none;
+      z-index: 100;
+    }
+
+    #top-btn.visible {
+      opacity: 1;
+      pointer-events: auto;
+    }
+
+    /* ── 이슈 카드 필터링 ── */
+    .issue-card {
+      cursor: pointer;
+    }
+
+    .issue-card.selected {
+      border-color: var(--accent);
+      box-shadow: 0 0 0 3px rgba(149,117,208,0.18), 0 4px 16px rgba(149,117,208,0.15);
+    }
+
+    .posts-table tbody tr.dimmed td {
+      opacity: 0.15;
+    }
+
+    .posts-table tbody tr.match .post-title a {
+      color: var(--accent-deep);
+      font-weight: 700;
+    }
+
+    /* ── 아카이브 내비 ── */
+    .archive-nav {
+      margin: 16px auto 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 12px;
+    }
+
+    .archive-nav select {
+      background: var(--surface);
+      color: var(--text-secondary);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 6px 14px;
+      font-size: 12px;
+      cursor: pointer;
+      outline: none;
+      font-family: inherit;
+      text-align: center;
+    }
+
+    .archive-nav select option {
+      direction: ltr;
+      text-align: left;
+    }

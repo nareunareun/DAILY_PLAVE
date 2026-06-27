@@ -1,4 +1,4 @@
-import requests
+import cloudscraper
 from bs4 import BeautifulSoup
 import re
 import time
@@ -8,7 +8,6 @@ BOARD_URL = "https://www.instiz.net/name_enter"
 CATEGORY  = 644
 
 HEADERS = {
-    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36",
     "Referer": "https://www.instiz.net/",
     "Accept-Language": "ko-KR,ko;q=0.9",
 }
@@ -16,13 +15,34 @@ HEADERS = {
 KST = timezone(timedelta(hours=9))
 _TIME_RE = re.compile(r"^\d{2}:\d{2}$")
 
-def fetch_page(page=1):
+
+def _make_scraper():
+    # 인스티즈는 Cloudflare 뒤에 있어 평범한 requests는 데이터센터 IP에서
+    # 간헐적으로 403을 받는다. cloudscraper는 브라우저 TLS 핑거프린트와
+    # 챌린지 처리를 흉내 내 차단 빈도를 낮춘다. 한 세션을 페이지 간 재사용해
+    # 쿠키 유지 + keep-alive 효과도 얻는다.
+    return cloudscraper.create_scraper(
+        browser={"browser": "chrome", "platform": "windows", "mobile": False}
+    )
+
+
+def fetch_page(scraper, page=1, retries=3, backoff=2.0):
     params = {"category": CATEGORY}
     if page > 1:
         params["page"] = page
-    resp = requests.get(BOARD_URL, headers=HEADERS, params=params, timeout=10)
-    resp.raise_for_status()
-    return resp.text
+    last_err = None
+    for attempt in range(1, retries + 1):
+        try:
+            resp = scraper.get(BOARD_URL, headers=HEADERS, params=params, timeout=15)
+            resp.raise_for_status()
+            return resp.text
+        except Exception as e:
+            last_err = e
+            if attempt < retries:
+                wait = backoff * attempt
+                print(f"  -> [재시도] 페이지 {page} 요청 실패({e}), {wait:.0f}s 후 재시도 ({attempt}/{retries})")
+                time.sleep(wait)
+    raise last_err
 
 def parse_posts(html, target_date_str, seen_links):
     soup = BeautifulSoup(html, "html.parser")
@@ -132,13 +152,14 @@ def collect_posts(max_pages=999):
     full_date_str = yesterday.strftime("%Y-%m-%d")
 
     print(f"목표 수집 날짜: {full_date_str} (인스티즈 판별용: {target_date_str})")
-    
+
     seen_links = set()
+    scraper = _make_scraper()
 
     for page in range(1, max_pages + 1):
         print(f"  [인스티즈] 페이지 {page} 탐색 중...")
         try:
-            html = fetch_page(page)
+            html = fetch_page(scraper, page)
             posts, older_found, new_links_count = parse_posts(html, target_date_str, seen_links)
             
             all_posts.extend(posts)
@@ -152,8 +173,14 @@ def collect_posts(max_pages=999):
 
         except Exception as e:
             print(f"  -> 오류: {e}")
+            # 1페이지부터 수집 결과가 전혀 없는데 실패하면, 빈 표가 그대로
+            # 커밋되는 무음 실패를 막기 위해 예외를 올려 빌드를 실패시킨다.
+            if not all_posts:
+                raise RuntimeError(
+                    f"인스티즈 수집 실패: 페이지 {page}에서 오류로 0개 수집 ({e})"
+                ) from e
             break
-            
+
         if page < max_pages: time.sleep(0.8)
 
     return all_posts, full_date_str

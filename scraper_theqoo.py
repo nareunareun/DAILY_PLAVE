@@ -15,9 +15,13 @@ HEADERS = {
 KST = timezone(timedelta(hours=9))
 _TIME_RE = re.compile(r"^\d{2}:\d{2}$")
 
+# 페이지 간 TCP 연결(keep-alive)·쿠키를 재사용한다.
+_session = requests.Session()
+_session.headers.update(HEADERS)
+
 def fetch_page(page=1):
     params = {"page": page} if page > 1 else {}
-    resp = requests.get(BOARD_URL, headers=HEADERS, params=params, timeout=10)
+    resp = _session.get(BOARD_URL, params=params, timeout=10)
     resp.raise_for_status()
     return resp.text
 

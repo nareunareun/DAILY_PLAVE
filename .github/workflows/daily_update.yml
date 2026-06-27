@@ -2,8 +2,18 @@ name: Daily PLAVE Update
 
 on:
   schedule:
-    - cron: '32 15 * * *'   # AM 12:32 KST (UTC+9)
+    # 인스티즈(Cloudflare)가 GitHub 러너 IP에 간헐적 403을 주므로,
+    # 실패에 대비해 1번 재시도한다. 재시도 실행은 다른 러너 IP를 받아
+    # 차단 안 된 IP를 만날 확률이 높아진다. 이미 성공한 날은
+    # run.py가 즉시 종료(already_done)하므로 중복 커밋/메일은 없다.
+    - cron: '32 15 * * *'   # 00:32 KST (UTC+9)
+    - cron: '10 17 * * *'   # 02:10 KST (재시도)
   workflow_dispatch:         # 수동 실행 허용
+
+# 같은 날 재시도들이 겹쳐 동시에 push 하는 일을 막는다(앞 실행이 끝난 뒤 진행).
+concurrency:
+  group: daily-plave-update
+  cancel-in-progress: false
 
 jobs:
   update:
@@ -33,14 +43,22 @@ jobs:
         timeout-minutes: 10
 
       - name: Commit and push results
+        id: commit
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add index.html archive/
-          git diff --staged --quiet || git commit -m "Daily update: $(date '+%Y-%m-%d')"
-          git push
+          git add index.html archive/ style.css
+          if git diff --staged --quiet; then
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+            echo "변경 없음 — 커밋/푸시 건너뜀 (이미 처리된 날)"
+          else
+            git commit -m "Daily update: $(date '+%Y-%m-%d')"
+            git push || (git pull --rebase origin main && git push)
+            echo "changed=true" >> "$GITHUB_OUTPUT"
+          fi
 
       - name: Send success notification
+        if: steps.commit.outputs.changed == 'true'
         continue-on-error: true
         env:
           GMAIL_USER: ${{ secrets.GMAIL_USER }}

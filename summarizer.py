@@ -2,9 +2,23 @@ import json
 import time
 from anthropic import Anthropic, APIConnectionError, APITimeoutError
 
-def load_posts(path="posts.json"):
-    with open(path, "r", encoding="utf-8") as f:
-        return json.load(f)
+# 요약에 보낼 글 선별 기준(반응 기준).
+# 출처마다 글 양이 크게 달라(디시·뉴덕 ~30 vs 더쿠·인스티즈 수십~1400+)
+# 고정 개수 컷은 작은 출처엔 과하고 큰 출처엔 반응 있는 글을 버린다.
+# 그래서 '댓글 수'로 거른다: 댓글이 임계값 이상인 글을 반응 강도순으로
+# 포함하되, 작은 출처가 굶지 않게 최소치를 보장하고, 폭주일의 토큰을
+# 막기 위해 상한을 둔다. (글은 score 내림차순 정렬 상태)
+REPLY_THRESHOLD = 3   # 이 댓글 수 이상이면 '유의미 반응'으로 보고 포함
+MIN_POSTS = 15        # 출처별 최소 보장(반응 글이 적어도 top score 15개)
+MAX_POSTS = 80        # 출처별 상한(토큰 방어)
+
+
+def select_posts(posts):
+    """한 출처에서 요약에 보낼 글을 반응 기준으로 선별."""
+    reacted = [p for p in posts if p.get("reply_count", 0) >= REPLY_THRESHOLD]
+    chosen = reacted if len(reacted) >= MIN_POSTS else posts[:MIN_POSTS]
+    return chosen[:MAX_POSTS]
+
 
 def build_prompt(posts_data):
     sources = [
@@ -15,7 +29,8 @@ def build_prompt(posts_data):
     ]
     lines = []
     for key, label in sources:
-        for p in posts_data.get(key, {}).get("posts", []):
+        posts = posts_data.get(key, {}).get("posts", [])
+        for p in select_posts(posts):
             lines.append(f"[{label}] {p['title']} (댓글 {p.get('reply_count', 0)})")
     return "\n".join(lines)
 
@@ -32,7 +47,7 @@ def summarize(posts_data, max_retries=5):
     prompt = f"""아래는 오늘({date}) 플레이브 팬 커뮤니티(디시인사이드, 더쿠, 뉴덕, 인스티즈) 게시글 제목 목록입니다.
 수집 시각: {collected_at}
 
-글 목록 (각 출처 표시, 반응순, 끝에 댓글 수 표기 — 해당 날짜 전체 게시물):
+글 목록 (각 출처 표시, 반응순, 끝에 댓글 수 표기 — 각 출처 반응 상위권):
 {post_list}
 
 위 글 목록을 분석해서 네 커뮤니티를 통틀어 현재 화제가 되고 있는 이슈를 3~6개로 요약해주세요.
@@ -63,7 +78,7 @@ JSON만 응답하고 다른 텍스트는 포함하지 마세요."""
     for attempt in range(1, max_retries + 1):
         try:
             message = client.messages.create(
-                model="claude-sonnet-4-6",
+                model="claude-haiku-4-5",
                 max_tokens=2048,
                 messages=[{"role": "user", "content": prompt}],
             )

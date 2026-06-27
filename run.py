@@ -1,13 +1,43 @@
 #!/usr/bin/env python3
 import sys
 import os
+import re
 import json
 import glob
 from datetime import datetime, timezone, timedelta
 
 KST = timezone(timedelta(hours=9))
 
+
+def already_done(target_date):
+    """이미 target_date(어제) 인스티즈 데이터가 들어간 index.html이 커밋돼 있으면 True.
+
+    자동 재시도(여러 cron) 시 한 번 성공한 날은 이후 실행을 건너뛰어
+    중복 커밋·메일을 막는다. 인스티즈가 403으로 0개 커밋된 경우는
+    False라서 재시도가 진행된다.
+    """
+    if not os.path.exists("index.html"):
+        return False
+    try:
+        with open("index.html", encoding="utf-8") as f:
+            html = f.read()
+    except OSError:
+        return False
+    m = re.search(
+        r'hero-badge">(\d{4})년 (\d{2})월 (\d{2})일 ·.*?인스티즈 (\d+)개', html
+    )
+    if not m:
+        return False
+    badge_date = f"{m.group(1)}-{m.group(2)}-{m.group(3)}"
+    return badge_date == target_date and int(m.group(4)) > 0
+
+
 def main():
+    target_date_guess = (datetime.now(KST) - timedelta(days=1)).strftime("%Y-%m-%d")
+    if already_done(target_date_guess):
+        print(f"이미 {target_date_guess} 업데이트 완료(인스티즈 포함). 재시도를 건너뜁니다.")
+        return
+
     print("=" * 60)
     print(" DAILY PLAVE - 커뮤니티 이슈 요약기")
     print("=" * 60)
@@ -49,7 +79,16 @@ def main():
 
     print("\n[5/6] AI 이슈 요약 생성 중...")
     from summarizer import summarize, save_summary
-    summary = summarize(posts_data)
+    # 유일한 유료(API) 단계. 크레딧 소진·인증 오류 등으로 실패해도 빌드 전체를
+    # 멈추지 않고, 빈 요약으로 대체해 수집 데이터·HTML은 정상 생성되게 한다.
+    try:
+        summary = summarize(posts_data)
+    except Exception as e:
+        print(f"  -> [경고] AI 요약 생략(이번 빌드는 요약 없이 진행): {e}")
+        summary = {
+            "issues": [],
+            "overall_mood": "오늘은 AI 요약을 생성하지 못했습니다. (수집 데이터는 정상입니다.)",
+        }
     save_summary(summary)
 
     for issue in summary["issues"]:

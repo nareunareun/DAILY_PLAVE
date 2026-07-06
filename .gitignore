@@ -5,3 +5,4 @@ __pycache__/
 posts.json
 summary.json
 *.egg-info/
+.last_run_status.json

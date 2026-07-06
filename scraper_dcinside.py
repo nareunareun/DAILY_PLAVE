@@ -1,8 +1,10 @@
 import requests
 from bs4 import BeautifulSoup
-import re
 import time
-from datetime import datetime, timezone, timedelta
+from scrape_utils import (
+    resolve_target_date, classify_date_text, get_with_retries,
+    NEWER, TARGET, OLDER,
+)
 
 GALLERY_URL = "https://gall.dcinside.com/mgallery/board/lists/"
 GALLERY_ID = "plave"
@@ -11,9 +13,6 @@ HEADERS = {
     "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36",
     "Referer": "https://gall.dcinside.com/",
 }
-
-KST = timezone(timedelta(hours=9))
-_TIME_RE = re.compile(r"^\d{2}:\d{2}$")
 
 # 페이지 간 TCP 연결(keep-alive)·쿠키를 재사용한다.
 _session = requests.Session()
@@ -25,7 +24,7 @@ def fetch_page(page=1):
     resp.raise_for_status()
     return resp.text
 
-def parse_posts(html, target_date_str):
+def parse_posts(html, target_date):
     soup = BeautifulSoup(html, "html.parser")
     posts = []
     older_found = False
@@ -45,10 +44,12 @@ def parse_posts(html, target_date_str):
         if not date_tag: continue
         date_text = date_tag.get_text(strip=True)
 
-        if _TIME_RE.match(date_text): continue
-        elif date_text == target_date_str: pass
-        else:
+        status = classify_date_text(date_text, target_date)
+        if status == TARGET: pass
+        elif status == OLDER:
             older_found = True
+            continue
+        else:  # NEWER(목표일 이후 글) 또는 UNKNOWN — 더 깊은 페이지로 계속
             continue
 
         # 사진/영상 배지가 a 태그를 중복 생성하므로 클래스로 필터링
@@ -98,26 +99,33 @@ def parse_posts(html, target_date_str):
 
     return posts, older_found
 
-def collect_posts(max_pages=999):
-    all_posts = []
-    yesterday = datetime.now(KST) - timedelta(days=1)
-    target_date_str = yesterday.strftime("%m.%d")
-    full_date_str = yesterday.strftime("%Y-%m-%d")
+def collect_posts(target_date=None, max_pages=999):
+    """target_date(기본: 어제)의 글을 수집. (posts, 'YYYY-MM-DD', complete) 반환.
 
-    print(f"목표 수집 날짜: {full_date_str} (표기: {target_date_str})")
+    complete=False는 페이지 탐색이 오류로 중단돼 그날 글 일부만 모였을 수
+    있다는 뜻이다. 호출부(run.py)는 이런 소스를 미완료로 기록해 다음
+    실행에서 다시 수집하게 한다.
+    """
+    target = resolve_target_date(target_date)
+    full_date_str = target.strftime("%Y-%m-%d")
+    all_posts = []
+    complete = True
+
+    print(f"목표 수집 날짜: {full_date_str}")
 
     for page in range(1, max_pages + 1):
         print(f"  [디시인사이드] 페이지 {page} 탐색 중...")
         try:
-            html = fetch_page(page)
-            posts, older_found = parse_posts(html, target_date_str)
+            html = get_with_retries(lambda p=page: fetch_page(p), desc=f"페이지 {page}")
+            posts, older_found = parse_posts(html, target)
             all_posts.extend(posts)
-            print(f"  -> {len(posts)}개 어제 글 수집" + (" (그저께 글 감지, 종료)" if older_found else ""))
-            
+            print(f"  -> {len(posts)}개 목표일 글 수집" + (" (이전 날짜 글 감지, 종료)" if older_found else ""))
+
             if older_found: break
         except Exception as e:
             print(f"  -> 오류: {e}")
+            complete = False
             break
         if page < max_pages: time.sleep(0.8)
 
-    return all_posts, full_date_str
+    return all_posts, full_date_str, complete

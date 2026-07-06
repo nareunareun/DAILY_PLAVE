@@ -2,7 +2,10 @@ import cloudscraper
 from bs4 import BeautifulSoup
 import re
 import time
-from datetime import datetime, timezone, timedelta
+from scrape_utils import (
+    resolve_target_date, classify_date_text,
+    NEWER, TARGET, OLDER,
+)
 
 BOARD_URL = "https://www.instiz.net/name_enter"
 CATEGORY  = 644
@@ -11,9 +14,6 @@ HEADERS = {
     "Referer": "https://www.instiz.net/",
     "Accept-Language": "ko-KR,ko;q=0.9",
 }
-
-KST = timezone(timedelta(hours=9))
-_TIME_RE = re.compile(r"^\d{2}:\d{2}$")
 
 
 def _make_scraper():
@@ -44,7 +44,7 @@ def fetch_page(scraper, page=1, retries=3, backoff=2.0):
                 time.sleep(wait)
     raise last_err
 
-def parse_posts(html, target_date_str, seen_links):
+def parse_posts(html, target_date, seen_links):
     soup = BeautifulSoup(html, "html.parser")
     posts = []
     older_found = False
@@ -90,12 +90,11 @@ def parse_posts(html, target_date_str, seen_links):
         if not date_text: continue
 
         is_green_post = bool(row.select_one("span.texthead_notice"))
-        
-        if target_date_str in date_text:
-            pass 
-        elif _TIME_RE.match(date_text):
-            continue 
-        elif re.search(r"\d+\.\d+", date_text):
+
+        status = classify_date_text(date_text, target_date)
+        if status == TARGET:
+            pass
+        elif status == OLDER:
             # 상단 인기글(우회) 블록은 본문 목록과 중복되며 과거 글이어도
             # 종료 신호로 보면 안 된다. 위치(순번) 대신 구조로 식별한다:
             # detour 행 또는 texthead_notice(=is_green_post)는 건너뛰기만 한다.
@@ -104,7 +103,7 @@ def parse_posts(html, target_date_str, seen_links):
             else:
                 older_found = True
                 continue
-        else:
+        else:  # NEWER(오늘 HH:MM 포함) 또는 UNKNOWN — 계속 탐색
             continue
 
         if not is_new_link:
@@ -145,13 +144,18 @@ def parse_posts(html, target_date_str, seen_links):
 
     return posts, older_found, new_links_count
 
-def collect_posts(max_pages=999):
-    all_posts = []
-    yesterday = datetime.now(KST) - timedelta(days=1)
-    target_date_str = yesterday.strftime("%m.%d") 
-    full_date_str = yesterday.strftime("%Y-%m-%d")
+def collect_posts(target_date=None, max_pages=999):
+    """target_date(기본: 어제)의 글을 수집. (posts, 'YYYY-MM-DD', complete) 반환.
 
-    print(f"목표 수집 날짜: {full_date_str} (인스티즈 판별용: {target_date_str})")
+    소스별 실패 처리(0개면 미완료로 기록, 전 소스 실패 시 빌드 실패)는
+    run.py가 담당하므로 여기서는 예외를 올리지 않는다.
+    """
+    target = resolve_target_date(target_date)
+    full_date_str = target.strftime("%Y-%m-%d")
+    all_posts = []
+    complete = True
+
+    print(f"목표 수집 날짜: {full_date_str}")
 
     seen_links = set()
     scraper = _make_scraper()
@@ -160,11 +164,11 @@ def collect_posts(max_pages=999):
         print(f"  [인스티즈] 페이지 {page} 탐색 중...")
         try:
             html = fetch_page(scraper, page)
-            posts, older_found, new_links_count = parse_posts(html, target_date_str, seen_links)
-            
+            posts, older_found, new_links_count = parse_posts(html, target, seen_links)
+
             all_posts.extend(posts)
-            print(f"  -> {len(posts)}개 어제 글 수집" + (" (그저께 이전 글 감지, 종료)" if older_found else ""))
-            
+            print(f"  -> {len(posts)}개 목표일 글 수집" + (" (이전 날짜 글 감지, 종료)" if older_found else ""))
+
             if older_found: break
 
             if new_links_count == 0 and page > 1:
@@ -173,14 +177,9 @@ def collect_posts(max_pages=999):
 
         except Exception as e:
             print(f"  -> 오류: {e}")
-            # 1페이지부터 수집 결과가 전혀 없는데 실패하면, 빈 표가 그대로
-            # 커밋되는 무음 실패를 막기 위해 예외를 올려 빌드를 실패시킨다.
-            if not all_posts:
-                raise RuntimeError(
-                    f"인스티즈 수집 실패: 페이지 {page}에서 오류로 0개 수집 ({e})"
-                ) from e
+            complete = False
             break
 
         if page < max_pages: time.sleep(0.8)
 
-    return all_posts, full_date_str
+    return all_posts, full_date_str, complete

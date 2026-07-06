@@ -1,8 +1,10 @@
 import requests
 from bs4 import BeautifulSoup
-import re
 import time
-from datetime import datetime, timedelta, timezone
+from scrape_utils import (
+    resolve_target_date, classify_date_text, get_with_retries,
+    NEWER, TARGET, OLDER,
+)
 
 BOARD_URL = "https://theqoo.net/plave"
 
@@ -11,9 +13,6 @@ HEADERS = {
     "Referer": "https://theqoo.net/",
     "Accept-Language": "ko-KR,ko;q=0.9",
 }
-
-KST = timezone(timedelta(hours=9))
-_TIME_RE = re.compile(r"^\d{2}:\d{2}$")
 
 # 페이지 간 TCP 연결(keep-alive)·쿠키를 재사용한다.
 _session = requests.Session()
@@ -25,7 +24,7 @@ def fetch_page(page=1):
     resp.raise_for_status()
     return resp.text
 
-def parse_posts(html, target_date_str):
+def parse_posts(html, target_date):
     soup = BeautifulSoup(html, "html.parser")
     posts = []
     older_found = False
@@ -44,12 +43,13 @@ def parse_posts(html, target_date_str):
             continue
         time_text = time_td.get_text(strip=True)
 
-        if _TIME_RE.match(time_text):
-            continue
-        elif target_date_str in time_text:
+        status = classify_date_text(time_text, target_date)
+        if status == TARGET:
             pass
-        else:
+        elif status == OLDER:
             older_found = True
+            continue
+        else:  # NEWER 또는 UNKNOWN — 더 깊은 페이지로 계속
             continue
 
         title_td = row.select_one("td.title")
@@ -92,28 +92,30 @@ def parse_posts(html, target_date_str):
 
     return posts, older_found
 
-def collect_posts(max_pages=999):
+def collect_posts(target_date=None, max_pages=999):
+    """target_date(기본: 어제)의 글을 수집. (posts, 'YYYY-MM-DD', complete) 반환."""
+    target = resolve_target_date(target_date)
+    full_date_str = target.strftime("%Y-%m-%d")
     all_posts = []
-    yesterday = datetime.now(KST) - timedelta(days=1)
-    target_date_str = yesterday.strftime("%m.%d")
-    full_date_str = yesterday.strftime("%Y-%m-%d")
+    complete = True
 
-    print(f"목표 수집 날짜: {full_date_str} (더쿠 표기: {target_date_str})")
+    print(f"목표 수집 날짜: {full_date_str}")
 
     for page in range(1, max_pages + 1):
         print(f"  [더쿠] 페이지 {page} 탐색 중...")
         try:
-            html = fetch_page(page)
-            posts, older_found = parse_posts(html, target_date_str)
+            html = get_with_retries(lambda p=page: fetch_page(p), desc=f"페이지 {page}")
+            posts, older_found = parse_posts(html, target)
             all_posts.extend(posts)
-            print(f"  -> {len(posts)}개 어제 글 수집" + (" (그저께 글 감지, 종료)" if older_found else ""))
+            print(f"  -> {len(posts)}개 목표일 글 수집" + (" (이전 날짜 글 감지, 종료)" if older_found else ""))
             if older_found:
                 break
         except Exception as e:
             print(f"  -> 오류: {e}")
+            complete = False
             break
         if page < max_pages:
             time.sleep(0.8)
 
-    return all_posts, full_date_str
+    return all_posts, full_date_str, complete
 

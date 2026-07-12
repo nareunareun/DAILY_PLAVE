@@ -2,6 +2,8 @@ import json
 import time
 from anthropic import Anthropic, APIConnectionError, APITimeoutError
 
+from scrape_utils import SOURCES
+
 # 요약에 보낼 글 선별 기준(반응 기준).
 # 출처마다 글 양이 크게 달라(디시·뉴덕 ~30 vs 더쿠·인스티즈 수십~1400+)
 # 고정 개수 컷은 작은 출처엔 과하고 큰 출처엔 반응 있는 글을 버린다.
@@ -21,14 +23,8 @@ def select_posts(posts):
 
 
 def build_prompt(posts_data):
-    sources = [
-        ("dcinside", "디시"),
-        ("theqoo",   "더쿠"),
-        ("newduck",  "뉴덕"),
-        ("instiz",   "인스티즈"),
-    ]
     lines = []
-    for key, label in sources:
+    for key, _, label, _ in SOURCES:
         posts = posts_data.get(key, {}).get("posts", [])
         for p in select_posts(posts):
             lines.append(f"[{label}] {p['title']} (댓글 {p.get('reply_count', 0)})")

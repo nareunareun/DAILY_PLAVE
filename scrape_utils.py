@@ -13,6 +13,14 @@ from datetime import datetime, date, timedelta, timezone
 
 KST = timezone(timedelta(hours=9))
 
+# (내부 키, 표시 이름, 요약 표기, 스크레이퍼 모듈) — run.py·summarizer.py 공용.
+SOURCES = [
+    ("dcinside", "디시인사이드", "디시",     "scraper_dcinside"),
+    ("theqoo",   "더쿠",        "더쿠",     "scraper_theqoo"),
+    ("newduck",  "뉴덕",        "뉴덕",     "scraper_newduck"),
+    ("instiz",   "인스티즈",    "인스티즈", "scraper_instiz"),
+]
+
 _TIME_RE = re.compile(r"^\d{1,2}:\d{2}$")
 # 커뮤니티 목록에 흔한 표기: 07.05 / 07-05 / 25.07.05 / 2025.07.05
 _MD_RE = re.compile(r"^(\d{1,2})[.\-/](\d{1,2})\.?$")

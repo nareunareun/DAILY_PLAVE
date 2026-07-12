@@ -18,24 +18,20 @@ import glob
 import argparse
 from datetime import datetime, timezone, timedelta
 
-KST = timezone(timedelta(hours=9))
+from scrape_utils import SOURCES
 
-# (내부 키, 표시 이름, 스크레이퍼 모듈)
-SOURCES = [
-    ("dcinside", "디시인사이드", "scraper_dcinside"),
-    ("theqoo",   "더쿠",        "scraper_theqoo"),
-    ("newduck",  "뉴덕",        "scraper_newduck"),
-    ("instiz",   "인스티즈",    "scraper_instiz"),
-]
+KST = timezone(timedelta(hours=9))
 
 DATA_DIR = os.path.join("archive", "data")
 # 워크플로 메일 단계가 읽는 실행 결과 요약(커밋되지 않음).
 STATUS_PATH = ".last_run_status.json"
 
-EMPTY_SUMMARY = {
-    "issues": [],
-    "overall_mood": "오늘은 AI 요약을 생성하지 못했습니다. (수집 데이터는 정상입니다.)",
-}
+def empty_summary():
+    # 매번 새 dict/list를 만들어 반환한다(공유 객체 변형 방지).
+    return {
+        "issues": [],
+        "overall_mood": "오늘은 AI 요약을 생성하지 못했습니다. (수집 데이터는 정상입니다.)",
+    }
 
 
 def data_path(date_str):
@@ -64,10 +60,9 @@ def source_ok(data, key):
 
 
 def write_status(target, posts_data, changed):
-    labels = {key: label for key, label, _ in SOURCES}
     counts = {}
     missing = []
-    for key, label, _ in SOURCES:
+    for key, label, *_ in SOURCES:
         info = (posts_data or {}).get(key) or {}
         counts[label] = info.get("total", 0)
         if not source_ok(posts_data, key):
@@ -94,7 +89,7 @@ def main():
         target = (datetime.now(KST) - timedelta(days=1)).strftime("%Y-%m-%d")
 
     existing = None if args.force else load_data(target)
-    pending = [(k, l, m) for k, l, m in SOURCES if not source_ok(existing, k)]
+    pending = [(k, l, m) for k, l, _, m in SOURCES if not source_ok(existing, k)]
 
     if not pending:
         print(f"이미 {target} 네 소스 모두 수집 완료. 재시도를 건너뜁니다.")
@@ -114,7 +109,7 @@ def main():
     }
     changed = False
 
-    for key, label, module_name in SOURCES:
+    for key, label, _, module_name in SOURCES:
         if existing and source_ok(existing, key):
             posts_data[key] = existing[key]
             print(f"\n[{label}] 기존 수집분 재사용 ({existing[key].get('total', 0)}개)")
@@ -137,7 +132,7 @@ def main():
         if posts:
             changed = True
 
-    nonempty = [k for k, _, _ in SOURCES if posts_data[k].get("total", 0) > 0]
+    nonempty = [k for k, *_ in SOURCES if posts_data[k].get("total", 0) > 0]
     if not nonempty:
         write_status(target, posts_data, changed=False)
         raise RuntimeError(
@@ -154,7 +149,7 @@ def main():
         )
 
     status = write_status(target, posts_data, changed=True)
-    print(f"\n  -> 수집 현황: " + ", ".join(f"{l} {status['counts'][l]}개" for _, l, _ in SOURCES))
+    print(f"\n  -> 수집 현황: " + ", ".join(f"{l} {status['counts'][l]}개" for _, l, *_ in SOURCES))
     if status["missing"]:
         print(f"  -> [경고] 미완료 소스(다음 실행에서 재시도): {', '.join(status['missing'])}")
 
@@ -167,15 +162,22 @@ def main():
     # 멈추지 않는다. 소스 구성이 같으면 기존 요약을 재사용해 호출을 아낀다.
     prev_summary = (existing or {}).get("summary")
     prev_sources = set((existing or {}).get("summary_sources") or [])
-    if prev_summary and prev_summary.get("issues") and prev_sources == set(nonempty):
-        print("  -> 소스 구성이 같아 기존 요약을 재사용합니다.")
+    # 소스 '집합'만 비교하면 끊겼던(complete=False) 소스를 온전히 다시 채운
+    # 날에도 부분 데이터로 만든 옛 요약을 재사용해 버린다. 소스별 개수까지
+    # 같을 때만 같은 데이터로 보고 재사용한다.
+    same_counts = all(
+        ((existing or {}).get(k) or {}).get("total") == posts_data[k].get("total")
+        for k in nonempty
+    )
+    if prev_summary and prev_summary.get("issues") and prev_sources == set(nonempty) and same_counts:
+        print("  -> 소스 구성·개수가 같아 기존 요약을 재사용합니다.")
         summary = prev_summary
     else:
         try:
             summary = summarize(posts_data)
         except Exception as e:
             print(f"  -> [경고] AI 요약 생략(이번 빌드는 요약 없이 진행): {e}")
-            summary = prev_summary if (prev_summary and prev_summary.get("issues")) else dict(EMPTY_SUMMARY)
+            summary = prev_summary if (prev_summary and prev_summary.get("issues")) else empty_summary()
     save_summary(summary)
 
     for issue in summary.get("issues", []):
@@ -193,12 +195,14 @@ def main():
     print(f"  -> 데이터 저장: {data_path(target)}")
 
     print("\n[생성] HTML 페이지 생성 중...")
-    from generate_html import generate_html, save_html
+    from generate_html import generate_html, save_html, save_dates_js
 
     os.makedirs("archive", exist_ok=True)
     archive_files = sorted(glob.glob("archive/????-??-??.html"), reverse=True)
     existing_dates = [os.path.basename(f)[:-5] for f in archive_files]
     all_dates = sorted(set([target] + existing_dates), reverse=True)
+    # 전 페이지 드롭다운이 참조하는 날짜 목록 — 과거 페이지도 최신 날짜로 이동 가능.
+    save_dates_js(all_dates)
 
     archive_path = f"archive/{target}.html"
     archive_html = generate_html(posts_data, summary, archive_dates=all_dates, is_archive_page=True)
@@ -213,7 +217,7 @@ def main():
         idx_data, idx_summary = posts_data, summary
     else:
         idx_data = load_data(latest)
-        idx_summary = (idx_data or {}).get("summary") or dict(EMPTY_SUMMARY)
+        idx_summary = (idx_data or {}).get("summary") or empty_summary()
     if idx_data:
         index_dates = [d for d in all_dates if d != latest]
         index_html = generate_html(idx_data, idx_summary, archive_dates=index_dates)

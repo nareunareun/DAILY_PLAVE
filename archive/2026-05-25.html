@@ -923,5 +923,19 @@
   });
 </script>
 
+<script src="dates.js"></script>
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    var sel = document.getElementById('archive-sel');
+    if (!sel || !window.ARCHIVE_DATES) return;
+    var have = new Set(Array.from(sel.options, function (o) { return o.textContent.trim(); }));
+    window.ARCHIVE_DATES.forEach(function (d) {
+      if (have.has(d)) return;
+      var idx = 1;
+      while (idx < sel.options.length && sel.options[idx].textContent.trim() > d) idx++;
+      sel.add(new Option(d, d + '.html'), idx);
+    });
+  });
+</script>
 </body>
 </html>

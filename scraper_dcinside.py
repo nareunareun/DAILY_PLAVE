@@ -3,7 +3,7 @@ from bs4 import BeautifulSoup
 import time
 from scrape_utils import (
     resolve_target_date, classify_date_text, get_with_retries,
-    NEWER, TARGET, OLDER,
+    TARGET, OLDER, UNKNOWN,
 )
 
 GALLERY_URL = "https://gall.dcinside.com/mgallery/board/lists/"
@@ -28,6 +28,7 @@ def parse_posts(html, target_date):
     soup = BeautifulSoup(html, "html.parser")
     posts = []
     older_found = False
+    dated_rows = 0  # 날짜를 인식한 행 수(0이 이어지면 목록 구조 변경 신호)
 
     for row in soup.select("tr.ub-content"):
         subject_tag = row.select_one("td.gall_subject")
@@ -45,6 +46,8 @@ def parse_posts(html, target_date):
         date_text = date_tag.get_text(strip=True)
 
         status = classify_date_text(date_text, target_date)
+        if status != UNKNOWN:
+            dated_rows += 1
         if status == TARGET: pass
         elif status == OLDER:
             older_found = True
@@ -97,7 +100,7 @@ def parse_posts(html, target_date):
             "recommend_count": recommend_count,
         })
 
-    return posts, older_found
+    return posts, older_found, dated_rows
 
 def collect_posts(target_date=None, max_pages=999):
     """target_date(기본: 어제)의 글을 수집. (posts, 'YYYY-MM-DD', complete) 반환.
@@ -110,6 +113,7 @@ def collect_posts(target_date=None, max_pages=999):
     full_date_str = target.strftime("%Y-%m-%d")
     all_posts = []
     complete = True
+    no_date_streak = 0
 
     print(f"목표 수집 날짜: {full_date_str}")
 
@@ -117,11 +121,19 @@ def collect_posts(target_date=None, max_pages=999):
         print(f"  [디시인사이드] 페이지 {page} 탐색 중...")
         try:
             html = get_with_retries(lambda p=page: fetch_page(p), desc=f"페이지 {page}")
-            posts, older_found = parse_posts(html, target)
+            posts, older_found, dated_rows = parse_posts(html, target)
             all_posts.extend(posts)
             print(f"  -> {len(posts)}개 목표일 글 수집" + (" (이전 날짜 글 감지, 종료)" if older_found else ""))
 
             if older_found: break
+
+            # 날짜를 인식한 행이 전혀 없는 페이지가 이어지면 사이트의 목록
+            # 구조·날짜 표기가 바뀐 것 — 무한 탐색을 막고 미완료로 넘긴다.
+            no_date_streak = 0 if dated_rows else no_date_streak + 1
+            if no_date_streak >= 3:
+                print("  -> [경고] 3페이지 연속 날짜 인식 실패 — 목록 구조 변경 의심, 탐색 중단(미완료)")
+                complete = False
+                break
         except Exception as e:
             print(f"  -> 오류: {e}")
             complete = False

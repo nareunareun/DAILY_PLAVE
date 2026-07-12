@@ -1,5 +1,6 @@
 import json
 from datetime import datetime, timezone, timedelta
+from html import escape
 
 KST = timezone(timedelta(hours=9))
 
@@ -20,15 +21,16 @@ def source_chips(sources):
     chips = []
     for s in sources:
         cls   = cls_map.get(s, "chip-dc")
-        label = label_map.get(s, s)
+        label = escape(label_map.get(s, s))
         chips.append(f'<span class="source-chip {cls}">{label}</span>')
     return "".join(chips)
 
 def render_post_table(posts, top=15):
     rows = ""
     for i, p in enumerate(posts[:top], 1):
-        link  = p.get("link", "#")
-        title = p["title"]
+        # 제목에 <, &, " 등이 흔해(커뮤니티 글) 이스케이프 없이는 마크업이 깨진다.
+        link  = escape(p.get("link", "#"), quote=True)
+        title = escape(p["title"])
         view  = f"{p['view_count']:,}"
         reply = str(p["reply_count"])
         rows += f"""
@@ -42,8 +44,14 @@ def render_post_table(posts, top=15):
 
 def generate_html(posts_data, summary, archive_dates=None, is_archive_page=False):
     now_kst = datetime.now(KST)
-    collected_at_raw = now_kst.strftime("%Y-%m-%dT%H:%M:%S+09:00")
-    collected_at = now_kst.strftime("%Y년 %m월 %d일 %H:%M")
+    # UPDATE 표기는 '수집 시각'을 쓴다. 백필·재생성 때 생성 시각이 찍혀
+    # 실제 데이터 시점과 어긋나는 것을 막는다. (없으면 현재 시각)
+    try:
+        collected_dt = datetime.fromisoformat(posts_data["collected_at"])
+    except (KeyError, ValueError):
+        collected_dt = now_kst
+    collected_at_raw = collected_dt.strftime("%Y-%m-%dT%H:%M:%S+09:00")
+    collected_at = collected_dt.strftime("%Y년 %m월 %d일 %H:%M")
     date_raw = posts_data.get("date", now_kst.strftime("%Y-%m-%d"))
     try:
         date = datetime.strptime(date_raw, "%Y-%m-%d").strftime("%Y년 %m월 %d일")
@@ -65,18 +73,19 @@ def generate_html(posts_data, summary, archive_dates=None, is_archive_page=False
     newduck_posts = newduck_info.get("posts", [])
     instiz_posts  = instiz_info.get("posts", [])
 
-    issues      = summary["issues"]
-    overall_mood = summary["overall_mood"]
+    # 요약은 LLM 출력이라 키 누락·특수문자 가능성이 있어 방어적으로 다룬다.
+    issues      = summary.get("issues") or []
+    overall_mood = escape(summary.get("overall_mood", ""))
 
     issue_cards = ""
     for issue in issues:
-        keywords_data = ",".join(issue["keywords"])
+        keywords_data = escape(",".join(issue.get("keywords", [])), quote=True)
         chips = source_chips(issue.get("sources", []))
         issue_cards += f"""
         <div class="issue-card" data-keywords="{keywords_data}">
           <div class="source-chips">{chips}</div>
-          <h3 class="issue-title">{issue['title']}</h3>
-          <p class="issue-summary">{issue['summary']}</p>
+          <h3 class="issue-title">{escape(issue.get('title', ''))}</h3>
+          <p class="issue-summary">{escape(issue.get('summary', ''))}</p>
         </div>"""
 
     # 요약이 비었을 때(예: API 크레딧 소진으로 요약 생략) 빈 그리드 대신 안내를 보여준다.
@@ -117,6 +126,8 @@ def generate_html(posts_data, summary, archive_dates=None, is_archive_page=False
 
     # index는 루트, 아카이브는 하위폴더라 CSS 경로 접두사가 다르다.
     css_href = "../style.css" if is_archive_page else "style.css"
+    dates_src = "dates.js" if is_archive_page else "archive/dates.js"
+    dates_prefix = "" if is_archive_page else "archive/"
     html = f"""<!DOCTYPE html>
 <html lang="ko">
 <head>
@@ -196,6 +207,7 @@ def generate_html(posts_data, summary, archive_dates=None, is_archive_page=False
 
 <button id="top-btn" aria-label="맨 위로">🖤</button>
 
+<script src="{dates_src}"></script>
 <script>
   const STORAGE_KEY = 'plave_read_posts';
 
@@ -285,6 +297,17 @@ def generate_html(posts_data, summary, archive_dates=None, is_archive_page=False
     /* ── 아카이브 내비 ── */
     const archiveSel = document.getElementById('archive-sel');
     if (archiveSel) {{
+      /* dates.js의 전체 날짜 목록으로 옵션을 보강한다 — 과거에 생성된
+         페이지에서도 이후에 추가된 날짜로 이동할 수 있게. */
+      if (window.ARCHIVE_DATES) {{
+        const have = new Set(Array.from(archiveSel.options, function (o) {{ return o.textContent.trim(); }}));
+        window.ARCHIVE_DATES.forEach(function (d) {{
+          if (have.has(d)) return;
+          let idx = 1;  /* 0번은 LATEST — 이후는 날짜 내림차순 유지 */
+          while (idx < archiveSel.options.length && archiveSel.options[idx].textContent.trim() > d) idx++;
+          archiveSel.add(new Option(d, '{dates_prefix}' + d + '.html'), idx);
+        }});
+      }}
       archiveSel.addEventListener('change', function () {{
         if (this.value) {{
           location.href = this.value;
@@ -306,6 +329,12 @@ def save_html(html, path="index.html"):
     with open(path, "w", encoding="utf-8") as f:
         f.write(html)
     print(f"HTML 페이지를 {path}에 저장했습니다.")
+
+def save_dates_js(dates, path="archive/dates.js"):
+    """전체 아카이브 날짜 목록. 모든 페이지의 드롭다운이 이 파일로 최신화된다."""
+    with open(path, "w", encoding="utf-8") as f:
+        f.write("window.ARCHIVE_DATES = " + json.dumps(sorted(dates, reverse=True)) + ";\n")
+    print(f"아카이브 날짜 목록을 {path}에 저장했습니다.")
 
 if __name__ == "__main__":
     import glob, os

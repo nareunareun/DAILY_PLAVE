@@ -4,7 +4,7 @@ import re
 import time
 from scrape_utils import (
     resolve_target_date, classify_date_text,
-    NEWER, TARGET, OLDER,
+    TARGET, OLDER, UNKNOWN,
 )
 
 BOARD_URL = "https://www.instiz.net/name_enter"
@@ -49,6 +49,7 @@ def parse_posts(html, target_date, seen_links):
     posts = []
     older_found = False
     new_links_count = 0
+    dated_rows = 0  # 날짜를 인식한 행 수(0이 이어지면 목록 구조 변경 신호)
 
     rows = soup.select("tr[id^='list'], tr[id='detour']")
     
@@ -92,6 +93,8 @@ def parse_posts(html, target_date, seen_links):
         is_green_post = bool(row.select_one("span.texthead_notice"))
 
         status = classify_date_text(date_text, target_date)
+        if status != UNKNOWN:
+            dated_rows += 1
         if status == TARGET:
             pass
         elif status == OLDER:
@@ -142,7 +145,7 @@ def parse_posts(html, target_date, seen_links):
             "reply_count": reply_count,
         })
 
-    return posts, older_found, new_links_count
+    return posts, older_found, new_links_count, dated_rows
 
 def collect_posts(target_date=None, max_pages=999):
     """target_date(기본: 어제)의 글을 수집. (posts, 'YYYY-MM-DD', complete) 반환.
@@ -154,6 +157,7 @@ def collect_posts(target_date=None, max_pages=999):
     full_date_str = target.strftime("%Y-%m-%d")
     all_posts = []
     complete = True
+    no_date_streak = 0
 
     print(f"목표 수집 날짜: {full_date_str}")
 
@@ -164,12 +168,20 @@ def collect_posts(target_date=None, max_pages=999):
         print(f"  [인스티즈] 페이지 {page} 탐색 중...")
         try:
             html = fetch_page(scraper, page)
-            posts, older_found, new_links_count = parse_posts(html, target, seen_links)
+            posts, older_found, new_links_count, dated_rows = parse_posts(html, target, seen_links)
 
             all_posts.extend(posts)
             print(f"  -> {len(posts)}개 목표일 글 수집" + (" (이전 날짜 글 감지, 종료)" if older_found else ""))
 
             if older_found: break
+
+            # 링크는 매 페이지 새로워도 날짜 표기를 못 읽으면 무한 탐색이
+            # 된다(seen_links 가드가 안 걸림). 구조 변경 신호로 보고 중단.
+            no_date_streak = 0 if dated_rows else no_date_streak + 1
+            if no_date_streak >= 3:
+                print("  -> [경고] 3페이지 연속 날짜 인식 실패 — 목록 구조 변경 의심, 탐색 중단(미완료)")
+                complete = False
+                break
 
             if new_links_count == 0 and page > 1:
                 print("  -> [알림] 더 이상 새로운 글이 발견되지 않아 탐색을 강제 종료합니다. (끝 페이지 도달)")

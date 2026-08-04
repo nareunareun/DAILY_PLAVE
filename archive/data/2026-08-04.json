@@ -1,0 +1,3931 @@
+{
+  "collected_at": "2026-08-05T02:14:04.298821+09:00",
+  "date": "2026-08-04",
+  "dcinside": {
+    "total": 56,
+    "posts": [
+      {
+        "title": "이것저것 알려줘",
+        "link": "https://gall.dcinside.com/mgallery/board/view/?id=plave&no=120012&page=1",
+        "view_count": 511,
+        "reply_count": 6,
+        "recommend_count": 24,
+        "score": 0.6314
+      },
+      {
+        "title": "[KEEP IT MANIC] 인천 'PLLI ZONE' 운영안내",
+        "link": "https://gall.dcinside.com/mgallery/board/view/?id=plave&no=119999&page=2",
+        "view_count": 618,
+        "reply_count": 12,
+        "recommend_count": 11,
+        "score": 0.6148
+      },
+      {
+        "title": "용기를 주셈",
+        "link": "https://gall.dcinside.com/mgallery/board/view/?id=plave&no=120017&page=1",
+        "view_count": 469,
+        "reply_count": 19,
+        "recommend_count": 0,
+        "score": 0.5589
+      },
+      {
+        "title": "고기 먹을땐 공기밥 나눠먹을 수 있지",
+        "link": "https://gall.dcinside.com/mgallery/board/view/?id=plave&no=120030&page=1",
+        "view_count": 400,
+        "reply_count": 20,
+        "recommend_count": 0,
+        "score": 0.5569
+      },
+      {
+        "title": "짭믐쿠션 속는럼 갤엔 없겠지",
+        "link": "https://gall.dcinside.com/mgallery/board/view/?id=plave&no=120018&page=1",
+        "view_count": 662,
+        "reply_count": 12,
+        "recommend_count": 0,
+        "score": 0.47
+      },
+      {
+        "title": "랜덤포카 십캎 럭드일 확률",
+        "link": "https://gall.dcinside.com/mgallery/board/view/?id=plave&no=120004&page=2",
+        "view_count": 471,
+        "reply_count": 14,
+        "recommend_count": 0,
+        "score": 0.4471
+      },
+      {
+        "title": "ㅁㅋㅇ 빡셀것 같았는데 빡세네",
+        "link": "https://gall.dcinside.com/mgallery/board/view/?id=plave&no=119996&page=2",
+        "view_count": 463,
+        "reply_count": 13,
+        "recommend_count": 0,
+        "score": 0.4218
+      },
+      {
+        "title": "문학때 밥 먹을거임?",
+        "link": "https://gall.dcinside.com/mgallery/board/view/?id=plave&no=119989&page=2",
+        "view_count": 509,
+        "reply_count": 9,
+        "recommend_count": 0,
+        "score": 0.3481
+      },
+      {
+        "title": "옞이 알려줬다는거 개쩌네",
+        "link": "https://gall.dcinside.com/mgallery/board/view/?id=plave&no=119990&page=2",
+        "view_count": 652,
+        "reply_count": 4,
+        "recommend_count": 1,
+        "score": 0.301
+      },
+      {
+        "title": "혐생때문에",
+        "link": "https://gall.dcinside.com/mgallery/board/view/?id=plave&no=120013&page=1",
+        "view_count": 333,
+        "reply_count": 8,
+        "recommend_count": 0,
+        "score": 0.2631
+      },
+      {
+        "title": "새폰 와이드 개꿀",
+        "link": "https://gall.dcinside.com/mgallery/board/view/?id=plave&no=120035&page=1",
+        "view_count": 372,
+        "reply_count": 7,
+        "recommend_count": 0,
+        "score": 0.2545
+      },
+      {
+        "title": "능지이슈 설명부탁",
+        "link": "https://gall.dcinside.com/mgallery/board/view/?id=plave&no=120015&page=1",
+        "view_count": 497,
+        "reply_count": 5,
+        "recommend_count": 0,
+        "score": 0.2539
+      },
+      {
+        "title": "콘엠디 소취글",
+        "link": "https://gall.dcinside.com/mgallery/board/view/?id=plave&no=120022&page=1",
+        "view_count": 301,
+        "reply_count": 8,
+        "recommend_count": 0,
+        "score": 0.2518
+      },
+      {
+        "title": "럭드갤에",
+        "link": "https://gall.dcinside.com/mgallery/board/view/?id=plave&no=120011&page=1",
+        "view_count": 414,
+        "reply_count": 6,
+        "recommend_count": 0,
+        "score": 0.2469
+      },
+      {
+        "title": "십캎",
+        "link": "https://gall.dcinside.com/mgallery/board/view/?id=plave&no=119992&page=2",
+        "view_count": 375,
+        "reply_count": 6,
+        "recommend_count": 0,
+        "score": 0.233
+      },
+      {
+        "title": "럭드포카 이거맞는거지",
+        "link": "https://gall.dcinside.com/mgallery/board/view/?id=plave&no=120010&page=1",
+        "view_count": 416,
+        "reply_count": 5,
+        "recommend_count": 0,
+        "score": 0.2251
+      },
+      {
+        "title": "슬슬 가방 굿즈가 필요하다고 생각함",
+        "link": "https://gall.dcinside.com/mgallery/board/view/?id=plave&no=120024&page=1",
+        "view_count": 279,
+        "reply_count": 7,
+        "recommend_count": 0,
+        "score": 0.2214
+      },
+      {
+        "title": "빼빼로",
+        "link": "https://gall.dcinside.com/mgallery/board/view/?id=plave&no=120020&page=1",
+        "view_count": 274,
+        "reply_count": 7,
+        "recommend_count": 0,
+        "score": 0.2197
+      },
+      {
+        "title": "왜 가방 걱정을 하고 있어",
+        "link": "https://gall.dcinside.com/mgallery/board/view/?id=plave&no=120009&page=1",
+        "view_count": 383,
+        "reply_count": 5,
+        "recommend_count": 0,
+        "score": 0.2134
+      },
+      {
+        "title": "갤주들 콜라보 또 뭐 안오나",
+        "link": "https://gall.dcinside.com/mgallery/board/view/?id=plave&no=120019&page=1",
+        "view_count": 306,
+        "reply_count": 6,
+        "recommend_count": 0,
+        "score": 0.2085
+      },
+      {
+        "title": "어 럭드 A상 이몸이 가져갈게",
+        "link": "https://gall.dcinside.com/mgallery/board/view/?id=plave&no=120002&page=2",
+        "view_count": 398,
+        "reply_count": 4,
+        "recommend_count": 0,
+        "score": 0.1962
+      },
+      {
+        "title": "너네 그건 아냐",
+        "link": "https://gall.dcinside.com/mgallery/board/view/?id=plave&no=120040&page=1",
+        "view_count": 309,
+        "reply_count": 5,
+        "recommend_count": 0,
+        "score": 0.1871
+      },
+      {
+        "title": "오늘도 하루종일 갤질했다",
+        "link": "https://gall.dcinside.com/mgallery/board/view/?id=plave&no=119988&page=2",
+        "view_count": 244,
+        "reply_count": 6,
+        "recommend_count": 0,
+        "score": 0.1865
+      },
+      {
+        "title": "나눔 받은 거중에 잘 쓰는 거 있냐",
+        "link": "https://gall.dcinside.com/mgallery/board/view/?id=plave&no=120025&page=1",
+        "view_count": 221,
+        "reply_count": 6,
+        "recommend_count": 0,
+        "score": 0.1783
+      },
+      {
+        "title": "ㅂㅂ 들었는데 곡을 몰래 녹음하셨더군요 공개적으로 사과하세요",
+        "link": "https://gall.dcinside.com/mgallery/board/view/?id=plave&no=120031&page=1",
+        "view_count": 472,
+        "reply_count": 2,
+        "recommend_count": 0,
+        "score": 0.1775
+      },
+      {
+        "title": "영화보고옴",
+        "link": "https://gall.dcinside.com/mgallery/board/view/?id=plave&no=120039&page=1",
+        "view_count": 203,
+        "reply_count": 6,
+        "recommend_count": 0,
+        "score": 0.1719
+      },
+      {
+        "title": "이제 슬슬 무서워지는 중",
+        "link": "https://gall.dcinside.com/mgallery/board/view/?id=plave&no=120029&page=1",
+        "view_count": 382,
+        "reply_count": 3,
+        "recommend_count": 0,
+        "score": 0.168
+      },
+      {
+        "title": "조련미쳣나",
+        "link": "https://gall.dcinside.com/mgallery/board/view/?id=plave&no=120001&page=2",
+        "view_count": 445,
+        "reply_count": 2,
+        "recommend_count": 0,
+        "score": 0.1679
+      },
+      {
+        "title": "논중화물",
+        "link": "https://gall.dcinside.com/mgallery/board/view/?id=plave&no=120023&page=1",
+        "view_count": 249,
+        "reply_count": 5,
+        "recommend_count": 0,
+        "score": 0.1658
+      },
+      {
+        "title": "ㅈㄴ신나는노래같다",
+        "link": "https://gall.dcinside.com/mgallery/board/view/?id=plave&no=120027&page=1",
+        "view_count": 306,
+        "reply_count": 4,
+        "recommend_count": 0,
+        "score": 0.1635
+      },
+      {
+        "title": "한달뒤도 날씨도 이럴까봐 ㅈㄴ무섭네",
+        "link": "https://gall.dcinside.com/mgallery/board/view/?id=plave&no=119993&page=2",
+        "view_count": 292,
+        "reply_count": 4,
+        "recommend_count": 0,
+        "score": 0.1586
+      },
+      {
+        "title": "동공 개같이 흔들리는 회사라면 개추",
+        "link": "https://gall.dcinside.com/mgallery/board/view/?id=plave&no=120028&page=1",
+        "view_count": 345,
+        "reply_count": 3,
+        "recommend_count": 0,
+        "score": 0.1549
+      },
+      {
+        "title": "요즘 짭, 플미 구매 유도가 많은 거 같음",
+        "link": "https://gall.dcinside.com/mgallery/board/view/?id=plave&no=120021&page=1",
+        "view_count": 362,
+        "reply_count": 2,
+        "recommend_count": 0,
+        "score": 0.1384
+      },
+      {
+        "title": "ㅎㄹ82",
+        "link": "https://gall.dcinside.com/mgallery/board/view/?id=plave&no=120014&page=1",
+        "view_count": 290,
+        "reply_count": 3,
+        "recommend_count": 0,
+        "score": 0.1354
+      },
+      {
+        "title": "럭드 드볼하는법",
+        "link": "https://gall.dcinside.com/mgallery/board/view/?id=plave&no=120005&page=2",
+        "view_count": 321,
+        "reply_count": 2,
+        "recommend_count": 0,
+        "score": 0.1239
+      },
+      {
+        "title": "너네 잘 생각해",
+        "link": "https://gall.dcinside.com/mgallery/board/view/?id=plave&no=120007&page=1",
+        "view_count": 317,
+        "reply_count": 2,
+        "recommend_count": 0,
+        "score": 0.1224
+      },
+      {
+        "title": "근위병 모자 아님?",
+        "link": "https://gall.dcinside.com/mgallery/board/view/?id=plave&no=120016&page=1",
+        "view_count": 303,
+        "reply_count": 2,
+        "recommend_count": 0,
+        "score": 0.1175
+      },
+      {
+        "title": "ㄹㅋ 재화 모으는거",
+        "link": "https://gall.dcinside.com/mgallery/board/view/?id=plave&no=119995&page=2",
+        "view_count": 230,
+        "reply_count": 3,
+        "recommend_count": 0,
+        "score": 0.114
+      },
+      {
+        "title": "A상은 나에게로",
+        "link": "https://gall.dcinside.com/mgallery/board/view/?id=plave&no=120008&page=1",
+        "view_count": 211,
+        "reply_count": 3,
+        "recommend_count": 0,
+        "score": 0.1073
+      },
+      {
+        "title": "아 전나웃김ㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋ",
+        "link": "https://gall.dcinside.com/mgallery/board/view/?id=plave&no=120032&page=1",
+        "view_count": 299,
+        "reply_count": 1,
+        "recommend_count": 0,
+        "score": 0.0935
+      },
+      {
+        "title": "아 가방 작은거 들고 가려고 했는데",
+        "link": "https://gall.dcinside.com/mgallery/board/view/?id=plave&no=120003&page=2",
+        "view_count": 226,
+        "reply_count": 2,
+        "recommend_count": 0,
+        "score": 0.0901
+      },
+      {
+        "title": "드디어 만들어봄",
+        "link": "https://gall.dcinside.com/mgallery/board/view/?id=plave&no=120034&page=1",
+        "view_count": 253,
+        "reply_count": 1,
+        "recommend_count": 0,
+        "score": 0.0772
+      },
+      {
+        "title": "드라이빙 청량 온다",
+        "link": "https://gall.dcinside.com/mgallery/board/view/?id=plave&no=120036&page=1",
+        "view_count": 238,
+        "reply_count": 1,
+        "recommend_count": 0,
+        "score": 0.0719
+      },
+      {
+        "title": "뭐야 뭔데 나 아직 못 들어봤다고",
+        "link": "https://gall.dcinside.com/mgallery/board/view/?id=plave&no=120038&page=1",
+        "view_count": 170,
+        "reply_count": 2,
+        "recommend_count": 0,
+        "score": 0.0702
+      },
+      {
+        "title": "나는 제물",
+        "link": "https://gall.dcinside.com/mgallery/board/view/?id=plave&no=120042&page=1",
+        "view_count": 213,
+        "reply_count": 1,
+        "recommend_count": 0,
+        "score": 0.063
+      },
+      {
+        "title": "전곡 들려준다는데",
+        "link": "https://gall.dcinside.com/mgallery/board/view/?id=plave&no=120044&page=1",
+        "view_count": 212,
+        "reply_count": 1,
+        "recommend_count": 0,
+        "score": 0.0626
+      },
+      {
+        "title": "지금 책 재고있음",
+        "link": "https://gall.dcinside.com/mgallery/board/view/?id=plave&no=119991&page=2",
+        "view_count": 267,
+        "reply_count": 0,
+        "recommend_count": 0,
+        "score": 0.0597
+      },
+      {
+        "title": "미친 심장 ㅈㄴ 뛰어",
+        "link": "https://gall.dcinside.com/mgallery/board/view/?id=plave&no=120026&page=1",
+        "view_count": 203,
+        "reply_count": 1,
+        "recommend_count": 0,
+        "score": 0.0594
+      },
+      {
+        "title": "2026 Try Everything 쇼츠",
+        "link": "https://gall.dcinside.com/mgallery/board/view/?id=plave&no=120043&page=1",
+        "view_count": 183,
+        "reply_count": 0,
+        "recommend_count": 2,
+        "score": 0.059
+      },
+      {
+        "title": "이번 유출 역대급이라고 생각했는데",
+        "link": "https://gall.dcinside.com/mgallery/board/view/?id=plave&no=120037&page=1",
+        "view_count": 239,
+        "reply_count": 0,
+        "recommend_count": 0,
+        "score": 0.0497
+      },
+      {
+        "title": "내가 이럴까봐 큰가방을 항상 가지고 다니지",
+        "link": "https://gall.dcinside.com/mgallery/board/view/?id=plave&no=120006&page=2",
+        "view_count": 175,
+        "reply_count": 1,
+        "recommend_count": 0,
+        "score": 0.0495
+      },
+      {
+        "title": "꿀리들이 밥을 거를리가 있나",
+        "link": "https://gall.dcinside.com/mgallery/board/view/?id=plave&no=120045&page=1",
+        "view_count": 99,
+        "reply_count": 2,
+        "recommend_count": 0,
+        "score": 0.045
+      },
+      {
+        "title": "가사가",
+        "link": "https://gall.dcinside.com/mgallery/board/view/?id=plave&no=120033&page=1",
+        "view_count": 197,
+        "reply_count": 0,
+        "recommend_count": 0,
+        "score": 0.0348
+      },
+      {
+        "title": "ㅁㅋㅇ 이거맞냐",
+        "link": "https://gall.dcinside.com/mgallery/board/view/?id=plave&no=119997&page=2",
+        "view_count": 181,
+        "reply_count": 0,
+        "recommend_count": 0,
+        "score": 0.0291
+      },
+      {
+        "title": "미친 스트랩",
+        "link": "https://gall.dcinside.com/mgallery/board/view/?id=plave&no=119998&page=2",
+        "view_count": 159,
+        "reply_count": 0,
+        "recommend_count": 0,
+        "score": 0.0213
+      },
+      {
+        "title": "시발 이제야 들어봄",
+        "link": "https://gall.dcinside.com/mgallery/board/view/?id=plave&no=120041&page=1",
+        "view_count": 141,
+        "reply_count": 0,
+        "recommend_count": 0,
+        "score": 0.0149
+      }
+    ],
+    "complete": true
+  },
+  "theqoo": {
+    "total": 329,
+    "posts": [
+      {
+        "title": "궁예주의) 설마 인천 럭드 포카",
+        "link": "https://theqoo.net/plave/4302321246?page=13",
+        "view_count": 999,
+        "reply_count": 24,
+        "score": 0.7516
+      },
+      {
+        "title": "이 시점에 한 번 체크해보는 너네 어느 구역이야??",
+        "link": "https://theqoo.net/plave/4302322947?page=12",
+        "view_count": 327,
+        "reply_count": 36,
+        "score": 0.7509
+      },
+      {
+        "title": "아",
+        "link": "https://theqoo.net/plave/4302764720?page=4",
+        "view_count": 1059,
+        "reply_count": 22,
+        "score": 0.7349
+      },
+      {
+        "title": "플리가 바보야...아니면 회사가 말을 어렵게 쓴거야...",
+        "link": "https://theqoo.net/plave/4302371633?page=11",
+        "view_count": 1030,
+        "reply_count": 22,
+        "score": 0.7255
+      },
+      {
+        "title": "다들 육여키링있어?",
+        "link": "https://theqoo.net/plave/4302298977?page=14",
+        "view_count": 486,
+        "reply_count": 30,
+        "score": 0.694
+      },
+      {
+        "title": "헐 산리오 새캐릭터 봤어????",
+        "link": "https://theqoo.net/plave/4302815832?page=3",
+        "view_count": 976,
+        "reply_count": 21,
+        "score": 0.69
+      },
+      {
+        "title": "ㅍㅇㅌ 부전믐전",
+        "link": "https://theqoo.net/plave/4302053253?page=17",
+        "view_count": 985,
+        "reply_count": 20,
+        "score": 0.6749
+      },
+      {
+        "title": "믐무 쿠션 파는 곳 관련",
+        "link": "https://theqoo.net/plave/4302581577?page=7",
+        "view_count": 947,
+        "reply_count": 20,
+        "score": 0.6626
+      },
+      {
+        "title": "내일 십카페 전타임 자리 있네 ㅋㅋㅋ 와 대박",
+        "link": "https://theqoo.net/plave/4302092194?page=16",
+        "view_count": 1044,
+        "reply_count": 18,
+        "score": 0.6579
+      },
+      {
+        "title": "믐무 쿠션 풀렸네",
+        "link": "https://theqoo.net/plave/4302425440?page=10",
+        "view_count": 815,
+        "reply_count": 22,
+        "score": 0.656
+      },
+      {
+        "title": "마카오 콘 예매 웨이팅 1시간이라는데 이거 맞어?",
+        "link": "https://theqoo.net/plave/4302225470?page=16",
+        "view_count": 637,
+        "reply_count": 25,
+        "score": 0.6526
+      },
+      {
+        "title": "ㅇㅍㅂ 아니 근데 너네 다 쿼티써? 노아처럼 다른 자판 쓰는 사람 없어?",
+        "link": "https://theqoo.net/plave/4302959237?page=2",
+        "view_count": 386,
+        "reply_count": 29,
+        "score": 0.6436
+      },
+      {
+        "title": "사실 플리존 부스는 걱정이 안됨",
+        "link": "https://theqoo.net/plave/4302571040?page=8",
+        "view_count": 822,
+        "reply_count": 21,
+        "score": 0.6402
+      },
+      {
+        "title": "플레이브 귀여워ㅋㅋ",
+        "link": "https://theqoo.net/plave/4302346104?page=12",
+        "view_count": 872,
+        "reply_count": 19,
+        "score": 0.6203
+      },
+      {
+        "title": "솔직히 무슨상이탐나?",
+        "link": "https://theqoo.net/plave/4302294287?page=15",
+        "view_count": 720,
+        "reply_count": 21,
+        "score": 0.6072
+      },
+      {
+        "title": "럭드 무조건 다 당첨인거 아냐?",
+        "link": "https://theqoo.net/plave/4302446476?page=10",
+        "view_count": 787,
+        "reply_count": 19,
+        "score": 0.5928
+      },
+      {
+        "title": "[📢]  2026 PLAVE World Tour [KEEP IT MANIC] in Incheon 'PLLI ZONE' 운영 안내",
+        "link": "https://theqoo.net/plave/4302288598?page=16",
+        "view_count": 853,
+        "reply_count": 17,
+        "score": 0.578
+      },
+      {
+        "title": "📢노아가 유출한거 비밀로 해주자!!!!!!📢",
+        "link": "https://theqoo.net/plave/4302742527?page=4",
+        "view_count": 894,
+        "reply_count": 16,
+        "score": 0.5732
+      },
+      {
+        "title": "md 온판일수도 있겠다 날씨도 그렇고 현장 감당 못할거 같기도 하고..",
+        "link": "https://theqoo.net/plave/4302486744?page=9",
+        "view_count": 750,
+        "reply_count": 18,
+        "score": 0.5628
+      },
+      {
+        "title": "머글친구 양일 데려가고 럭드포카 추가 2매 받을까...",
+        "link": "https://theqoo.net/plave/4302339622?page=12",
+        "view_count": 689,
+        "reply_count": 19,
+        "score": 0.5611
+      },
+      {
+        "title": "몌무 옷입히기",
+        "link": "https://theqoo.net/plave/4301978115?page=17",
+        "view_count": 782,
+        "reply_count": 16,
+        "score": 0.537
+      },
+      {
+        "title": "나 십카페 B상당첨됐길래 왕!!!!!!하고 엠디샵갓는데",
+        "link": "https://theqoo.net/plave/4302416991?page=10",
+        "view_count": 759,
+        "reply_count": 15,
+        "score": 0.5115
+      },
+      {
+        "title": "그니까 이 말이지?",
+        "link": "https://theqoo.net/plave/4302303190?page=14",
+        "view_count": 724,
+        "reply_count": 15,
+        "score": 0.5002
+      },
+      {
+        "title": "한노아 슬렌더",
+        "link": "https://theqoo.net/plave/4301895631?page=17",
+        "view_count": 1052,
+        "reply_count": 8,
+        "score": 0.4799
+      },
+      {
+        "title": "내 야타즈도 봐줘",
+        "link": "https://theqoo.net/plave/4302456882?page=9",
+        "view_count": 631,
+        "reply_count": 14,
+        "score": 0.452
+      },
+      {
+        "title": "주먹밥은 어디까지 존재하는가",
+        "link": "https://theqoo.net/plave/4301831259?page=17",
+        "view_count": 1097,
+        "reply_count": 5,
+        "score": 0.4403
+      },
+      {
+        "title": "고척 플리존",
+        "link": "https://theqoo.net/plave/4302584337?page=7",
+        "view_count": 699,
+        "reply_count": 12,
+        "score": 0.4379
+      },
+      {
+        "title": "이거구나",
+        "link": "https://theqoo.net/plave/4302733819?page=5",
+        "view_count": 860,
+        "reply_count": 9,
+        "score": 0.4358
+      },
+      {
+        "title": "용병이 티켓 잡아줘서 멤버십 특전 못 받는데",
+        "link": "https://theqoo.net/plave/4302301673?page=14",
+        "view_count": 525,
+        "reply_count": 15,
+        "score": 0.4358
+      },
+      {
+        "title": "앞자리 3 진입",
+        "link": "https://theqoo.net/plave/4301986717?page=17",
+        "view_count": 963,
+        "reply_count": 7,
+        "score": 0.433
+      },
+      {
+        "title": "ㄷㅇㅅ 수영복 진심 최고 귀염",
+        "link": "https://theqoo.net/plave/4302679318?page=6",
+        "view_count": 561,
+        "reply_count": 14,
+        "score": 0.4294
+      },
+      {
+        "title": "ㅇㅍㅂ 진주회관 왔다",
+        "link": "https://theqoo.net/plave/4302162278?page=16",
+        "view_count": 779,
+        "reply_count": 10,
+        "score": 0.4277
+      },
+      {
+        "title": "ㅂㅍㅂ 낯이 익어",
+        "link": "https://theqoo.net/plave/4301998847?page=17",
+        "view_count": 800,
+        "reply_count": 9,
+        "score": 0.4164
+      },
+      {
+        "title": "공연장 크기비교",
+        "link": "https://theqoo.net/plave/4302559413?page=8",
+        "view_count": 755,
+        "reply_count": 9,
+        "score": 0.4019
+      },
+      {
+        "title": "우리 십카페 럭드기계 보면 가끔 불쌍해",
+        "link": "https://theqoo.net/plave/4302315608?page=13",
+        "view_count": 689,
+        "reply_count": 10,
+        "score": 0.3986
+      },
+      {
+        "title": "생각보다 실사용 많이 하고 있는 굿즈 베스트 3",
+        "link": "https://theqoo.net/plave/4302528070?page=8",
+        "view_count": 548,
+        "reply_count": 11,
+        "score": 0.371
+      },
+      {
+        "title": "ㅇㅍㅂ 빅팬 선풍기 색 골라주라!!!",
+        "link": "https://theqoo.net/plave/4302783944?page=4",
+        "view_count": 532,
+        "reply_count": 11,
+        "score": 0.3658
+      },
+      {
+        "title": "@블래스트 지난콘서트때는 담요줬는데 이번에는 손풍기 주는거 어때 (혼자 정함)",
+        "link": "https://theqoo.net/plave/4302535253?page=8",
+        "view_count": 584,
+        "reply_count": 10,
+        "score": 0.3646
+      },
+      {
+        "title": "ㄷㅇㅅ 새우티김옷",
+        "link": "https://theqoo.net/plave/4302981110",
+        "view_count": 561,
+        "reply_count": 10,
+        "score": 0.3572
+      },
+      {
+        "title": "왕 나 십카페첨갔는데 럭드 당첨됨",
+        "link": "https://theqoo.net/plave/4302411599?page=10",
+        "view_count": 554,
+        "reply_count": 10,
+        "score": 0.3549
+      },
+      {
+        "title": "탐라에서 봤는데 이 인형 예라인 존똑이야",
+        "link": "https://theqoo.net/plave/4302542282?page=8",
+        "view_count": 651,
+        "reply_count": 8,
+        "score": 0.3502
+      },
+      {
+        "title": "그니깐 PLLI ZONE PHOTOCARD SET 또는 럭드1장 인거지??",
+        "link": "https://theqoo.net/plave/4302296961?page=15",
+        "view_count": 364,
+        "reply_count": 13,
+        "score": 0.3476
+      },
+      {
+        "title": "굿즈로 장패드좀 줬음 좋겠다",
+        "link": "https://theqoo.net/plave/4302083653?page=17",
+        "view_count": 419,
+        "reply_count": 12,
+        "score": 0.3474
+      },
+      {
+        "title": "반지보관 때매 보석함 살말하다",
+        "link": "https://theqoo.net/plave/4302907295?page=3",
+        "view_count": 457,
+        "reply_count": 11,
+        "score": 0.3416
+      },
+      {
+        "title": "근데우리당분간",
+        "link": "https://theqoo.net/plave/4302839511?page=3",
+        "view_count": 668,
+        "reply_count": 7,
+        "score": 0.3376
+      },
+      {
+        "title": "십카페 짧은후기",
+        "link": "https://theqoo.net/plave/4302593385?page=7",
+        "view_count": 665,
+        "reply_count": 7,
+        "score": 0.3366
+      },
+      {
+        "title": "육여스트랩 밤비만 긴거 언제안웃겨?",
+        "link": "https://theqoo.net/plave/4302318858?page=13",
+        "view_count": 541,
+        "reply_count": 9,
+        "score": 0.3326
+      },
+      {
+        "title": "양일이니까 두장이긴한데 그럼 나머지 셋은 따로 구하지않는 한 못구하나",
+        "link": "https://theqoo.net/plave/4302299393?page=14",
+        "view_count": 371,
+        "reply_count": 12,
+        "score": 0.3318
+      },
+      {
+        "title": "A 주세요",
+        "link": "https://theqoo.net/plave/4302652948?page=7",
+        "view_count": 477,
+        "reply_count": 10,
+        "score": 0.33
+      },
+      {
+        "title": "한노아 너무 유출인가 싶어서 쫄려가지구 조용한 건데 몰름보강아 코러스는 내일 할까요? 하는 거 가웄",
+        "link": "https://theqoo.net/plave/4302746825?page=4",
+        "view_count": 643,
+        "reply_count": 7,
+        "score": 0.3295
+      },
+      {
+        "title": "플리맘쌔비지수건이 모야?",
+        "link": "https://theqoo.net/plave/4302107102?page=16",
+        "view_count": 637,
+        "reply_count": 7,
+        "score": 0.3276
+      },
+      {
+        "title": "ㅅㅁ 하시면 럭드 잘나옴",
+        "link": "https://theqoo.net/plave/4302539708?page=8",
+        "view_count": 299,
+        "reply_count": 13,
+        "score": 0.3266
+      },
+      {
+        "title": "내게 남은 플리존 기억",
+        "link": "https://theqoo.net/plave/4302452435?page=9",
+        "view_count": 456,
+        "reply_count": 10,
+        "score": 0.3232
+      },
+      {
+        "title": "앗때지들",
+        "link": "https://theqoo.net/plave/4302884829?page=3",
+        "view_count": 503,
+        "reply_count": 9,
+        "score": 0.3204
+      },
+      {
+        "title": "아빠머리한 믐무들",
+        "link": "https://theqoo.net/plave/4302644716?page=7",
+        "view_count": 498,
+        "reply_count": 9,
+        "score": 0.3187
+      },
+      {
+        "title": "우리 이거도 십카페에서 준적있나?",
+        "link": "https://theqoo.net/plave/4302675176?page=6",
+        "view_count": 490,
+        "reply_count": 9,
+        "score": 0.3162
+      },
+      {
+        "title": "너희 플부물산 ppt의 비하인드 이거 알았어?",
+        "link": "https://theqoo.net/plave/4302250259?page=16",
+        "view_count": 709,
+        "reply_count": 5,
+        "score": 0.3148
+      },
+      {
+        "title": "ㅇㅍㅂ? 랜덤피규어 샀는데 채봉구 닮은거 나왔어",
+        "link": "https://theqoo.net/plave/4302720936?page=6",
+        "view_count": 507,
+        "reply_count": 8,
+        "score": 0.3036
+      },
+      {
+        "title": "ㄷㅇㅅ인형옷행거도 너무 쥬타",
+        "link": "https://theqoo.net/plave/4302796691?page=3",
+        "view_count": 504,
+        "reply_count": 8,
+        "score": 0.3026
+      },
+      {
+        "title": "나 지금 다 다른 상황인게 너무 웃김ㅋㅋㅋㅋㅋ",
+        "link": "https://theqoo.net/plave/4302959625",
+        "view_count": 495,
+        "reply_count": 8,
+        "score": 0.2997
+      },
+      {
+        "title": "ㅇㅍㅂ 엄마 폴드 탐내시길래 손떨며 구매하고",
+        "link": "https://theqoo.net/plave/4302025840?page=17",
+        "view_count": 759,
+        "reply_count": 3,
+        "score": 0.2948
+      },
+      {
+        "title": "회사는 엠디 공지낼때 크게 크게 적어줘라..",
+        "link": "https://theqoo.net/plave/4302492753?page=9",
+        "view_count": 423,
+        "reply_count": 9,
+        "score": 0.2945
+      },
+      {
+        "title": "럭드 헷갈리는데 내가 만약 C상 당첨이 됐어",
+        "link": "https://theqoo.net/plave/4302353952?page=11",
+        "view_count": 517,
+        "reply_count": 7,
+        "score": 0.2888
+      },
+      {
+        "title": "9월에 바시티는 덥겠지?",
+        "link": "https://theqoo.net/plave/4302309565?page=14",
+        "view_count": 345,
+        "reply_count": 10,
+        "score": 0.2873
+      },
+      {
+        "title": "노아가 먹은 ㅉㅍㄱㅌ 먹었는데",
+        "link": "https://theqoo.net/plave/4302197970?page=16",
+        "view_count": 618,
+        "reply_count": 5,
+        "score": 0.2853
+      },
+      {
+        "title": "나두 입혔다 우리는 수영하는 므메미무 그런데",
+        "link": "https://theqoo.net/plave/4302875671?page=3",
+        "view_count": 437,
+        "reply_count": 8,
+        "score": 0.281
+      },
+      {
+        "title": "참여자 전체 증정 멘트가 있다구 풀리들아 ㅋㅋㅋ",
+        "link": "https://theqoo.net/plave/4302382645?page=11",
+        "view_count": 715,
+        "reply_count": 3,
+        "score": 0.2806
+      },
+      {
+        "title": "이번에는 단체 포카 없는 거지??",
+        "link": "https://theqoo.net/plave/4302476863?page=9",
+        "view_count": 371,
+        "reply_count": 9,
+        "score": 0.2777
+      },
+      {
+        "title": "노아 뚝스한테 뭔가 얘기듣고 고개 끄덕하던 영상 뭐였지?",
+        "link": "https://theqoo.net/plave/4301801166?page=17",
+        "view_count": 706,
+        "reply_count": 3,
+        "score": 0.2777
+      },
+      {
+        "title": "PLAVE가 또다시 CanCam에 등장🪐",
+        "link": "https://theqoo.net/plave/4302484093?page=9",
+        "view_count": 646,
+        "reply_count": 4,
+        "score": 0.2763
+      },
+      {
+        "title": "뚜뚜 방금 ㅂㅂ읽고 머리 겁나 쎄게 맞은 기분",
+        "link": "https://theqoo.net/plave/4302966350",
+        "view_count": 455,
+        "reply_count": 7,
+        "score": 0.2687
+      },
+      {
+        "title": "럭드 제일 탐나는거 D상",
+        "link": "https://theqoo.net/plave/4302291329?page=16",
+        "view_count": 343,
+        "reply_count": 9,
+        "score": 0.2686
+      },
+      {
+        "title": "플리존에 바라는건..",
+        "link": "https://theqoo.net/plave/4302601677?page=7",
+        "view_count": 445,
+        "reply_count": 7,
+        "score": 0.2655
+      },
+      {
+        "title": "럭드 꽝도 있는거야...?",
+        "link": "https://theqoo.net/plave/4302364513?page=11",
+        "view_count": 384,
+        "reply_count": 8,
+        "score": 0.2638
+      },
+      {
+        "title": "a상 스페셜 메세지 포함이래",
+        "link": "https://theqoo.net/plave/4302321213?page=13",
+        "view_count": 490,
+        "reply_count": 6,
+        "score": 0.262
+      },
+      {
+        "title": "목소리 은호야?",
+        "link": "https://theqoo.net/plave/4302720728?page=6",
+        "view_count": 424,
+        "reply_count": 7,
+        "score": 0.2587
+      },
+      {
+        "title": "다이소에 이런게 팔았네",
+        "link": "https://theqoo.net/plave/4302788814?page=3",
+        "view_count": 641,
+        "reply_count": 3,
+        "score": 0.2567
+      },
+      {
+        "title": "자리고민 들어줄사람?",
+        "link": "https://theqoo.net/plave/4302160740?page=16",
+        "view_count": 389,
+        "reply_count": 7,
+        "score": 0.2474
+      },
+      {
+        "title": "논중화물이다 싶으면 바로 앞에 있어도 위버스버블로 말하는거 개웃김",
+        "link": "https://theqoo.net/plave/4302695615?page=6",
+        "view_count": 433,
+        "reply_count": 6,
+        "score": 0.2435
+      },
+      {
+        "title": "플리존 야외면 거기 머 돗자리 깔고 앉아잇고 그런건 안되겟지",
+        "link": "https://theqoo.net/plave/4302350563?page=12",
+        "view_count": 314,
+        "reply_count": 8,
+        "score": 0.2412
+      },
+      {
+        "title": "멀리서 양일 가는 입장이라 솔직히 랜덤 포카나 더 받고 싶고 혹시 A~C 당첨되면 현장에서 원하는 플리랑 교환하고",
+        "link": "https://theqoo.net/plave/4302301298?page=14",
+        "view_count": 256,
+        "reply_count": 9,
+        "score": 0.2405
+      },
+      {
+        "title": "와 ㅁㅊ",
+        "link": "https://theqoo.net/plave/4302717393?page=6",
+        "view_count": 304,
+        "reply_count": 8,
+        "score": 0.2379
+      },
+      {
+        "title": "ㅇㅍㅂ 아티가 보는 ㅂㅂ 화면",
+        "link": "https://theqoo.net/plave/4302918574?page=2",
+        "view_count": 523,
+        "reply_count": 4,
+        "score": 0.2365
+      },
+      {
+        "title": "교환존 주겟지?",
+        "link": "https://theqoo.net/plave/4302360307?page=11",
+        "view_count": 243,
+        "reply_count": 9,
+        "score": 0.2363
+      },
+      {
+        "title": "아니 유하민 왜케 귀여워????????",
+        "link": "https://theqoo.net/plave/4302140332?page=16",
+        "view_count": 351,
+        "reply_count": 7,
+        "score": 0.2351
+      },
+      {
+        "title": "형이 하는 건 유출이고요",
+        "link": "https://theqoo.net/plave/4302761659?page=4",
+        "view_count": 629,
+        "reply_count": 2,
+        "score": 0.2347
+      },
+      {
+        "title": "럭드 1세트는 보장 + abcd꽝 중 택1 인 거지???",
+        "link": "https://theqoo.net/plave/4302461752?page=9",
+        "view_count": 280,
+        "reply_count": 8,
+        "score": 0.2302
+      },
+      {
+        "title": "근데 럭키드로우 꽝은없어?",
+        "link": "https://theqoo.net/plave/4302295780?page=15",
+        "view_count": 278,
+        "reply_count": 8,
+        "score": 0.2295
+      },
+      {
+        "title": "믐무 쿠션 원가가 얼마였지?",
+        "link": "https://theqoo.net/plave/4301771918?page=17",
+        "view_count": 663,
+        "reply_count": 1,
+        "score": 0.2277
+      },
+      {
+        "title": "노아 이 부분 너무 좋아",
+        "link": "https://theqoo.net/plave/4302758678?page=4",
+        "view_count": 490,
+        "reply_count": 4,
+        "score": 0.2259
+      },
+      {
+        "title": "내일 콘섵트에요?",
+        "link": "https://theqoo.net/plave/4302608968?page=7",
+        "view_count": 484,
+        "reply_count": 4,
+        "score": 0.2239
+      },
+      {
+        "title": "셔틀 4시 도착예정인데 플리존 빡빡하려나?",
+        "link": "https://theqoo.net/plave/4302519659?page=8",
+        "view_count": 366,
+        "reply_count": 6,
+        "score": 0.2219
+      },
+      {
+        "title": "파랑포카 운이 좋아서 1+럭드당첨1장 이틀 된다고 해도",
+        "link": "https://theqoo.net/plave/4302496859?page=9",
+        "view_count": 365,
+        "reply_count": 6,
+        "score": 0.2215
+      },
+      {
+        "title": "미안한데 바시티 내가 좀 당첨될게",
+        "link": "https://theqoo.net/plave/4302327802?page=12",
+        "view_count": 245,
+        "reply_count": 8,
+        "score": 0.2188
+      },
+      {
+        "title": "제발음성들어제발음성들어",
+        "link": "https://theqoo.net/plave/4302717807?page=6",
+        "view_count": 354,
+        "reply_count": 6,
+        "score": 0.218
+      },
+      {
+        "title": "럭드기계가 로봇혁명일으켜도 이해해주자",
+        "link": "https://theqoo.net/plave/4302517573?page=8",
+        "view_count": 343,
+        "reply_count": 6,
+        "score": 0.2144
+      },
+      {
+        "title": "근데 진짜 확 달라져서 신기해",
+        "link": "https://theqoo.net/plave/4301828197?page=17",
+        "view_count": 620,
+        "reply_count": 1,
+        "score": 0.2138
+      },
+      {
+        "title": "노아가 지금 스포하는거랑 달의 심장이랑 연관 있을까",
+        "link": "https://theqoo.net/plave/4302838040?page=3",
+        "view_count": 337,
+        "reply_count": 6,
+        "score": 0.2125
+      },
+      {
+        "title": "문학 저기는 터가 엄청 넓겠지?",
+        "link": "https://theqoo.net/plave/4302506469?page=8",
+        "view_count": 335,
+        "reply_count": 6,
+        "score": 0.2118
+      },
+      {
+        "title": "호옥쉬 십카페 럭드기계 인천으로 출장가나???",
+        "link": "https://theqoo.net/plave/4302310884?page=13",
+        "view_count": 270,
+        "reply_count": 7,
+        "score": 0.2089
+      },
+      {
+        "title": "뭐가 제일 갖고싶니",
+        "link": "https://theqoo.net/plave/4302367055?page=11",
+        "view_count": 148,
+        "reply_count": 9,
+        "score": 0.2055
+      },
+      {
+        "title": "십카페 음료 질문",
+        "link": "https://theqoo.net/plave/4301982538?page=17",
+        "view_count": 367,
+        "reply_count": 5,
+        "score": 0.2041
+      },
+      {
+        "title": "그러고보니 이번에 부채는 진짜 줄지도? 아돌라콘때 생각나네",
+        "link": "https://theqoo.net/plave/4302546215?page=8",
+        "view_count": 310,
+        "reply_count": 6,
+        "score": 0.2038
+      },
+      {
+        "title": "D제외하고는 당첨확률 극악일 것 같음",
+        "link": "https://theqoo.net/plave/4302383408?page=11",
+        "view_count": 399,
+        "reply_count": 4,
+        "score": 0.1964
+      },
+      {
+        "title": "콘서트장 매번 점점 넓어지는 거 몽가",
+        "link": "https://theqoo.net/plave/4302914602?page=2",
+        "view_count": 335,
+        "reply_count": 5,
+        "score": 0.1938
+      },
+      {
+        "title": "헐 설마 선공개?",
+        "link": "https://theqoo.net/plave/4302942179?page=2",
+        "view_count": 384,
+        "reply_count": 4,
+        "score": 0.1916
+      },
+      {
+        "title": "이 마음 따뜻한 형댕동댕",
+        "link": "https://theqoo.net/plave/4301824172?page=17",
+        "view_count": 428,
+        "reply_count": 3,
+        "score": 0.1878
+      },
+      {
+        "title": "야 이거 주ㅁㅜㄴ 콘설영상 이거 진짜 실존한다",
+        "link": "https://theqoo.net/plave/4302871338?page=3",
+        "view_count": 483,
+        "reply_count": 2,
+        "score": 0.1875
+      },
+      {
+        "title": "난 예준이 그림에서 벌써 ㄴㄹ ㅇㅎㅅ라는 걸 알았다구",
+        "link": "https://theqoo.net/plave/4302740648?page=4",
+        "view_count": 534,
+        "reply_count": 1,
+        "score": 0.1859
+      },
+      {
+        "title": "럭드 포카는 되도 정병 안되도 정병이다 ㅋㅋㅋㅋㅋㅋㅋ",
+        "link": "https://theqoo.net/plave/4302326924?page=12",
+        "view_count": 310,
+        "reply_count": 5,
+        "score": 0.1857
+      },
+      {
+        "title": "ㅁㅊ 럭키드로우에 육여키링있음",
+        "link": "https://theqoo.net/plave/4302289509?page=16",
+        "view_count": 252,
+        "reply_count": 6,
+        "score": 0.185
+      },
+      {
+        "title": "ㅇㅍㅂ 폴드8 산 플리들 있어..?",
+        "link": "https://theqoo.net/plave/4302937862?page=2",
+        "view_count": 248,
+        "reply_count": 6,
+        "score": 0.1837
+      },
+      {
+        "title": "md 뭐 나올까?",
+        "link": "https://theqoo.net/plave/4302500858?page=8",
+        "view_count": 183,
+        "reply_count": 7,
+        "score": 0.1807
+      },
+      {
+        "title": "럭드 지금봤는데 만약 양일 d당첨됐다 치면",
+        "link": "https://theqoo.net/plave/4302643970?page=7",
+        "view_count": 292,
+        "reply_count": 5,
+        "score": 0.1799
+      },
+      {
+        "title": "9월 인천 더울텐데 바시티 입고 다녀야하네",
+        "link": "https://theqoo.net/plave/4302673578?page=6",
+        "view_count": 291,
+        "reply_count": 5,
+        "score": 0.1796
+      },
+      {
+        "title": "호오 뜬금 육여스트랩이라니 재판이다vs재고영끌이다",
+        "link": "https://theqoo.net/plave/4302292307?page=15",
+        "view_count": 291,
+        "reply_count": 5,
+        "score": 0.1796
+      },
+      {
+        "title": "5종중 1랜덤이요? 안돼",
+        "link": "https://theqoo.net/plave/4302296662?page=15",
+        "view_count": 346,
+        "reply_count": 4,
+        "score": 0.1793
+      },
+      {
+        "title": "용병이 티켓 구해준 플리들은 유의사항 잘 확인해봐...",
+        "link": "https://theqoo.net/plave/4302335176?page=12",
+        "view_count": 513,
+        "reply_count": 1,
+        "score": 0.1791
+      },
+      {
+        "title": "ㅁㅁㅁㅁ 천연 수영복",
+        "link": "https://theqoo.net/plave/4302517028?page=8",
+        "view_count": 452,
+        "reply_count": 2,
+        "score": 0.1775
+      },
+      {
+        "title": "⬇️ 얘 뜯어 + 댓글에 한놈 더 뜯어",
+        "link": "https://theqoo.net/plave/4302348059?page=12",
+        "view_count": 340,
+        "reply_count": 4,
+        "score": 0.1774
+      },
+      {
+        "title": "포카 세트는 무조건 받는거고!!!!!!!! 럭드가!!!!!! 포카 1장이거나!!!! 상품이거나!!!!!!",
+        "link": "https://theqoo.net/plave/4302367467?page=11",
+        "view_count": 338,
+        "reply_count": 4,
+        "score": 0.1767
+      },
+      {
+        "title": "나 십카페 한번도 안가봐서 그런데 질문이 있어 팁도 부탁해",
+        "link": "https://theqoo.net/plave/4302337761?page=12",
+        "view_count": 226,
+        "reply_count": 6,
+        "score": 0.1766
+      },
+      {
+        "title": "서로한테도 배우는거 몽가몽가",
+        "link": "https://theqoo.net/plave/4301829645?page=17",
+        "view_count": 447,
+        "reply_count": 2,
+        "score": 0.1759
+      },
+      {
+        "title": "혹시 숙소 늦게잡은 플리들 어느쪽에 잡았어?",
+        "link": "https://theqoo.net/plave/4302669742?page=7",
+        "view_count": 167,
+        "reply_count": 7,
+        "score": 0.1756
+      },
+      {
+        "title": "헐 ㅅㅋㅍ 다담주에서 이번주 일욜로 바꿨다 히히",
+        "link": "https://theqoo.net/plave/4302211260?page=16",
+        "view_count": 334,
+        "reply_count": 4,
+        "score": 0.1754
+      },
+      {
+        "title": "그니까 내 명의로 키링달고 2명이 갈때",
+        "link": "https://theqoo.net/plave/4302426873?page=10",
+        "view_count": 331,
+        "reply_count": 4,
+        "score": 0.1744
+      },
+      {
+        "title": "간만에 뚜뚜와 티키타카 됐어",
+        "link": "https://theqoo.net/plave/4302979842",
+        "view_count": 383,
+        "reply_count": 3,
+        "score": 0.1732
+      },
+      {
+        "title": "예준이 진짜 말랑 긍정토끼야 ㅋㅋㅋ",
+        "link": "https://theqoo.net/plave/4302123271?page=16",
+        "view_count": 326,
+        "reply_count": 4,
+        "score": 0.1728
+      },
+      {
+        "title": "왜 하 필 육 여 키 링 일 까 요?",
+        "link": "https://theqoo.net/plave/4302295460?page=15",
+        "view_count": 320,
+        "reply_count": 4,
+        "score": 0.1709
+      },
+      {
+        "title": "너희드볼욕심쩐다",
+        "link": "https://theqoo.net/plave/4302343765?page=12",
+        "view_count": 319,
+        "reply_count": 4,
+        "score": 0.1706
+      },
+      {
+        "title": "럭드포카 교환구할 생각에 아득해짐",
+        "link": "https://theqoo.net/plave/4302330909?page=12",
+        "view_count": 256,
+        "reply_count": 5,
+        "score": 0.1682
+      },
+      {
+        "title": "싸인 당첨되면 춤춘다",
+        "link": "https://theqoo.net/plave/4302434385?page=10",
+        "view_count": 198,
+        "reply_count": 6,
+        "score": 0.1675
+      },
+      {
+        "title": "나 엠디 소취하는거 있어 야구장 갔을때 본건데",
+        "link": "https://theqoo.net/plave/4302508164?page=8",
+        "view_count": 307,
+        "reply_count": 4,
+        "score": 0.1667
+      },
+      {
+        "title": "팬튭인데 예밤하 일본 라디오 나온거 번역해서 올려주셨다",
+        "link": "https://theqoo.net/plave/4302827928?page=3",
+        "view_count": 243,
+        "reply_count": 5,
+        "score": 0.164
+      },
+      {
+        "title": "이번 앨범 노래 진짜 좋지 않아?",
+        "link": "https://theqoo.net/plave/4302719921?page=6",
+        "view_count": 242,
+        "reply_count": 5,
+        "score": 0.1637
+      },
+      {
+        "title": "전곡 틀면 회사나 예주니한테 전화오는거 아니냐곸ㅋㅋㅋㅋㅋㅋ",
+        "link": "https://theqoo.net/plave/4302941495?page=2",
+        "view_count": 295,
+        "reply_count": 4,
+        "score": 0.1628
+      },
+      {
+        "title": "캐리어 끌고 가야겠다",
+        "link": "https://theqoo.net/plave/4302392735?page=10",
+        "view_count": 227,
+        "reply_count": 5,
+        "score": 0.1589
+      },
+      {
+        "title": "얘들아 파란 포카 말이야",
+        "link": "https://theqoo.net/plave/4302336683?page=12",
+        "view_count": 282,
+        "reply_count": 4,
+        "score": 0.1586
+      },
+      {
+        "title": "크레이지아케이드 8월13일 서비스종료래",
+        "link": "https://theqoo.net/plave/4302174186?page=16",
+        "view_count": 279,
+        "reply_count": 4,
+        "score": 0.1576
+      },
+      {
+        "title": "시뻘건 수영복 입은 때지므모만 보면 웃음남",
+        "link": "https://theqoo.net/plave/4302898339?page=3",
+        "view_count": 220,
+        "reply_count": 5,
+        "score": 0.1566
+      },
+      {
+        "title": "근데 A2T면 싶카페도 같은거로 바뀌나?",
+        "link": "https://theqoo.net/plave/4302305903?page=14",
+        "view_count": 214,
+        "reply_count": 5,
+        "score": 0.1546
+      },
+      {
+        "title": "너를 위해서",
+        "link": "https://theqoo.net/plave/4302781393?page=4",
+        "view_count": 380,
+        "reply_count": 2,
+        "score": 0.1542
+      },
+      {
+        "title": "노아 오타ㅂㅂ 적금들으면 만수르 금방되겠지?",
+        "link": "https://theqoo.net/plave/4302949848?page=2",
+        "view_count": 212,
+        "reply_count": 5,
+        "score": 0.154
+      },
+      {
+        "title": "육여스트랩 재판이 어렵다면 새 이름 스트랩을 내달라",
+        "link": "https://theqoo.net/plave/4302312830?page=13",
+        "view_count": 210,
+        "reply_count": 5,
+        "score": 0.1534
+      },
+      {
+        "title": "내가 이해한게 맞나",
+        "link": "https://theqoo.net/plave/4302414796?page=10",
+        "view_count": 261,
+        "reply_count": 4,
+        "score": 0.1518
+      },
+      {
+        "title": "저 럭드 십카페도 저걸로 바뀔거같아",
+        "link": "https://theqoo.net/plave/4302370876?page=11",
+        "view_count": 204,
+        "reply_count": 5,
+        "score": 0.1514
+      },
+      {
+        "title": "십카페 럭드 포카 바뀐 날짜",
+        "link": "https://theqoo.net/plave/4302509462?page=8",
+        "view_count": 369,
+        "reply_count": 2,
+        "score": 0.1506
+      },
+      {
+        "title": "수상할정도로 찐헌 블러를 한 파란 포카...",
+        "link": "https://theqoo.net/plave/4302492819?page=9",
+        "view_count": 366,
+        "reply_count": 2,
+        "score": 0.1497
+      },
+      {
+        "title": "노아 말투ㅋㅋㅋㅋㅋㅋㅋ",
+        "link": "https://theqoo.net/plave/4302937733?page=2",
+        "view_count": 252,
+        "reply_count": 4,
+        "score": 0.1489
+      },
+      {
+        "title": "❤️ 코러스는 내일 할까요?",
+        "link": "https://theqoo.net/plave/4302757227?page=4",
+        "view_count": 417,
+        "reply_count": 1,
+        "score": 0.1481
+      },
+      {
+        "title": "육여름 스트랩 그냥 시원하게 재판하자",
+        "link": "https://theqoo.net/plave/4302403325?page=10",
+        "view_count": 245,
+        "reply_count": 4,
+        "score": 0.1466
+      },
+      {
+        "title": "모두가 당첨되는 판을 만들어주면 좋겠다",
+        "link": "https://theqoo.net/plave/4302461214?page=9",
+        "view_count": 297,
+        "reply_count": 3,
+        "score": 0.1454
+      },
+      {
+        "title": "육여키링 재고가 딱 저정도밖에 안남았나보네",
+        "link": "https://theqoo.net/plave/4302296833?page=15",
+        "view_count": 295,
+        "reply_count": 3,
+        "score": 0.1447
+      },
+      {
+        "title": "애들 ㅂㅂ오는 시간 너무 투명하지 않냐(새삼)",
+        "link": "https://theqoo.net/plave/4302967911",
+        "view_count": 286,
+        "reply_count": 3,
+        "score": 0.1418
+      },
+      {
+        "title": "밤비가 과자에 사이다 타준다고 한 거 어느 영상인지 아는 ai풀리ㅠㅜ",
+        "link": "https://theqoo.net/plave/4302191989?page=16",
+        "view_count": 283,
+        "reply_count": 3,
+        "score": 0.1409
+      },
+      {
+        "title": "그냥 해보는소린데..나 ㄷㅎㄷ팝업때한 vr체험 더해줬으면 조퀐어...",
+        "link": "https://theqoo.net/plave/4302327383?page=12",
+        "view_count": 166,
+        "reply_count": 5,
+        "score": 0.1391
+      },
+      {
+        "title": "난 럭드 포카는 십카페랑 똑같을 것 같고",
+        "link": "https://theqoo.net/plave/4302312300?page=13",
+        "view_count": 219,
+        "reply_count": 4,
+        "score": 0.1382
+      },
+      {
+        "title": "보조경기장은 좀 시원하려나 하고 사진찾아봤는데",
+        "link": "https://theqoo.net/plave/4302309775?page=14",
+        "view_count": 267,
+        "reply_count": 3,
+        "score": 0.1357
+      },
+      {
+        "title": "헐 ㄷㅇㅅ에 튀김옷 있어?",
+        "link": "https://theqoo.net/plave/4302961674",
+        "view_count": 261,
+        "reply_count": 3,
+        "score": 0.1337
+      },
+      {
+        "title": "@@ 너를 위해서?",
+        "link": "https://theqoo.net/plave/4302725344?page=5",
+        "view_count": 315,
+        "reply_count": 2,
+        "score": 0.1332
+      },
+      {
+        "title": "사첵 끝나고 나와서 플리존 갈수있나?",
+        "link": "https://theqoo.net/plave/4302401692?page=10",
+        "view_count": 253,
+        "reply_count": 3,
+        "score": 0.1312
+      },
+      {
+        "title": "근데 럭드포카 어떤건지 감도 안잡혀",
+        "link": "https://theqoo.net/plave/4302318266?page=13",
+        "view_count": 249,
+        "reply_count": 3,
+        "score": 0.1299
+      },
+      {
+        "title": "ㅇㅍㅂ 와 지금 우리 동네 34도야",
+        "link": "https://theqoo.net/plave/4302881378?page=3",
+        "view_count": 191,
+        "reply_count": 4,
+        "score": 0.1292
+      },
+      {
+        "title": "그럼 플리존 정리하면",
+        "link": "https://theqoo.net/plave/4302348818?page=12",
+        "view_count": 241,
+        "reply_count": 3,
+        "score": 0.1273
+      },
+      {
+        "title": "콘엠디 vs 앨범예판 뭐가 먼저 올거 같아?",
+        "link": "https://theqoo.net/plave/4302552296?page=8",
+        "view_count": 184,
+        "reply_count": 4,
+        "score": 0.1269
+      },
+      {
+        "title": "십카페 럭드가 인천콘 럭드랑 동일한걸로 바뀐다(였으면 좋겠다)",
+        "link": "https://theqoo.net/plave/4302307147?page=14",
+        "view_count": 184,
+        "reply_count": 4,
+        "score": 0.1269
+      },
+      {
+        "title": "나 사실 바닥 닦았다는 소리가",
+        "link": "https://theqoo.net/plave/4302786633?page=4",
+        "view_count": 348,
+        "reply_count": 1,
+        "score": 0.1258
+      },
+      {
+        "title": "2시에 뭐 올라고 눈 떴어 안떴어",
+        "link": "https://theqoo.net/plave/4302297128?page=15",
+        "view_count": 120,
+        "reply_count": 5,
+        "score": 0.1242
+      },
+      {
+        "title": "그럼 럭키드로우는 무조건 랜덤1장인거지?",
+        "link": "https://theqoo.net/plave/4302292969?page=15",
+        "view_count": 173,
+        "reply_count": 4,
+        "score": 0.1233
+      },
+      {
+        "title": "느낌온다",
+        "link": "https://theqoo.net/plave/4302922878?page=2",
+        "view_count": 227,
+        "reply_count": 3,
+        "score": 0.1227
+      },
+      {
+        "title": "하미나 공깃밥을 나눠먹는다니",
+        "link": "https://theqoo.net/plave/4302688379?page=6",
+        "view_count": 276,
+        "reply_count": 2,
+        "score": 0.1205
+      },
+      {
+        "title": "저 포카가 이번 앨범 컨포포카라면 콘 있는 주에 컴백할 수도 있겠는데..",
+        "link": "https://theqoo.net/plave/4302466085?page=9",
+        "view_count": 215,
+        "reply_count": 3,
+        "score": 0.1189
+      },
+      {
+        "title": "럭드 abcd는  무조건 d라도 받는거야?",
+        "link": "https://theqoo.net/plave/4302318000?page=13",
+        "view_count": 213,
+        "reply_count": 3,
+        "score": 0.1182
+      },
+      {
+        "title": "당첨되면 근처편의점가서",
+        "link": "https://theqoo.net/plave/4302408336?page=10",
+        "view_count": 263,
+        "reply_count": 2,
+        "score": 0.1163
+      },
+      {
+        "title": "9일 첫탐 얼떨결에 잡았다! ㄷㄷ",
+        "link": "https://theqoo.net/plave/4302222978?page=16",
+        "view_count": 261,
+        "reply_count": 2,
+        "score": 0.1157
+      },
+      {
+        "title": "우리 재판은 진짜 거의 없지?",
+        "link": "https://theqoo.net/plave/4302678272?page=6",
+        "view_count": 255,
+        "reply_count": 2,
+        "score": 0.1137
+      },
+      {
+        "title": "갑자기 콘서트때 받은 담요 생각나",
+        "link": "https://theqoo.net/plave/4302481052?page=9",
+        "view_count": 253,
+        "reply_count": 2,
+        "score": 0.1131
+      },
+      {
+        "title": "와 근데 정신차리면",
+        "link": "https://theqoo.net/plave/4302351176?page=12",
+        "view_count": 250,
+        "reply_count": 2,
+        "score": 0.1121
+      },
+      {
+        "title": "럭드 의외로 당첨 마니 되구 그런거 아닐까",
+        "link": "https://theqoo.net/plave/4302628549?page=7",
+        "view_count": 244,
+        "reply_count": 2,
+        "score": 0.1102
+      },
+      {
+        "title": "믐무들 옷 사줄때 하나만 못사겠어",
+        "link": "https://theqoo.net/plave/4302462093?page=9",
+        "view_count": 188,
+        "reply_count": 3,
+        "score": 0.1101
+      },
+      {
+        "title": "뭔가 ㅅㅋㅍ 럭드포카랑 도안은 같고 뒷면만 다를수도?",
+        "link": "https://theqoo.net/plave/4302330715?page=12",
+        "view_count": 182,
+        "reply_count": 3,
+        "score": 0.1082
+      },
+      {
+        "title": "얘두라 난 너네가 진짜 많이 당첨됐으면 좋겠어",
+        "link": "https://theqoo.net/plave/4302444378?page=10",
+        "view_count": 237,
+        "reply_count": 2,
+        "score": 0.1079
+      },
+      {
+        "title": "뭐야 뭐떢더? 나오늘 하루종일 바빳음",
+        "link": "https://theqoo.net/plave/4302686565?page=6",
+        "view_count": 236,
+        "reply_count": 2,
+        "score": 0.1076
+      },
+      {
+        "title": "싸인포카가 너무 갖고싶습니다......",
+        "link": "https://theqoo.net/plave/4302483063?page=9",
+        "view_count": 176,
+        "reply_count": 3,
+        "score": 0.1062
+      },
+      {
+        "title": "바시티 재생산했던거 남은건가",
+        "link": "https://theqoo.net/plave/4302342415?page=12",
+        "view_count": 229,
+        "reply_count": 2,
+        "score": 0.1053
+      },
+      {
+        "title": "모닝 ㅅㅁㅊㅊ",
+        "link": "https://theqoo.net/plave/4301997786?page=17",
+        "view_count": 56,
+        "reply_count": 5,
+        "score": 0.1035
+      },
+      {
+        "title": "안될거알지만 럭드기회 더 줬으면 좋겠다",
+        "link": "https://theqoo.net/plave/4302640220?page=7",
+        "view_count": 166,
+        "reply_count": 3,
+        "score": 0.103
+      },
+      {
+        "title": "파ㄹ바게ㅌ에서 루나헕 자만추 ㅠㅠ",
+        "link": "https://theqoo.net/plave/4302277134?page=16",
+        "view_count": 110,
+        "reply_count": 4,
+        "score": 0.103
+      },
+      {
+        "title": "바닥 긁는 소리로 워터마크 넣었구나",
+        "link": "https://theqoo.net/plave/4302734516?page=5",
+        "view_count": 277,
+        "reply_count": 1,
+        "score": 0.1028
+      },
+      {
+        "title": "난 큰욕심 없다 그냥 D상이나 팍팍 넣어줬으면",
+        "link": "https://theqoo.net/plave/4302390155?page=11",
+        "view_count": 160,
+        "reply_count": 3,
+        "score": 0.1011
+      },
+      {
+        "title": "예준아 우리 밥걱정은 하지마 🙄",
+        "link": "https://theqoo.net/plave/4302974051",
+        "view_count": 159,
+        "reply_count": 3,
+        "score": 0.1007
+      },
+      {
+        "title": "플레이브 버전의 트로피컬 하우스 장르가 온다구요? (아님)",
+        "link": "https://theqoo.net/plave/4302752678?page=4",
+        "view_count": 269,
+        "reply_count": 1,
+        "score": 0.1002
+      },
+      {
+        "title": "그냥 십카페 입장 럭드랑 똑같은 방식인거 아냐?",
+        "link": "https://theqoo.net/plave/4302321559?page=13",
+        "view_count": 213,
+        "reply_count": 2,
+        "score": 0.1002
+      },
+      {
+        "title": "오랜만에 야타즈 팅글 영상 보는중인데",
+        "link": "https://theqoo.net/plave/4302843353?page=3",
+        "view_count": 209,
+        "reply_count": 2,
+        "score": 0.0989
+      },
+      {
+        "title": "2개나 3개는 용서해도 4개는 용서가 안되는데",
+        "link": "https://theqoo.net/plave/4302334951?page=12",
+        "view_count": 264,
+        "reply_count": 1,
+        "score": 0.0986
+      },
+      {
+        "title": "근데 저거 하려면 최대 몇시까지 가야해?",
+        "link": "https://theqoo.net/plave/4302317659?page=13",
+        "view_count": 147,
+        "reply_count": 3,
+        "score": 0.0969
+      },
+      {
+        "title": "잠깐만 저거 포카 새앨범 사진이면 어케",
+        "link": "https://theqoo.net/plave/4302320328?page=13",
+        "view_count": 145,
+        "reply_count": 3,
+        "score": 0.0962
+      },
+      {
+        "title": "나 사인앨범 받을거같아",
+        "link": "https://theqoo.net/plave/4302666623?page=7",
+        "view_count": 142,
+        "reply_count": 3,
+        "score": 0.0952
+      },
+      {
+        "title": "집단독백하는거봐 ㅋㅋㅋㅋ",
+        "link": "https://theqoo.net/plave/4302729211?page=5",
+        "view_count": 250,
+        "reply_count": 1,
+        "score": 0.0941
+      },
+      {
+        "title": "최소 세 곡은 스포해줬다",
+        "link": "https://theqoo.net/plave/4302951129?page=2",
+        "view_count": 304,
+        "reply_count": 0,
+        "score": 0.0935
+      },
+      {
+        "title": "노앜ㅋㅋㅋㅋㅋㅋㅋ뒤꿈칰ㅋㅋㅋㅋ놔냥이아니냐",
+        "link": "https://theqoo.net/plave/4302734889?page=5",
+        "view_count": 188,
+        "reply_count": 2,
+        "score": 0.0921
+      },
+      {
+        "title": "2시간전",
+        "link": "https://theqoo.net/plave/4302867598?page=3",
+        "view_count": 123,
+        "reply_count": 3,
+        "score": 0.0891
+      },
+      {
+        "title": "벌써 탄산음료 세 다라이 먹은 기분이야",
+        "link": "https://theqoo.net/plave/4302730679?page=5",
+        "view_count": 169,
+        "reply_count": 2,
+        "score": 0.0859
+      },
+      {
+        "title": "일단 너네 다 눈떠서 오늘밤은 딥슬립해도 될거같지",
+        "link": "https://theqoo.net/plave/4302955804?page=2",
+        "view_count": 112,
+        "reply_count": 3,
+        "score": 0.0855
+      },
+      {
+        "title": "콘서트 슬슬 실감난다ㅋㅋㅋㅋㅋ",
+        "link": "https://theqoo.net/plave/4302311012?page=13",
+        "view_count": 111,
+        "reply_count": 3,
+        "score": 0.0852
+      },
+      {
+        "title": "ㄷㄱ...내일 아카이브북 배송....ㄷㄱ....",
+        "link": "https://theqoo.net/plave/4302117934?page=16",
+        "view_count": 165,
+        "reply_count": 2,
+        "score": 0.0846
+      },
+      {
+        "title": "플리존에 포카세트랑 럭드 이렇게 두개 준다는거지??",
+        "link": "https://theqoo.net/plave/4302391352?page=11",
+        "view_count": 156,
+        "reply_count": 2,
+        "score": 0.0817
+      },
+      {
+        "title": "고기 다 먹고 된찌 먹을 순간 아닌 이상 공깃밥 나눠먹자는 에바지",
+        "link": "https://theqoo.net/plave/4302688748?page=6",
+        "view_count": 211,
+        "reply_count": 1,
+        "score": 0.0815
+      },
+      {
+        "title": "https://usen.oshireq.com/song/6877533",
+        "link": "https://theqoo.net/plave/4302848870?page=3",
+        "view_count": 42,
+        "reply_count": 4,
+        "score": 0.081
+      },
+      {
+        "title": "사마죄 200만까지 8000뷰",
+        "link": "https://theqoo.net/plave/4302820595?page=3",
+        "view_count": 153,
+        "reply_count": 2,
+        "score": 0.0808
+      },
+      {
+        "title": "럭드는 1회 참여야?",
+        "link": "https://theqoo.net/plave/4302427275?page=10",
+        "view_count": 153,
+        "reply_count": 2,
+        "score": 0.0808
+      },
+      {
+        "title": "칼파투 엠디 5만원 포카 교환 💙❤️>💜💗",
+        "link": "https://theqoo.net/plave/4302832208?page=3",
+        "view_count": 40,
+        "reply_count": 4,
+        "score": 0.0803
+      },
+      {
+        "title": "하얀포카 5인세트 +  파란포카 랜덤 1장 다 받는거구",
+        "link": "https://theqoo.net/plave/4302297553?page=14",
+        "view_count": 206,
+        "reply_count": 1,
+        "score": 0.0798
+      },
+      {
+        "title": "우리 다른 나라에서 하는 공연도 럭드있어?",
+        "link": "https://theqoo.net/plave/4302309559?page=14",
+        "view_count": 149,
+        "reply_count": 2,
+        "score": 0.0795
+      },
+      {
+        "title": "ㅇㅍㅂ ㅁㄷㅎ 노란색 선크림...",
+        "link": "https://theqoo.net/plave/4302661329?page=7",
+        "view_count": 202,
+        "reply_count": 1,
+        "score": 0.0785
+      },
+      {
+        "title": "📢플리존 마감 6시야! 도착 일정 잘 짜야해~",
+        "link": "https://theqoo.net/plave/4302378010?page=11",
+        "view_count": 202,
+        "reply_count": 1,
+        "score": 0.0785
+      },
+      {
+        "title": "바막 이타백",
+        "link": "https://theqoo.net/plave/4302593250?page=7",
+        "view_count": 198,
+        "reply_count": 1,
+        "score": 0.0773
+      },
+      {
+        "title": "그니까 포카세트에 뭘 더 준다는말인거잖아?",
+        "link": "https://theqoo.net/plave/4302454349?page=9",
+        "view_count": 198,
+        "reply_count": 1,
+        "score": 0.0773
+      },
+      {
+        "title": "십카페 럭드도 보통은 엽서고 가끔 좋은거 걸리듯이 저것도 당첨 극악이겠지..",
+        "link": "https://theqoo.net/plave/4302439445?page=10",
+        "view_count": 140,
+        "reply_count": 2,
+        "score": 0.0765
+      },
+      {
+        "title": "콘서트에 접이식 장바구니 들고 가?",
+        "link": "https://theqoo.net/plave/4302293414?page=15",
+        "view_count": 139,
+        "reply_count": 2,
+        "score": 0.0762
+      },
+      {
+        "title": "랜야드 홀로그램단체포카 스탬프스티커 사인포스터",
+        "link": "https://theqoo.net/plave/4302554828?page=8",
+        "view_count": 194,
+        "reply_count": 1,
+        "score": 0.076
+      },
+      {
+        "title": "싸인씨디 당첨될수도 있으니까 리유저블백 가져가야겠다",
+        "link": "https://theqoo.net/plave/4302317173?page=13",
+        "view_count": 80,
+        "reply_count": 3,
+        "score": 0.0752
+      },
+      {
+        "title": "하민이 저임티 넘 잘써서 ㄱㅇㅇ",
+        "link": "https://theqoo.net/plave/4302048715?page=17",
+        "view_count": 191,
+        "reply_count": 1,
+        "score": 0.075
+      },
+      {
+        "title": "청량 플레이브 오나요?????",
+        "link": "https://theqoo.net/plave/4302719799?page=6",
+        "view_count": 132,
+        "reply_count": 2,
+        "score": 0.074
+      },
+      {
+        "title": "문학 넓이 체감이 안 되넹...",
+        "link": "https://theqoo.net/plave/4302537271?page=8",
+        "view_count": 186,
+        "reply_count": 1,
+        "score": 0.0734
+      },
+      {
+        "title": "플리들 육여 스트랩갖고싶은거 알고있네 !!",
+        "link": "https://theqoo.net/plave/4302306628?page=14",
+        "view_count": 128,
+        "reply_count": 2,
+        "score": 0.0727
+      },
+      {
+        "title": "나도 사인포카 받아보고 싶다",
+        "link": "https://theqoo.net/plave/4302661035?page=7",
+        "view_count": 72,
+        "reply_count": 3,
+        "score": 0.0726
+      },
+      {
+        "title": "예준아 두두해조라",
+        "link": "https://theqoo.net/plave/4302975689",
+        "view_count": 125,
+        "reply_count": 2,
+        "score": 0.0717
+      },
+      {
+        "title": "ㄷㅇㅅ 수영복 산 플리들 있어?",
+        "link": "https://theqoo.net/plave/4302494438?page=9",
+        "view_count": 180,
+        "reply_count": 1,
+        "score": 0.0714
+      },
+      {
+        "title": "노아가 플리를 얼마나 사랑하는 거야",
+        "link": "https://theqoo.net/plave/4302737310?page=4",
+        "view_count": 177,
+        "reply_count": 1,
+        "score": 0.0705
+      },
+      {
+        "title": "원래 앨범 구성도 제대로 안 보는 사람들이라",
+        "link": "https://theqoo.net/plave/4302372051?page=11",
+        "view_count": 177,
+        "reply_count": 1,
+        "score": 0.0705
+      },
+      {
+        "title": "어캄 벌써 재밌음;;;",
+        "link": "https://theqoo.net/plave/4302308843?page=14",
+        "view_count": 113,
+        "reply_count": 2,
+        "score": 0.0678
+      },
+      {
+        "title": "ㅇㅍㅂ 그때 독방에서 봤능데 잠 오게하는 유툽",
+        "link": "https://theqoo.net/plave/4302927508?page=2",
+        "view_count": 167,
+        "reply_count": 1,
+        "score": 0.0672
+      },
+      {
+        "title": "럭드",
+        "link": "https://theqoo.net/plave/4302654507?page=7",
+        "view_count": 111,
+        "reply_count": 2,
+        "score": 0.0672
+      },
+      {
+        "title": "당첨 막 이백명씩 되면 좋겠다",
+        "link": "https://theqoo.net/plave/4302572765?page=8",
+        "view_count": 167,
+        "reply_count": 1,
+        "score": 0.0672
+      },
+      {
+        "title": "한노아 사진 개조녜",
+        "link": "https://theqoo.net/plave/4302967137",
+        "view_count": 159,
+        "reply_count": 1,
+        "score": 0.0646
+      },
+      {
+        "title": "ㅇㅍㅂ 라디오에서 하미니가 내 사랑이란 뜻이다 이래서 ? 햇느네",
+        "link": "https://theqoo.net/plave/4302383314?page=11",
+        "view_count": 153,
+        "reply_count": 1,
+        "score": 0.0627
+      },
+      {
+        "title": "A2T Draw는 하루 1인 한 번인거지??",
+        "link": "https://theqoo.net/plave/4302294199?page=15",
+        "view_count": 143,
+        "reply_count": 1,
+        "score": 0.0595
+      },
+      {
+        "title": "진짜 착하게 살겠습니다 지금부터 욕도 안하고 저주도 안하겟습니다",
+        "link": "https://theqoo.net/plave/4302295000?page=15",
+        "view_count": 86,
+        "reply_count": 2,
+        "score": 0.0591
+      },
+      {
+        "title": "몰래했냐곸ㅋㅋㅋㅋㅋ",
+        "link": "https://theqoo.net/plave/4302733349?page=5",
+        "view_count": 130,
+        "reply_count": 1,
+        "score": 0.0553
+      },
+      {
+        "title": "이 정도면 식단하라는 두두의 고도의 계략인 거 아닐까",
+        "link": "https://theqoo.net/plave/4302977548",
+        "view_count": 127,
+        "reply_count": 1,
+        "score": 0.0543
+      },
+      {
+        "title": "난 새앨범 나오고 이번 럭드 옆에 인천붙어서 십카페 럭드는 아닐듯",
+        "link": "https://theqoo.net/plave/4302309350?page=14",
+        "view_count": 120,
+        "reply_count": 1,
+        "score": 0.052
+      },
+      {
+        "title": "에이투티 럭드면 십카페도 바뀌는거겠지...?",
+        "link": "https://theqoo.net/plave/4302293656?page=15",
+        "view_count": 116,
+        "reply_count": 1,
+        "score": 0.0507
+      },
+      {
+        "title": "두두당하고싶다",
+        "link": "https://theqoo.net/plave/4302978278",
+        "view_count": 114,
+        "reply_count": 1,
+        "score": 0.0501
+      },
+      {
+        "title": "선공개곡 말고 타이틀곡 무대 선공개 소취!!",
+        "link": "https://theqoo.net/plave/4302469708?page=9",
+        "view_count": 113,
+        "reply_count": 1,
+        "score": 0.0498
+      },
+      {
+        "title": "이번 엠디는 이전에 잘 없었던 품목들 있으면 좋겠는 소소한 바람",
+        "link": "https://theqoo.net/plave/4302506169?page=8",
+        "view_count": 110,
+        "reply_count": 1,
+        "score": 0.0488
+      },
+      {
+        "title": "러기지택 9월에도 있을까",
+        "link": "https://theqoo.net/plave/4302456650?page=9",
+        "view_count": 108,
+        "reply_count": 1,
+        "score": 0.0481
+      },
+      {
+        "title": "럭드 해외도 주나?",
+        "link": "https://theqoo.net/plave/4302301046?page=14",
+        "view_count": 107,
+        "reply_count": 1,
+        "score": 0.0478
+      },
+      {
+        "title": "노아 사랑 꽉 낀다",
+        "link": "https://theqoo.net/plave/4302727107?page=5",
+        "view_count": 104,
+        "reply_count": 1,
+        "score": 0.0468
+      },
+      {
+        "title": "저런거 당첨 잘 안되니까 d 되면 좋겠다",
+        "link": "https://theqoo.net/plave/4302319139?page=13",
+        "view_count": 101,
+        "reply_count": 1,
+        "score": 0.0459
+      },
+      {
+        "title": "한노아ㅋㅋㅋㅋㅋㅋㅋ아 진짜 귀여웤ㅋㅋㅋ",
+        "link": "https://theqoo.net/plave/4302736553?page=5",
+        "view_count": 97,
+        "reply_count": 1,
+        "score": 0.0446
+      },
+      {
+        "title": "야외니까 이번에도 김장봉투 챙겨가야겠다",
+        "link": "https://theqoo.net/plave/4302414757?page=10",
+        "view_count": 97,
+        "reply_count": 1,
+        "score": 0.0446
+      },
+      {
+        "title": "달력을 찢는건 어려울 것 같으니 스티커 붙이기 이런걸로 오면 귀엽겠다",
+        "link": "https://theqoo.net/plave/4302834324?page=3",
+        "view_count": 96,
+        "reply_count": 1,
+        "score": 0.0443
+      },
+      {
+        "title": "노아가 쫄린다고 먼저 말하는때가 있네ㅋㅋㅋㅋㅋ",
+        "link": "https://theqoo.net/plave/4302744672?page=4",
+        "view_count": 147,
+        "reply_count": 0,
+        "score": 0.0427
+      },
+      {
+        "title": "베이비 므메미무 2차 기원 정권지르기 107일차 👊⚞🎀 ō ▽ ō 🎀⚟",
+        "link": "https://theqoo.net/plave/4302455484?page=9",
+        "view_count": 35,
+        "reply_count": 2,
+        "score": 0.0426
+      },
+      {
+        "title": "콘서트용 포카1세트에 십카페st 럭드뽑기하고 a~d랜덤당첨",
+        "link": "https://theqoo.net/plave/4302408153?page=10",
+        "view_count": 90,
+        "reply_count": 1,
+        "score": 0.0423
+      },
+      {
+        "title": "그러고보니 십카페 럭드기계 원래는 영상 틀어져있지않았나",
+        "link": "https://theqoo.net/plave/4302317942?page=13",
+        "view_count": 90,
+        "reply_count": 1,
+        "score": 0.0423
+      },
+      {
+        "title": "가방 큰거 챙겨야겠다",
+        "link": "https://theqoo.net/plave/4302308606?page=14",
+        "view_count": 81,
+        "reply_count": 1,
+        "score": 0.0394
+      },
+      {
+        "title": "단식하겟습니다",
+        "link": "https://theqoo.net/plave/4302976601",
+        "view_count": 77,
+        "reply_count": 1,
+        "score": 0.0381
+      },
+      {
+        "title": "십카페 당첨 경력 0회 청년 힘차게 등장",
+        "link": "https://theqoo.net/plave/4302298329?page=14",
+        "view_count": 76,
+        "reply_count": 1,
+        "score": 0.0378
+      },
+      {
+        "title": "ㅅㅁㅊㅊ",
+        "link": "https://theqoo.net/plave/4302938763?page=2",
+        "view_count": 16,
+        "reply_count": 2,
+        "score": 0.0364
+      },
+      {
+        "title": "육여름키링..? 왜 갑자기 육여름 키링이 나왔을까 눈 떠도 되나",
+        "link": "https://theqoo.net/plave/4302295038?page=15",
+        "view_count": 69,
+        "reply_count": 1,
+        "score": 0.0355
+      },
+      {
+        "title": "내일 엠디왔으면",
+        "link": "https://theqoo.net/plave/4302531437?page=8",
+        "view_count": 68,
+        "reply_count": 1,
+        "score": 0.0352
+      },
+      {
+        "title": "노아 그럼 들킬 때까지 바닥 긁는 거야?ㅋㅋㅋ",
+        "link": "https://theqoo.net/plave/4302739945?page=4",
+        "view_count": 120,
+        "reply_count": 0,
+        "score": 0.034
+      },
+      {
+        "title": "기분탓인가 흰포카대비 블랙의상 포카가 블러가 빡쎈것이",
+        "link": "https://theqoo.net/plave/4302378978?page=11",
+        "view_count": 117,
+        "reply_count": 0,
+        "score": 0.033
+      },
+      {
+        "title": "예주니도 로켓 이모티콘 썼네",
+        "link": "https://theqoo.net/plave/4302946142?page=2",
+        "view_count": 116,
+        "reply_count": 0,
+        "score": 0.0327
+      },
+      {
+        "title": "플리특징 생각났잖아",
+        "link": "https://theqoo.net/plave/4302353337?page=11",
+        "view_count": 116,
+        "reply_count": 0,
+        "score": 0.0327
+      },
+      {
+        "title": "선,,유출..?🙄",
+        "link": "https://theqoo.net/plave/4302943290?page=2",
+        "view_count": 113,
+        "reply_count": 0,
+        "score": 0.0317
+      },
+      {
+        "title": "아 오늘 자고 내일 자면",
+        "link": "https://theqoo.net/plave/4302862377?page=3",
+        "view_count": 111,
+        "reply_count": 0,
+        "score": 0.0311
+      },
+      {
+        "title": "럭드 교환의 장 이거 난리나겠네ㅋㅋㅋㅋㅋㅋㅋ",
+        "link": "https://theqoo.net/plave/4302357443?page=11",
+        "view_count": 109,
+        "reply_count": 0,
+        "score": 0.0304
+      },
+      {
+        "title": "아닠ㅋㅋㅋㅋㅋ진짜 유출인데?ㅋㅋㅋㅋㅋㅋㅋㅋ",
+        "link": "https://theqoo.net/plave/4302739253?page=4",
+        "view_count": 107,
+        "reply_count": 0,
+        "score": 0.0298
+      },
+      {
+        "title": "ㅁㅊ 채봉구",
+        "link": "https://theqoo.net/plave/4302724579?page=6",
+        "view_count": 106,
+        "reply_count": 0,
+        "score": 0.0294
+      },
+      {
+        "title": "육여 뮤비 보다가 마지막 노아 보고 또 깊생 시작",
+        "link": "https://theqoo.net/plave/4302857952?page=3",
+        "view_count": 93,
+        "reply_count": 0,
+        "score": 0.0252
+      },
+      {
+        "title": "곧 알게 되겠지.",
+        "link": "https://theqoo.net/plave/4302738606?page=4",
+        "view_count": 93,
+        "reply_count": 0,
+        "score": 0.0252
+      },
+      {
+        "title": "독방에서 앨범 스페셜 메시지 당첨되면 공유해주기야",
+        "link": "https://theqoo.net/plave/4302298892?page=14",
+        "view_count": 34,
+        "reply_count": 1,
+        "score": 0.0242
+      },
+      {
+        "title": "근데 또 못들어본 비트?다",
+        "link": "https://theqoo.net/plave/4302739420?page=4",
+        "view_count": 89,
+        "reply_count": 0,
+        "score": 0.0239
+      },
+      {
+        "title": "애들은 아무도 몰라 곧 알게 되겠지",
+        "link": "https://theqoo.net/plave/4302739797?page=4",
+        "view_count": 88,
+        "reply_count": 0,
+        "score": 0.0236
+      },
+      {
+        "title": "알야야 하느니",
+        "link": "https://theqoo.net/plave/4302951342?page=2",
+        "view_count": 84,
+        "reply_count": 0,
+        "score": 0.0223
+      },
+      {
+        "title": "지방러 가뿐하게 가려했는데ㅜ 캐리어 챙겨야겠다",
+        "link": "https://theqoo.net/plave/4302435049?page=10",
+        "view_count": 82,
+        "reply_count": 0,
+        "score": 0.0217
+      },
+      {
+        "title": "목요일 언제오냐",
+        "link": "https://theqoo.net/plave/4302607694?page=7",
+        "view_count": 80,
+        "reply_count": 0,
+        "score": 0.021
+      },
+      {
+        "title": "전곡을 준다는 저 기개",
+        "link": "https://theqoo.net/plave/4302941758?page=2",
+        "view_count": 79,
+        "reply_count": 0,
+        "score": 0.0207
+      },
+      {
+        "title": "밤비 목소리 많이 못들어본 목소린데 또 너무 좋다",
+        "link": "https://theqoo.net/plave/4302737154?page=5",
+        "view_count": 71,
+        "reply_count": 0,
+        "score": 0.0181
+      },
+      {
+        "title": "아 플레이브 노래 또 좋네ㅡㅡ",
+        "link": "https://theqoo.net/plave/4302723052?page=6",
+        "view_count": 71,
+        "reply_count": 0,
+        "score": 0.0181
+      },
+      {
+        "title": "느낌이 온다",
+        "link": "https://theqoo.net/plave/4302381670?page=11",
+        "view_count": 69,
+        "reply_count": 0,
+        "score": 0.0175
+      },
+      {
+        "title": "애들이 저렇게 스포 아닌 셀프유출로 터키아이스크림 해주는것도 자체제작의 어떠한 권력이라 생각",
+        "link": "https://theqoo.net/plave/4302957922?page=2",
+        "view_count": 68,
+        "reply_count": 0,
+        "score": 0.0171
+      },
+      {
+        "title": "이 ㅈㄴ 기엽다 한노아...",
+        "link": "https://theqoo.net/plave/4302734295?page=5",
+        "view_count": 65,
+        "reply_count": 0,
+        "score": 0.0162
+      },
+      {
+        "title": "쫄렸냐구 ㅋㅋㅋㅋㅋㅋㅋㅋㅋ",
+        "link": "https://theqoo.net/plave/4302733668?page=5",
+        "view_count": 64,
+        "reply_count": 0,
+        "score": 0.0159
+      },
+      {
+        "title": "난 바시티 노린다",
+        "link": "https://theqoo.net/plave/4302574072?page=7",
+        "view_count": 63,
+        "reply_count": 0,
+        "score": 0.0155
+      },
+      {
+        "title": "럭드 나도 받고 싶다.,,",
+        "link": "https://theqoo.net/plave/4302333731?page=12",
+        "view_count": 63,
+        "reply_count": 0,
+        "score": 0.0155
+      },
+      {
+        "title": "오늘부터 집가면서 쓰레기 줍는다",
+        "link": "https://theqoo.net/plave/4302455388?page=9",
+        "view_count": 62,
+        "reply_count": 0,
+        "score": 0.0152
+      },
+      {
+        "title": "완전 한여름 청량한 케이팝 보이 그룹 노래 같지? ㅋㅋ",
+        "link": "https://theqoo.net/plave/4302726247?page=5",
+        "view_count": 61,
+        "reply_count": 0,
+        "score": 0.0149
+      },
+      {
+        "title": "신에게는 이틀의 기회가 있소이다",
+        "link": "https://theqoo.net/plave/4302299569?page=14",
+        "view_count": 61,
+        "reply_count": 0,
+        "score": 0.0149
+      },
+      {
+        "title": "이왕이면 d상도 많았음 좋겠다",
+        "link": "https://theqoo.net/plave/4302315320?page=13",
+        "view_count": 60,
+        "reply_count": 0,
+        "score": 0.0146
+      },
+      {
+        "title": "첫콘 싸인앨범 막콘 바시티 ㅇㅋㅇㅋ",
+        "link": "https://theqoo.net/plave/4302439644?page=10",
+        "view_count": 59,
+        "reply_count": 0,
+        "score": 0.0142
+      },
+      {
+        "title": "엥 나 사인앨범 당첨될듯",
+        "link": "https://theqoo.net/plave/4302410389?page=10",
+        "view_count": 59,
+        "reply_count": 0,
+        "score": 0.0142
+      },
+      {
+        "title": "A상 미쳐따",
+        "link": "https://theqoo.net/plave/4302293615?page=15",
+        "view_count": 59,
+        "reply_count": 0,
+        "score": 0.0142
+      },
+      {
+        "title": "이거 ㅈㅉ 유출이닼ㅋㅋ",
+        "link": "https://theqoo.net/plave/4302724839?page=6",
+        "view_count": 57,
+        "reply_count": 0,
+        "score": 0.0136
+      },
+      {
+        "title": "럭드권 팔아주는겁니까(1인1회같긴하지만)",
+        "link": "https://theqoo.net/plave/4302293238?page=15",
+        "view_count": 56,
+        "reply_count": 0,
+        "score": 0.0133
+      },
+      {
+        "title": "와 ㅁㅊ 노아야 진짜 다주는구낰ㅋㅋㅋㅋ",
+        "link": "https://theqoo.net/plave/4302724864?page=6",
+        "view_count": 51,
+        "reply_count": 0,
+        "score": 0.0116
+      },
+      {
+        "title": "럭드에 사인포카도 추가해주세요",
+        "link": "https://theqoo.net/plave/4302658465?page=7",
+        "view_count": 51,
+        "reply_count": 0,
+        "score": 0.0116
+      },
+      {
+        "title": "5종 랜덤?",
+        "link": "https://theqoo.net/plave/4302320588?page=13",
+        "view_count": 50,
+        "reply_count": 0,
+        "score": 0.0113
+      },
+      {
+        "title": "나 애들 친필싸인 하나도 없어",
+        "link": "https://theqoo.net/plave/4302314615?page=13",
+        "view_count": 50,
+        "reply_count": 0,
+        "score": 0.0113
+      },
+      {
+        "title": "저는 노아가 들려줘서 들었을 뿐입니다",
+        "link": "https://theqoo.net/plave/4302725792?page=5",
+        "view_count": 46,
+        "reply_count": 0,
+        "score": 0.01
+      },
+      {
+        "title": "5분뒤에 엠디리스트도 갖고와줘",
+        "link": "https://theqoo.net/plave/4302355190?page=11",
+        "view_count": 46,
+        "reply_count": 0,
+        "score": 0.01
+      },
+      {
+        "title": "로켓 뭘까🙄우주 탐험이라도 하나",
+        "link": "https://theqoo.net/plave/4302951195?page=2",
+        "view_count": 43,
+        "reply_count": 0,
+        "score": 0.0091
+      },
+      {
+        "title": "갑자기 아일랜드처럼 급 선공개하는 상상",
+        "link": "https://theqoo.net/plave/4302941644?page=2",
+        "view_count": 41,
+        "reply_count": 0,
+        "score": 0.0084
+      },
+      {
+        "title": "약간 오프닝송?",
+        "link": "https://theqoo.net/plave/4302729022?page=5",
+        "view_count": 40,
+        "reply_count": 0,
+        "score": 0.0081
+      },
+      {
+        "title": "럭드포카뽑고 이마에 붙이고 다닐까 제발 교환해주세요",
+        "link": "https://theqoo.net/plave/4302358963?page=11",
+        "view_count": 39,
+        "reply_count": 0,
+        "score": 0.0078
+      },
+      {
+        "title": "사인앨범 담을 장바구니 가져가야지",
+        "link": "https://theqoo.net/plave/4302329292?page=12",
+        "view_count": 39,
+        "reply_count": 0,
+        "score": 0.0078
+      },
+      {
+        "title": "8초를 영원히 들어...",
+        "link": "https://theqoo.net/plave/4302718699?page=6",
+        "view_count": 38,
+        "reply_count": 0,
+        "score": 0.0074
+      },
+      {
+        "title": "이틀가니까 하루는 친필싸인 받겠지",
+        "link": "https://theqoo.net/plave/4302315415?page=13",
+        "view_count": 38,
+        "reply_count": 0,
+        "score": 0.0074
+      },
+      {
+        "title": "기특 놔냥이다 ㅋㅋㅋ",
+        "link": "https://theqoo.net/plave/4302739034?page=4",
+        "view_count": 37,
+        "reply_count": 0,
+        "score": 0.0071
+      },
+      {
+        "title": "나는 이 노래를 이미 좋아함",
+        "link": "https://theqoo.net/plave/4302727561?page=5",
+        "view_count": 35,
+        "reply_count": 0,
+        "score": 0.0065
+      },
+      {
+        "title": "소취 말하는김에 말한다 명찰도 재판해줘!!!",
+        "link": "https://theqoo.net/plave/4302404394?page=10",
+        "view_count": 35,
+        "reply_count": 0,
+        "score": 0.0065
+      },
+      {
+        "title": "6여스트랩이 아직도 있었냐!!!!!!!!!!",
+        "link": "https://theqoo.net/plave/4302295378?page=15",
+        "view_count": 35,
+        "reply_count": 0,
+        "score": 0.0065
+      },
+      {
+        "title": "육여름스트랩키링 재판해여 ㅠㅠ",
+        "link": "https://theqoo.net/plave/4302290966?page=16",
+        "view_count": 32,
+        "reply_count": 0,
+        "score": 0.0055
+      },
+      {
+        "title": "마짜나 눈 떠도 되자나",
+        "link": "https://theqoo.net/plave/4302719137?page=6",
+        "view_count": 31,
+        "reply_count": 0,
+        "score": 0.0052
+      },
+      {
+        "title": "따봉 노아야 사랑해",
+        "link": "https://theqoo.net/plave/4302727095?page=5",
+        "view_count": 30,
+        "reply_count": 0,
+        "score": 0.0049
+      },
+      {
+        "title": "내꺼임",
+        "link": "https://theqoo.net/plave/4302290413?page=16",
+        "view_count": 30,
+        "reply_count": 0,
+        "score": 0.0049
+      },
+      {
+        "title": "노래 벌써 좋음",
+        "link": "https://theqoo.net/plave/4302731558?page=5",
+        "view_count": 29,
+        "reply_count": 0,
+        "score": 0.0045
+      },
+      {
+        "title": "다 비켜 스트랩은 내가 가져갈거야",
+        "link": "https://theqoo.net/plave/4302298003?page=14",
+        "view_count": 29,
+        "reply_count": 0,
+        "score": 0.0045
+      },
+      {
+        "title": "칼파투 5만원 md 포카 ❤️>💜",
+        "link": "https://theqoo.net/plave/4302739939?page=4",
+        "view_count": 28,
+        "reply_count": 0,
+        "score": 0.0042
+      },
+      {
+        "title": "및ㅣㄴ 어어어 듣자마자 심장 뛰어",
+        "link": "https://theqoo.net/plave/4302728629?page=5",
+        "view_count": 28,
+        "reply_count": 0,
+        "score": 0.0042
+      },
+      {
+        "title": "오바야 진짜 매번 개쩌는거 들고와",
+        "link": "https://theqoo.net/plave/4302728537?page=5",
+        "view_count": 28,
+        "reply_count": 0,
+        "score": 0.0042
+      },
+      {
+        "title": "30분전",
+        "link": "https://theqoo.net/plave/4302961368",
+        "view_count": 23,
+        "reply_count": 0,
+        "score": 0.0026
+      },
+      {
+        "title": "싸인앨범 제발ㅠㅠ",
+        "link": "https://theqoo.net/plave/4302293949?page=15",
+        "view_count": 23,
+        "reply_count": 0,
+        "score": 0.0026
+      },
+      {
+        "title": "싸인 내꺼 찜꽁",
+        "link": "https://theqoo.net/plave/4302291757?page=15",
+        "view_count": 23,
+        "reply_count": 0,
+        "score": 0.0026
+      },
+      {
+        "title": "플보싶",
+        "link": "https://theqoo.net/plave/4302670299?page=7",
+        "view_count": 22,
+        "reply_count": 0,
+        "score": 0.0023
+      },
+      {
+        "title": "솔직히 육 여 키 링 재 판 올 때 됐 다",
+        "link": "https://theqoo.net/plave/4302296644?page=15",
+        "view_count": 15,
+        "reply_count": 0,
+        "score": 0.0
+      }
+    ],
+    "complete": true
+  },
+  "newduck": {
+    "total": 149,
+    "posts": [
+      {
+        "title": "어제 믐쿠션 올라온 사이트 있자나...",
+        "link": "https://newduck.net/board_gLxy54/127323022?page=5",
+        "view_count": 336,
+        "reply_count": 12,
+        "score": 1.0
+      },
+      {
+        "title": "있잖아 플리존 럭드 말이야 혹시... (깃털)",
+        "link": "https://newduck.net/board_gLxy54/127320969?page=5",
+        "view_count": 263,
+        "reply_count": 11,
+        "score": 0.8679
+      },
+      {
+        "title": "기본 럭드상이 D상이진 않겠지..?",
+        "link": "https://newduck.net/board_gLxy54/127319612?page=5",
+        "view_count": 241,
+        "reply_count": 9,
+        "score": 0.7361
+      },
+      {
+        "title": "스파이더맨 볼 오리들 뱃지도 꼭 받아",
+        "link": "https://newduck.net/board_gLxy54/127315071?page=7",
+        "view_count": 128,
+        "reply_count": 11,
+        "score": 0.7239
+      },
+      {
+        "title": "오리들아 a상 받으면 되게 귀찮아지는거 알지",
+        "link": "https://newduck.net/board_gLxy54/127316914?page=6",
+        "view_count": 220,
+        "reply_count": 8,
+        "score": 0.6596
+      },
+      {
+        "title": "카드 이름부터 a to t 포카라서 십카페 입장럭드랑 같은 도안을 콘서트장에서도 럭드 ...",
+        "link": "https://newduck.net/board_gLxy54/127317361?page=6",
+        "view_count": 172,
+        "reply_count": 8,
+        "score": 0.6083
+      },
+      {
+        "title": "콘 숙소 아직 못 잡은 오리들",
+        "link": "https://newduck.net/board_gLxy54/127319118?page=5",
+        "view_count": 205,
+        "reply_count": 7,
+        "score": 0.5894
+      },
+      {
+        "title": "햇갈려 하는 오리가 많은거 같아서",
+        "link": "https://newduck.net/board_gLxy54/127320033?page=5",
+        "view_count": 254,
+        "reply_count": 6,
+        "score": 0.5875
+      },
+      {
+        "title": "ㄷㅇㅅ 인형 비키니 괜찮다",
+        "link": "https://newduck.net/board_gLxy54/127328525?page=2",
+        "view_count": 187,
+        "reply_count": 7,
+        "score": 0.5702
+      },
+      {
+        "title": "곧 엠디가 올텐데 엠디 소취하는거 하나",
+        "link": "https://newduck.net/board_gLxy54/127322035?page=5",
+        "view_count": 156,
+        "reply_count": 7,
+        "score": 0.5371
+      },
+      {
+        "title": "십카페 앞 ㅈㅇㅅ에 아직 플부빵 팔까?",
+        "link": "https://newduck.net/board_gLxy54/127315006?page=8",
+        "view_count": 96,
+        "reply_count": 8,
+        "score": 0.5272
+      },
+      {
+        "title": "우리 10월에 일본에서 뭐 나온다고 하지 않았었나...?",
+        "link": "https://newduck.net/board_gLxy54/127327917?page=3",
+        "view_count": 126,
+        "reply_count": 7,
+        "score": 0.5051
+      },
+      {
+        "title": "픽오들아 약속지켜 의리지켜🤙",
+        "link": "https://newduck.net/board_gLxy54/127328006?page=2",
+        "view_count": 117,
+        "reply_count": 7,
+        "score": 0.4955
+      },
+      {
+        "title": "8시에 단관하면 볼래?",
+        "link": "https://newduck.net/board_gLxy54/127325314?page=5",
+        "view_count": 64,
+        "reply_count": 8,
+        "score": 0.4931
+      },
+      {
+        "title": "[📢]  2026 PLAVE World Tour [KEEP IT MANIC] in Incheon 'PLLI ZONE' 운영 ...",
+        "link": "https://newduck.net/board_gLxy54/127316302?page=7",
+        "view_count": 174,
+        "reply_count": 5,
+        "score": 0.448
+      },
+      {
+        "title": "내가 진짜 곰곰이 생각해봤는데",
+        "link": "https://newduck.net/board_gLxy54/127318454?page=6",
+        "view_count": 214,
+        "reply_count": 4,
+        "score": 0.4365
+      },
+      {
+        "title": "걍 십카페 입장럭드처럼 생각하면 될 듯",
+        "link": "https://newduck.net/board_gLxy54/127317408?page=6",
+        "view_count": 110,
+        "reply_count": 6,
+        "score": 0.4338
+      },
+      {
+        "title": "A2T 적혀있으니까",
+        "link": "https://newduck.net/board_gLxy54/127316758?page=7",
+        "view_count": 110,
+        "reply_count": 6,
+        "score": 0.4338
+      },
+      {
+        "title": "긍까 가면 포카 7장 받는거지?",
+        "link": "https://newduck.net/board_gLxy54/127316781?page=7",
+        "view_count": 147,
+        "reply_count": 5,
+        "score": 0.4192
+      },
+      {
+        "title": "이렇게 짭이 나도는데 베믐 2차를 달라",
+        "link": "https://newduck.net/board_gLxy54/127323876?page=5",
+        "view_count": 138,
+        "reply_count": 5,
+        "score": 0.4096
+      },
+      {
+        "title": "럭드 질문!",
+        "link": "https://newduck.net/board_gLxy54/127316920?page=6",
+        "view_count": 128,
+        "reply_count": 5,
+        "score": 0.3989
+      },
+      {
+        "title": "근데 플리존 만들려고 지금 축구장 하나를 통째로 빌려버린거임...?",
+        "link": "https://newduck.net/board_gLxy54/127321838?page=5",
+        "view_count": 169,
+        "reply_count": 4,
+        "score": 0.3885
+      },
+      {
+        "title": "거봐 진작에 씻자니까",
+        "link": "https://newduck.net/board_gLxy54/127330564?page=2",
+        "view_count": 92,
+        "reply_count": 5,
+        "score": 0.3605
+      },
+      {
+        "title": "ㅇㅍㅂ 항상 함께할 수 있는 굿즈가 좋은 것 같아",
+        "link": "https://newduck.net/board_gLxy54/127315132?page=7",
+        "view_count": 127,
+        "reply_count": 4,
+        "score": 0.3436
+      },
+      {
+        "title": "ㅇㅍㅂ 오리 위 내시경 받으려고 18시간 굶었어.....",
+        "link": "https://newduck.net/board_gLxy54/127315113?page=7",
+        "view_count": 72,
+        "reply_count": 5,
+        "score": 0.3391
+      },
+      {
+        "title": "한노아 바보",
+        "link": "https://newduck.net/board_gLxy54/127315940?page=7",
+        "view_count": 68,
+        "reply_count": 5,
+        "score": 0.3349
+      },
+      {
+        "title": "이거 수록곡일까?",
+        "link": "https://newduck.net/board_gLxy54/127327795?page=3",
+        "view_count": 62,
+        "reply_count": 5,
+        "score": 0.3285
+      },
+      {
+        "title": "플리존 6시까지라 루트를 어떻게 짤지 고민이네",
+        "link": "https://newduck.net/board_gLxy54/127319536?page=5",
+        "view_count": 97,
+        "reply_count": 4,
+        "score": 0.3116
+      },
+      {
+        "title": "내가 노래를 그 정도로 잘하면 더이상 노력없이 안주하고 살텐데",
+        "link": "https://newduck.net/board_gLxy54/127306123?page=8",
+        "view_count": 144,
+        "reply_count": 3,
+        "score": 0.3076
+      },
+      {
+        "title": "PLAVE의 최근 요모조모 알려줘〜♡",
+        "link": "https://newduck.net/board_gLxy54/127320184?page=5",
+        "view_count": 140,
+        "reply_count": 3,
+        "score": 0.3034
+      },
+      {
+        "title": "꽝도 있는건가??",
+        "link": "https://newduck.net/board_gLxy54/127316596?page=7",
+        "view_count": 133,
+        "reply_count": 3,
+        "score": 0.2959
+      },
+      {
+        "title": "십카페 내일이랑 모레 전타임 자리 있다",
+        "link": "https://newduck.net/board_gLxy54/127314365?page=8",
+        "view_count": 81,
+        "reply_count": 4,
+        "score": 0.2946
+      },
+      {
+        "title": "궁예하던게 맞았넼ㅋㅋㅋㅋㅋ",
+        "link": "https://newduck.net/board_gLxy54/127332176",
+        "view_count": 169,
+        "reply_count": 2,
+        "score": 0.2801
+      },
+      {
+        "title": "A2T포카 십카페 럭드로 온다면 얼마나 갈까?",
+        "link": "https://newduck.net/board_gLxy54/127317558?page=6",
+        "view_count": 118,
+        "reply_count": 3,
+        "score": 0.2799
+      },
+      {
+        "title": "맨날 사무실에서 스트레스볼 만지니까",
+        "link": "https://newduck.net/board_gLxy54/127310066?page=8",
+        "view_count": 111,
+        "reply_count": 3,
+        "score": 0.2724
+      },
+      {
+        "title": "럭드 안보ㅏ도 예쁠텐데 최대 2장이라니",
+        "link": "https://newduck.net/board_gLxy54/127317003?page=6",
+        "view_count": 107,
+        "reply_count": 3,
+        "score": 0.2681
+      },
+      {
+        "title": "밤비야 지금 공기밥 절반 나눠먹는거에 놀랄때가 아니다",
+        "link": "https://newduck.net/board_gLxy54/127328060?page=2",
+        "view_count": 106,
+        "reply_count": 3,
+        "score": 0.2671
+      },
+      {
+        "title": "멧챠 카멜레온 라방 같이 볼 오리 들어와",
+        "link": "https://newduck.net/board_gLxy54/127326934?page=4",
+        "view_count": 52,
+        "reply_count": 4,
+        "score": 0.2636
+      },
+      {
+        "title": "아니 그 삐끼삐끼 소리같지않아? 디제잉",
+        "link": "https://newduck.net/board_gLxy54/127327704?page=3",
+        "view_count": 51,
+        "reply_count": 4,
+        "score": 0.2626
+      },
+      {
+        "title": "노아한테 혼남",
+        "link": "https://newduck.net/board_gLxy54/127331435",
+        "view_count": 96,
+        "reply_count": 3,
+        "score": 0.2564
+      },
+      {
+        "title": "💜애들은 아무도 이 사실을 몰라...",
+        "link": "https://newduck.net/board_gLxy54/127327978?page=2",
+        "view_count": 88,
+        "reply_count": 3,
+        "score": 0.2479
+      },
+      {
+        "title": "싸인 진짜 많이 한다더니 갬동...",
+        "link": "https://newduck.net/board_gLxy54/127317809?page=6",
+        "view_count": 138,
+        "reply_count": 2,
+        "score": 0.2471
+      },
+      {
+        "title": "사마죄 199만!!!",
+        "link": "https://newduck.net/board_gLxy54/127328337?page=2",
+        "view_count": 36,
+        "reply_count": 4,
+        "score": 0.2465
+      },
+      {
+        "title": "아 나 당첨되면 우뜨케",
+        "link": "https://newduck.net/board_gLxy54/127317656?page=6",
+        "view_count": 86,
+        "reply_count": 3,
+        "score": 0.2457
+      },
+      {
+        "title": "머글친구가 믐무 귀엽다고 칭찬 많이 해줌",
+        "link": "https://newduck.net/board_gLxy54/127326328?page=4",
+        "view_count": 81,
+        "reply_count": 3,
+        "score": 0.2404
+      },
+      {
+        "title": "럭드포카 뭐지",
+        "link": "https://newduck.net/board_gLxy54/127316627?page=7",
+        "view_count": 81,
+        "reply_count": 3,
+        "score": 0.2404
+      },
+      {
+        "title": "콘서트 하기까지 39일 !",
+        "link": "https://newduck.net/board_gLxy54/127310057?page=8",
+        "view_count": 76,
+        "reply_count": 3,
+        "score": 0.2351
+      },
+      {
+        "title": "아직도 이 굿즈가 안 나왔다는게 믿을 수 없음 list",
+        "link": "https://newduck.net/board_gLxy54/127325936?page=5",
+        "view_count": 120,
+        "reply_count": 2,
+        "score": 0.2278
+      },
+      {
+        "title": "미니5집(?) 유출이 벌써 이만큼",
+        "link": "https://newduck.net/board_gLxy54/127328317?page=2",
+        "view_count": 116,
+        "reply_count": 2,
+        "score": 0.2236
+      },
+      {
+        "title": "노아는 스포따위 하지않아",
+        "link": "https://newduck.net/board_gLxy54/127327462?page=4",
+        "view_count": 65,
+        "reply_count": 3,
+        "score": 0.2233
+      },
+      {
+        "title": "지난주 토욜날 베믐이들이랑 외출했었는데 사진 볼 오리?",
+        "link": "https://newduck.net/board_gLxy54/127327257?page=4",
+        "view_count": 50,
+        "reply_count": 3,
+        "score": 0.2073
+      },
+      {
+        "title": "너를위해서..?",
+        "link": "https://newduck.net/board_gLxy54/127327696?page=3",
+        "view_count": 49,
+        "reply_count": 3,
+        "score": 0.2062
+      },
+      {
+        "title": "목요일 단체라방 ㄴㅁ 기대돼",
+        "link": "https://newduck.net/board_gLxy54/127328469?page=2",
+        "view_count": 96,
+        "reply_count": 2,
+        "score": 0.2022
+      },
+      {
+        "title": "콘서트 앵콜곡은 우리영화였으면 좋겠다",
+        "link": "https://newduck.net/board_gLxy54/127309400?page=8",
+        "view_count": 82,
+        "reply_count": 2,
+        "score": 0.1873
+      },
+      {
+        "title": "콘서트 앞두고 쇼핑하는거 너무 재밌닼ㅋㅋ",
+        "link": "https://newduck.net/board_gLxy54/127320413?page=5",
+        "view_count": 76,
+        "reply_count": 2,
+        "score": 0.1809
+      },
+      {
+        "title": "애들 뽀글이나 윕으로 일하다 한가한거, 뭐하는지, 뭐 먹는지 기타 등등 많이 말해주는...",
+        "link": "https://newduck.net/board_gLxy54/127331605",
+        "view_count": 70,
+        "reply_count": 2,
+        "score": 0.1745
+      },
+      {
+        "title": "내가 제일 궁금한 확률은 럭드랑 d상 같멤 뽑는 풀리다",
+        "link": "https://newduck.net/board_gLxy54/127317988?page=6",
+        "view_count": 118,
+        "reply_count": 1,
+        "score": 0.1715
+      },
+      {
+        "title": "지금 작곡즈도 모르게 유출하는것 같은데ㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋ",
+        "link": "https://newduck.net/board_gLxy54/127327587?page=3",
+        "view_count": 66,
+        "reply_count": 2,
+        "score": 0.1702
+      },
+      {
+        "title": "포카셋도 주는데 럭드를 더 준다고?",
+        "link": "https://newduck.net/board_gLxy54/127318802?page=5",
+        "view_count": 108,
+        "reply_count": 1,
+        "score": 0.1609
+      },
+      {
+        "title": "개웃기다ㅋㅋㅋㅋㅋㅋㅋ",
+        "link": "https://newduck.net/board_gLxy54/127327836?page=3",
+        "view_count": 56,
+        "reply_count": 2,
+        "score": 0.1596
+      },
+      {
+        "title": "나 지금 딱 이 짤 상태 되어가고 있엌ㅋㅋㅋㅋㅋ",
+        "link": "https://newduck.net/board_gLxy54/127327680?page=3",
+        "view_count": 56,
+        "reply_count": 2,
+        "score": 0.1596
+      },
+      {
+        "title": "목소리 누구누구지 아 벌써 좋음",
+        "link": "https://newduck.net/board_gLxy54/127327410?page=4",
+        "view_count": 56,
+        "reply_count": 2,
+        "score": 0.1596
+      },
+      {
+        "title": "당분간 뭐 안오겠지?",
+        "link": "https://newduck.net/board_gLxy54/127331223",
+        "view_count": 50,
+        "reply_count": 2,
+        "score": 0.1532
+      },
+      {
+        "title": "[속보] 작곡즈 막내, 유출 소식 습득",
+        "link": "https://newduck.net/board_gLxy54/127332127",
+        "view_count": 100,
+        "reply_count": 1,
+        "score": 0.1523
+      },
+      {
+        "title": "이거 우리가 들어도 돼..?ㅋㅋㅋㅋㅋ",
+        "link": "https://newduck.net/board_gLxy54/127327569?page=3",
+        "view_count": 46,
+        "reply_count": 2,
+        "score": 0.1489
+      },
+      {
+        "title": "뜬금없긴한데 나 노아 애드립 너무 좋아",
+        "link": "https://newduck.net/board_gLxy54/127307545?page=8",
+        "view_count": 96,
+        "reply_count": 1,
+        "score": 0.1481
+      },
+      {
+        "title": "쫄렸던 놔냥이가 바들바들 떠는 소리엿다네요",
+        "link": "https://newduck.net/board_gLxy54/127327789?page=3",
+        "view_count": 40,
+        "reply_count": 2,
+        "score": 0.1425
+      },
+      {
+        "title": "알고리즘이 추천해준 쇼츠",
+        "link": "https://newduck.net/board_gLxy54/127330683?page=2",
+        "view_count": 39,
+        "reply_count": 2,
+        "score": 0.1414
+      },
+      {
+        "title": "목소리에 졸음이 가득한데",
+        "link": "https://newduck.net/board_gLxy54/127305839?page=8",
+        "view_count": 89,
+        "reply_count": 1,
+        "score": 0.1406
+      },
+      {
+        "title": "럭드 상품 미칫다",
+        "link": "https://newduck.net/board_gLxy54/127316339?page=7",
+        "view_count": 86,
+        "reply_count": 1,
+        "score": 0.1374
+      },
+      {
+        "title": "창고 싹싹 긁어온거 왤케 웃김ㅋㅋㅋㅋㅋ",
+        "link": "https://newduck.net/board_gLxy54/127316442?page=7",
+        "view_count": 85,
+        "reply_count": 1,
+        "score": 0.1363
+      },
+      {
+        "title": "공주는 알까 풀리들이 생각보다 더",
+        "link": "https://newduck.net/board_gLxy54/127328385?page=2",
+        "view_count": 80,
+        "reply_count": 1,
+        "score": 0.131
+      },
+      {
+        "title": "육여가 진짜 뭐가 있나봐",
+        "link": "https://newduck.net/board_gLxy54/127316789?page=7",
+        "view_count": 74,
+        "reply_count": 1,
+        "score": 0.1246
+      },
+      {
+        "title": "스트랩 재고 있으시면 좀 팔아주세요",
+        "link": "https://newduck.net/board_gLxy54/127316493?page=7",
+        "view_count": 74,
+        "reply_count": 1,
+        "score": 0.1246
+      },
+      {
+        "title": "똥촉들 : 이거 비트같애 / 노아 : 쫄려서 뒤꿈치로 바닥비빔",
+        "link": "https://newduck.net/board_gLxy54/127328162?page=2",
+        "view_count": 72,
+        "reply_count": 1,
+        "score": 0.1225
+      },
+      {
+        "title": "나는 아랫글 보고 털을 걸자면",
+        "link": "https://newduck.net/board_gLxy54/127321896?page=5",
+        "view_count": 72,
+        "reply_count": 1,
+        "score": 0.1225
+      },
+      {
+        "title": "GS띠부씰, 칼파투앨범, MD 교환",
+        "link": "https://newduck.net/board_gLxy54/127311077?page=8",
+        "view_count": 121,
+        "reply_count": 0,
+        "score": 0.1206
+      },
+      {
+        "title": "플리존 럭드보자마자 여분가방챙길 생각함",
+        "link": "https://newduck.net/board_gLxy54/127320744?page=5",
+        "view_count": 70,
+        "reply_count": 1,
+        "score": 0.1203
+      },
+      {
+        "title": "❤️ 내일 할까요?👀",
+        "link": "https://newduck.net/board_gLxy54/127328410?page=2",
+        "view_count": 69,
+        "reply_count": 1,
+        "score": 0.1193
+      },
+      {
+        "title": "요즘 노래챌이 또 쫌쫌따리 보이던데",
+        "link": "https://newduck.net/board_gLxy54/127325167?page=5",
+        "view_count": 67,
+        "reply_count": 1,
+        "score": 0.1171
+      },
+      {
+        "title": "오늘 스트레스볼 덕 많이 봤다",
+        "link": "https://newduck.net/board_gLxy54/127324848?page=5",
+        "view_count": 63,
+        "reply_count": 1,
+        "score": 0.1129
+      },
+      {
+        "title": "데뷔전에 유출 다 모으면 기다릴게 1절 나온거 생각나ㅠㅋㅋㅋㅋㅋㅋㅋㅋ",
+        "link": "https://newduck.net/board_gLxy54/127327726?page=3",
+        "view_count": 62,
+        "reply_count": 1,
+        "score": 0.1118
+      },
+      {
+        "title": "오 럭드 모야",
+        "link": "https://newduck.net/board_gLxy54/127316363?page=7",
+        "view_count": 60,
+        "reply_count": 1,
+        "score": 0.1097
+      },
+      {
+        "title": "가볍게 가려고 했는데 큰일이네",
+        "link": "https://newduck.net/board_gLxy54/127317213?page=6",
+        "view_count": 58,
+        "reply_count": 1,
+        "score": 0.1075
+      },
+      {
+        "title": "C상 갖고싶다",
+        "link": "https://newduck.net/board_gLxy54/127317490?page=6",
+        "view_count": 55,
+        "reply_count": 1,
+        "score": 0.1043
+      },
+      {
+        "title": "나 무섭다 노아야",
+        "link": "https://newduck.net/board_gLxy54/127331304",
+        "view_count": 54,
+        "reply_count": 1,
+        "score": 0.1033
+      },
+      {
+        "title": "한노아 진심 개욱김",
+        "link": "https://newduck.net/board_gLxy54/127327817?page=3",
+        "view_count": 50,
+        "reply_count": 1,
+        "score": 0.099
+      },
+      {
+        "title": "A상 받으면 그자리에서 쓰러질듯",
+        "link": "https://newduck.net/board_gLxy54/127316861?page=6",
+        "view_count": 49,
+        "reply_count": 1,
+        "score": 0.0979
+      },
+      {
+        "title": "한노아 왜 내가 할말을하냐",
+        "link": "https://newduck.net/board_gLxy54/127331240",
+        "view_count": 45,
+        "reply_count": 1,
+        "score": 0.0936
+      },
+      {
+        "title": "260801 예밤하 일본 라디오",
+        "link": "https://newduck.net/board_gLxy54/127314641?page=8",
+        "view_count": 45,
+        "reply_count": 1,
+        "score": 0.0936
+      },
+      {
+        "title": "창법 연습하고 바로 차이나는거 너무 신기하다",
+        "link": "https://newduck.net/board_gLxy54/127331842",
+        "view_count": 44,
+        "reply_count": 1,
+        "score": 0.0926
+      },
+      {
+        "title": "한노아 얼마나 신난건지 감도 안옴...",
+        "link": "https://newduck.net/board_gLxy54/127331418",
+        "view_count": 44,
+        "reply_count": 1,
+        "score": 0.0926
+      },
+      {
+        "title": "중간에 지퍼 올렸다내렸다하는 소린가",
+        "link": "https://newduck.net/board_gLxy54/127327621?page=3",
+        "view_count": 38,
+        "reply_count": 1,
+        "score": 0.0862
+      },
+      {
+        "title": "예밤하 브이아루 라디오 번역본",
+        "link": "https://newduck.net/board_gLxy54/127330826",
+        "view_count": 37,
+        "reply_count": 1,
+        "score": 0.0851
+      },
+      {
+        "title": "몽가... 진짜 최선의 선택 같다",
+        "link": "https://newduck.net/board_gLxy54/127316752?page=7",
+        "view_count": 79,
+        "reply_count": 0,
+        "score": 0.0758
+      },
+      {
+        "title": "콘서트 실감 난다 너무 설레",
+        "link": "https://newduck.net/board_gLxy54/127317496?page=6",
+        "view_count": 25,
+        "reply_count": 1,
+        "score": 0.0723
+      },
+      {
+        "title": "생각해보니 양콘이니까 2장이잖아?",
+        "link": "https://newduck.net/board_gLxy54/127318772?page=5",
+        "view_count": 75,
+        "reply_count": 0,
+        "score": 0.0715
+      },
+      {
+        "title": "명창가나디!!!",
+        "link": "https://newduck.net/board_gLxy54/127331778",
+        "view_count": 23,
+        "reply_count": 1,
+        "score": 0.0702
+      },
+      {
+        "title": "단관오리 고마워",
+        "link": "https://newduck.net/board_gLxy54/127330762?page=2",
+        "view_count": 17,
+        "reply_count": 1,
+        "score": 0.0638
+      },
+      {
+        "title": "정시리셋대기👏👏👏",
+        "link": "https://newduck.net/board_gLxy54/127316250?page=7",
+        "view_count": 8,
+        "reply_count": 1,
+        "score": 0.0542
+      },
+      {
+        "title": "다 유출하라고 부추기니까",
+        "link": "https://newduck.net/board_gLxy54/127331484",
+        "view_count": 58,
+        "reply_count": 0,
+        "score": 0.0534
+      },
+      {
+        "title": "쫄리는건 노아가 아니라 뚝스들일듯",
+        "link": "https://newduck.net/board_gLxy54/127331314",
+        "view_count": 51,
+        "reply_count": 0,
+        "score": 0.0459
+      },
+      {
+        "title": "기분탓일수 있지만 21초쯤에 노아가 나도.하는데",
+        "link": "https://newduck.net/board_gLxy54/127327911?page=3",
+        "view_count": 49,
+        "reply_count": 0,
+        "score": 0.0437
+      },
+      {
+        "title": "포카+포카",
+        "link": "https://newduck.net/board_gLxy54/127316521?page=7",
+        "view_count": 48,
+        "reply_count": 0,
+        "score": 0.0427
+      },
+      {
+        "title": "오리들 너무 귀여",
+        "link": "https://newduck.net/board_gLxy54/127317722?page=6",
+        "view_count": 47,
+        "reply_count": 0,
+        "score": 0.0416
+      },
+      {
+        "title": "노아 점수 봐 ㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋ",
+        "link": "https://newduck.net/board_gLxy54/127329686?page=2",
+        "view_count": 45,
+        "reply_count": 0,
+        "score": 0.0395
+      },
+      {
+        "title": "뚝스랑 대화하는 작곡즈 모음.zip",
+        "link": "https://newduck.net/board_gLxy54/127331128",
+        "view_count": 41,
+        "reply_count": 0,
+        "score": 0.0352
+      },
+      {
+        "title": "싸인앨범 몇개나 있을까",
+        "link": "https://newduck.net/board_gLxy54/127317921?page=6",
+        "view_count": 41,
+        "reply_count": 0,
+        "score": 0.0352
+      },
+      {
+        "title": "플리들이 육여스트랩에 목말라있는거 아네ㅋㅋㅋ",
+        "link": "https://newduck.net/board_gLxy54/127316796?page=6",
+        "view_count": 38,
+        "reply_count": 0,
+        "score": 0.032
+      },
+      {
+        "title": "6여키링?🤔",
+        "link": "https://newduck.net/board_gLxy54/127316641?page=7",
+        "view_count": 38,
+        "reply_count": 0,
+        "score": 0.032
+      },
+      {
+        "title": "a랑 d상이 젤 갖고싶군여",
+        "link": "https://newduck.net/board_gLxy54/127316500?page=7",
+        "view_count": 38,
+        "reply_count": 0,
+        "score": 0.032
+      },
+      {
+        "title": "입장시간 맞춰서 가려고 했는데",
+        "link": "https://newduck.net/board_gLxy54/127318735?page=5",
+        "view_count": 37,
+        "reply_count": 0,
+        "score": 0.0309
+      },
+      {
+        "title": "너를 위해서 이건가봐",
+        "link": "https://newduck.net/board_gLxy54/127327955?page=3",
+        "view_count": 36,
+        "reply_count": 0,
+        "score": 0.0299
+      },
+      {
+        "title": "네? 진짜요?",
+        "link": "https://newduck.net/board_gLxy54/127331270",
+        "view_count": 31,
+        "reply_count": 0,
+        "score": 0.0245
+      },
+      {
+        "title": "막내 선 넘네",
+        "link": "https://newduck.net/board_gLxy54/127326718?page=4",
+        "view_count": 30,
+        "reply_count": 0,
+        "score": 0.0235
+      },
+      {
+        "title": "유출해줘도 어차피 우리도 몰라~",
+        "link": "https://newduck.net/board_gLxy54/127328079?page=2",
+        "view_count": 29,
+        "reply_count": 0,
+        "score": 0.0224
+      },
+      {
+        "title": "럭드라니...!",
+        "link": "https://newduck.net/board_gLxy54/127317575?page=6",
+        "view_count": 28,
+        "reply_count": 0,
+        "score": 0.0213
+      },
+      {
+        "title": "콘포카 콘서트 의상이라는 점이 아주 좋음",
+        "link": "https://newduck.net/board_gLxy54/127318299?page=6",
+        "view_count": 27,
+        "reply_count": 0,
+        "score": 0.0203
+      },
+      {
+        "title": "이러다가 선공개하면 어떡해",
+        "link": "https://newduck.net/board_gLxy54/127331348",
+        "view_count": 26,
+        "reply_count": 0,
+        "score": 0.0192
+      },
+      {
+        "title": "럭드 상품 보고 아 장바구니 챙겨가야겠네 이러고 있음",
+        "link": "https://newduck.net/board_gLxy54/127317118?page=6",
+        "view_count": 26,
+        "reply_count": 0,
+        "score": 0.0192
+      },
+      {
+        "title": "ㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋ논중화물이다",
+        "link": "https://newduck.net/board_gLxy54/127326806?page=4",
+        "view_count": 25,
+        "reply_count": 0,
+        "score": 0.0181
+      },
+      {
+        "title": "유출 우리들만의 비밀이다 픽오들아",
+        "link": "https://newduck.net/board_gLxy54/127327974?page=3",
+        "view_count": 23,
+        "reply_count": 0,
+        "score": 0.016
+      },
+      {
+        "title": "응응 알겟긔 코러스 파트는",
+        "link": "https://newduck.net/board_gLxy54/127327657?page=3",
+        "view_count": 23,
+        "reply_count": 0,
+        "score": 0.016
+      },
+      {
+        "title": "목욜에도",
+        "link": "https://newduck.net/board_gLxy54/127328244?page=2",
+        "view_count": 22,
+        "reply_count": 0,
+        "score": 0.0149
+      },
+      {
+        "title": "뵥뵥이 제일 단호해보임",
+        "link": "https://newduck.net/board_gLxy54/127326745?page=4",
+        "view_count": 22,
+        "reply_count": 0,
+        "score": 0.0149
+      },
+      {
+        "title": "예준이 저녁 너무 늦게 먹는다ㅠㅠ",
+        "link": "https://newduck.net/board_gLxy54/127331567",
+        "view_count": 21,
+        "reply_count": 0,
+        "score": 0.0139
+      },
+      {
+        "title": "일콘 가서 진짜 꼭 사먹어봐야지",
+        "link": "https://newduck.net/board_gLxy54/127328362?page=2",
+        "view_count": 20,
+        "reply_count": 0,
+        "score": 0.0128
+      },
+      {
+        "title": "봉구 너를 위해서 가성 좋다",
+        "link": "https://newduck.net/board_gLxy54/127328251?page=2",
+        "view_count": 20,
+        "reply_count": 0,
+        "score": 0.0128
+      },
+      {
+        "title": "티 안나게 유출하는 것 같은딬ㅋㅋㅋㅋㅋㅋㅋㅋ",
+        "link": "https://newduck.net/board_gLxy54/127327625?page=3",
+        "view_count": 20,
+        "reply_count": 0,
+        "score": 0.0128
+      },
+      {
+        "title": "헐 ㅁㅊ 스포",
+        "link": "https://newduck.net/board_gLxy54/127327345?page=4",
+        "view_count": 20,
+        "reply_count": 0,
+        "score": 0.0128
+      },
+      {
+        "title": "다들 뭔 느낌인지 알지",
+        "link": "https://newduck.net/board_gLxy54/127327544?page=4",
+        "view_count": 19,
+        "reply_count": 0,
+        "score": 0.0117
+      },
+      {
+        "title": "나진짜 단순하다",
+        "link": "https://newduck.net/board_gLxy54/127327423?page=4",
+        "view_count": 19,
+        "reply_count": 0,
+        "score": 0.0117
+      },
+      {
+        "title": "헉 edm 하우스 오나봐",
+        "link": "https://newduck.net/board_gLxy54/127327328?page=4",
+        "view_count": 19,
+        "reply_count": 0,
+        "score": 0.0117
+      },
+      {
+        "title": "유출미쳐따",
+        "link": "https://newduck.net/board_gLxy54/127327323?page=4",
+        "view_count": 18,
+        "reply_count": 0,
+        "score": 0.0107
+      },
+      {
+        "title": "요즘 공기밥 양 얼마나 한다고",
+        "link": "https://newduck.net/board_gLxy54/127326751?page=4",
+        "view_count": 18,
+        "reply_count": 0,
+        "score": 0.0107
+      },
+      {
+        "title": "친필싸인 내꺼",
+        "link": "https://newduck.net/board_gLxy54/127316730?page=7",
+        "view_count": 18,
+        "reply_count": 0,
+        "score": 0.0107
+      },
+      {
+        "title": "으노 바로 호흡 넣어서 발라드 연습한거 보내주는거 진짜",
+        "link": "https://newduck.net/board_gLxy54/127331552",
+        "view_count": 17,
+        "reply_count": 0,
+        "score": 0.0096
+      },
+      {
+        "title": "I'm yours 너를 위해서~",
+        "link": "https://newduck.net/board_gLxy54/127327628?page=3",
+        "view_count": 17,
+        "reply_count": 0,
+        "score": 0.0096
+      },
+      {
+        "title": "진짜 하우스 장르 오나?",
+        "link": "https://newduck.net/board_gLxy54/127327470?page=4",
+        "view_count": 17,
+        "reply_count": 0,
+        "score": 0.0096
+      },
+      {
+        "title": "무슨 소리야 이게",
+        "link": "https://newduck.net/board_gLxy54/127326724?page=4",
+        "view_count": 15,
+        "reply_count": 0,
+        "score": 0.0075
+      },
+      {
+        "title": "작곡즈 일 끝나고 우루루 오는거 너무 귀엽네",
+        "link": "https://newduck.net/board_gLxy54/127331582",
+        "view_count": 14,
+        "reply_count": 0,
+        "score": 0.0064
+      },
+      {
+        "title": "개좋을 거 같단 것만 알겠다",
+        "link": "https://newduck.net/board_gLxy54/127328166?page=2",
+        "view_count": 14,
+        "reply_count": 0,
+        "score": 0.0064
+      },
+      {
+        "title": "난 이미 이노래를 좋아해",
+        "link": "https://newduck.net/board_gLxy54/127327363?page=4",
+        "view_count": 14,
+        "reply_count": 0,
+        "score": 0.0064
+      },
+      {
+        "title": "밤비 먹을거 얘기하는데 진짜 좋아하넼ㅋㅋㅋㅋ",
+        "link": "https://newduck.net/board_gLxy54/127328352?page=2",
+        "view_count": 12,
+        "reply_count": 0,
+        "score": 0.0043
+      },
+      {
+        "title": "아니 컴백 언제냐고요",
+        "link": "https://newduck.net/board_gLxy54/127327459?page=4",
+        "view_count": 11,
+        "reply_count": 0,
+        "score": 0.0032
+      },
+      {
+        "title": "미쳤다 난 벌써 이노래를 좋아해",
+        "link": "https://newduck.net/board_gLxy54/127327360?page=4",
+        "view_count": 11,
+        "reply_count": 0,
+        "score": 0.0032
+      },
+      {
+        "title": "너를위해~",
+        "link": "https://newduck.net/board_gLxy54/127327590?page=3",
+        "view_count": 10,
+        "reply_count": 0,
+        "score": 0.0021
+      },
+      {
+        "title": "유출이다",
+        "link": "https://newduck.net/board_gLxy54/127327335?page=4",
+        "view_count": 10,
+        "reply_count": 0,
+        "score": 0.0021
+      },
+      {
+        "title": "너무 좋은데?!",
+        "link": "https://newduck.net/board_gLxy54/127327575?page=3",
+        "view_count": 8,
+        "reply_count": 0,
+        "score": 0.0
+      }
+    ],
+    "complete": true
+  },
+  "instiz": {
+    "total": 0,
+    "posts": [],
+    "complete": false
+  },
+  "summary": {
+    "issues": [
+      {
+        "rank": 1,
+        "title": "인천 PLLI ZONE 운영 안내",
+        "summary": "8월 개최되는 인천 PLLI ZONE 공연에 대한 운영 방식, 일정, 예매 관련 정보가 팬들 사이에서 많이 논의되고 있습니다. 공연장 크기, 장소 선택, 야외 구성 등에 대해 궁금해하는 팬들이 많습니다.",
+        "keywords": [
+          "PLLI ZONE",
+          "인천 콘서트",
+          "운영안내",
+          "공연"
+        ],
+        "hot_level": "hot",
+        "sources": [
+          "디시",
+          "더쿠",
+          "뉴덕"
+        ]
+      },
+      {
+        "rank": 2,
+        "title": "럭드 포카 당첨 및 상품 정보",
+        "summary": "PLLI ZONE과 십카페의 럭드 포카 당첨 여부, 상품 등급(A~D상), 당첨 확률 등에 관한 논의가 매우 활발합니다. 팬들이 어느 상품을 선호하는지, 실제 당첨 여부, 꽝 존재 여부 등을 묻고 있습니다.",
+        "keywords": [
+          "럭드",
+          "포카",
+          "당첨",
+          "상품등급"
+        ],
+        "hot_level": "hot",
+        "sources": [
+          "디시",
+          "더쿠",
+          "뉴덕"
+        ]
+      },
+      {
+        "rank": 3,
+        "title": "십카페 방문 후기 및 당첨 경험",
+        "summary": "십카페 방문 후 럭드 당첨이나 미당첨 경험, 자리 예약, 방문 시간대 팁 등이 공유되고 있습니다. 팬들이 자신의 경험담을 나누며 정보를 교환하는 중입니다.",
+        "keywords": [
+          "십카페",
+          "방문",
+          "당첨",
+          "예약"
+        ],
+        "hot_level": "warm",
+        "sources": [
+          "디시",
+          "더쿠",
+          "뉴덕"
+        ]
+      },
+      {
+        "rank": 4,
+        "title": "믐무 쿠션 구매처 및 판매 정보",
+        "summary": "믐무 쿠션의 판매 시작, 구매처 정보, 짭 상품에 대한 주의 등이 논의되고 있습니다. 팬들이 정품 구매처를 찾거나 온라인/오프라인 판매 여부를 확인하고 있습니다.",
+        "keywords": [
+          "믐무 쿠션",
+          "구매",
+          "판매처",
+          "짭"
+        ],
+        "hot_level": "warm",
+        "sources": [
+          "디시",
+          "더쿠",
+          "뉴덕"
+        ]
+      },
+      {
+        "rank": 5,
+        "title": "멤버 스타일링 및 굿즈 디자인",
+        "summary": "멤버들의 수영복 스타일, 인형 옷 디자인, 스트랩 길이 등 굿즈와 멤버 외모에 관한 긍정적인 평가와 요청이 이루어지고 있습니다. 팬들이 선호하는 굿즈 형태와 멤버 스타일에 대해 의견을 나누고 있습니다.",
+        "keywords": [
+          "스타일링",
+          "굿즈",
+          "인형",
+          "스트랩"
+        ],
+        "hot_level": "warm",
+        "sources": [
+          "더쿠",
+          "뉴덕"
+        ]
+      },
+      {
+        "rank": 6,
+        "title": "노아의 스포일러 공개 논쟁",
+        "summary": "노아가 우발적으로 공개한 정보에 대해 팬들이 침묵을 지켜달라고 요청하고 있습니다. 비밀 유지를 강조하는 글들이 등장하고 있으며, 이것이 팬 커뮤니티 내에서 논쟁의 대상이 되고 있습니다.",
+        "keywords": [
+          "노아",
+          "스포일러",
+          "유출",
+          "비밀"
+        ],
+        "hot_level": "normal",
+        "sources": [
+          "더쿠",
+          "뉴덕"
+        ]
+      }
+    ],
+    "overall_mood": "플레이브의 인천 PLLI ZONE 공연 개최를 앞두고 팬들의 기대감과 실질적인 정보 공유가 활발하게 이루어지고 있으며, 럭드 당첨과 굿즈 관련해서는 긍정적인 분위기 속에서도 정보 확인에 대한 열정이 높아 보입니다."
+  },
+  "summary_sources": [
+    "dcinside",
+    "newduck",
+    "theqoo"
+  ]
+}

@@ -1,5 +1,5 @@
 {
-  "collected_at": "2026-08-16T00:48:20.296565+09:00",
+  "collected_at": "2026-08-16T10:54:28.088767+09:00",
   "date": "2026-08-15",
   "dcinside": {
     "total": 20,
@@ -558,16 +558,721 @@
     "complete": true
   },
   "instiz": {
-    "total": 0,
-    "posts": [],
-    "complete": false
+    "total": 98,
+    "posts": [
+      {
+        "title": "너네 다 어디갔어??",
+        "link": "https://www.instiz.net/name_enter/100314076&category=644",
+        "view_count": 806,
+        "reply_count": 37,
+        "score": 1.0
+      },
+      {
+        "title": "다들 ㅁㄹ 친밀도 몇이야??",
+        "link": "https://www.instiz.net/name_enter/100318616&category=644",
+        "view_count": 602,
+        "reply_count": 37,
+        "score": 0.9103
+      },
+      {
+        "title": "밤비가 먹은 노아빵같이 생긴 거 드디어 찾았다!",
+        "link": "https://www.instiz.net/name_enter/100317200&category=644",
+        "view_count": 438,
+        "reply_count": 28,
+        "score": 0.6801
+      },
+      {
+        "title": "예준아 큰일났다",
+        "link": "https://www.instiz.net/name_enter/100315868&category=644",
+        "view_count": 563,
+        "reply_count": 18,
+        "score": 0.5594
+      },
+      {
+        "title": "내기준 위버라 제일 웃긴 순간 1위인데",
+        "link": "https://www.instiz.net/name_enter/100317502&category=644",
+        "view_count": 585,
+        "reply_count": 15,
+        "score": 0.5163
+      },
+      {
+        "title": "나 파알못인데 알리오올리오에 간마늘만 넣어도 되나?",
+        "link": "https://www.instiz.net/name_enter/100312192&category=644",
+        "view_count": 142,
+        "reply_count": 18,
+        "score": 0.3743
+      },
+      {
+        "title": "심심하니까 친모아 귀엽구 웃긴거 공유 해도 될까",
+        "link": "https://www.instiz.net/name_enter/100316814&category=644",
+        "view_count": 208,
+        "reply_count": 13,
+        "score": 0.3154
+      },
+      {
+        "title": "플리실친 결혼식 왔는데 플레이브 메들리나온다ㅋㅋㅋ",
+        "link": "https://www.instiz.net/name_enter/100314680&category=644",
+        "view_count": 241,
+        "reply_count": 10,
+        "score": 0.2772
+      },
+      {
+        "title": "포카 가질 플둥",
+        "link": "https://www.instiz.net/name_enter/100315480&category=644",
+        "view_count": 212,
+        "reply_count": 9,
+        "score": 0.2469
+      },
+      {
+        "title": "장터드립백 양도받을 플둥 이써?",
+        "link": "https://www.instiz.net/name_enter/100319010&category=644",
+        "view_count": 120,
+        "reply_count": 11,
+        "score": 0.2416
+      },
+      {
+        "title": "콘서트 티켓 팔찌 수령 몇시부터 돼??",
+        "link": "https://www.instiz.net/name_enter/100316319&category=644",
+        "view_count": 198,
+        "reply_count": 9,
+        "score": 0.2408
+      },
+      {
+        "title": "플둥이들아 나 운동가라고 좀 해줘",
+        "link": "https://www.instiz.net/name_enter/100315001&category=644",
+        "view_count": 75,
+        "reply_count": 11,
+        "score": 0.2218
+      },
+      {
+        "title": "플두니들아🥹 우리 이번 멤버쉽카드",
+        "link": "https://www.instiz.net/name_enter/100312769&category=644",
+        "view_count": 174,
+        "reply_count": 8,
+        "score": 0.2127
+      },
+      {
+        "title": "우우우 플레이브 보고 싶어",
+        "link": "https://www.instiz.net/name_enter/100316915&category=644",
+        "view_count": 105,
+        "reply_count": 9,
+        "score": 0.1999
+      },
+      {
+        "title": "썸넬이 너뭍ㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋ",
+        "link": "https://www.instiz.net/name_enter/100319283&category=644",
+        "view_count": 290,
+        "reply_count": 4,
+        "score": 0.1934
+      },
+      {
+        "title": "히융 강아지",
+        "link": "https://www.instiz.net/name_enter/100313096&category=644",
+        "view_count": 250,
+        "reply_count": 5,
+        "score": 0.1934
+      },
+      {
+        "title": "노아가 보내준 알리오올리오가 5인분이었어?",
+        "link": "https://www.instiz.net/name_enter/100312882&category=644",
+        "view_count": 284,
+        "reply_count": 4,
+        "score": 0.1907
+      },
+      {
+        "title": "효자돌고래",
+        "link": "https://www.instiz.net/name_enter/100316191&category=644",
+        "view_count": 241,
+        "reply_count": 5,
+        "score": 0.1894
+      },
+      {
+        "title": "누락 미쳤다..그래도 드뎌 1만 넘겼다",
+        "link": "https://www.instiz.net/name_enter/100315127&category=644",
+        "view_count": 161,
+        "reply_count": 7,
+        "score": 0.1894
+      },
+      {
+        "title": "컵밥먹다 화상입은 나 등장",
+        "link": "https://www.instiz.net/name_enter/100314178&category=644",
+        "view_count": 141,
+        "reply_count": 7,
+        "score": 0.1806
+      },
+      {
+        "title": "ㄱ1년전 깜돌이래",
+        "link": "https://www.instiz.net/name_enter/100315560&category=644",
+        "view_count": 161,
+        "reply_count": 6,
+        "score": 0.1718
+      },
+      {
+        "title": "아 잠깐만 엄돌님만 보신 게 아니구나",
+        "link": "https://www.instiz.net/name_enter/100316224&category=644",
+        "view_count": 314,
+        "reply_count": 2,
+        "score": 0.1688
+      },
+      {
+        "title": "얘들아 내가 믐깅이를 처음으로 울샴푸했더느",
+        "link": "https://www.instiz.net/name_enter/100316225&category=644",
+        "view_count": 191,
+        "reply_count": 5,
+        "score": 0.1674
+      },
+      {
+        "title": "ㄷㅇㅅ 인형옷걸이 괜찮다",
+        "link": "https://www.instiz.net/name_enter/100317111&category=644",
+        "view_count": 218,
+        "reply_count": 4,
+        "score": 0.1617
+      },
+      {
+        "title": "나도 하고 시퍼 0767744 << 아무도 안와서 샷다 내렷어😢",
+        "link": "https://www.instiz.net/name_enter/100312444&category=644",
+        "view_count": 94,
+        "reply_count": 7,
+        "score": 0.1599
+      },
+      {
+        "title": "새벽 세시 지친 요리사 상황",
+        "link": "https://www.instiz.net/name_enter/100313065&category=644",
+        "view_count": 248,
+        "reply_count": 3,
+        "score": 0.1574
+      },
+      {
+        "title": "쁜라형이 으노를 너무 사랑해",
+        "link": "https://www.instiz.net/name_enter/100314217&category=644",
+        "view_count": 205,
+        "reply_count": 4,
+        "score": 0.156
+      },
+      {
+        "title": "은호 아무리 잡도리당해도 헤헤 했는데",
+        "link": "https://www.instiz.net/name_enter/100312869&category=644",
+        "view_count": 232,
+        "reply_count": 3,
+        "score": 0.1503
+      },
+      {
+        "title": "장터응원봉 파츠 구버전 💙💜🩷❤️🖤 일괄 양도해",
+        "link": "https://www.instiz.net/name_enter/100315833&category=644",
+        "view_count": 104,
+        "reply_count": 6,
+        "score": 0.1467
+      },
+      {
+        "title": "장터육여 명찰 + 아크릴스탠드 + 므메미무 바인더 원가양도",
+        "link": "https://www.instiz.net/name_enter/100318520&category=644",
+        "view_count": 178,
+        "reply_count": 4,
+        "score": 0.1441
+      },
+      {
+        "title": "1년 전 오늘 뉴헤어 첫 공개",
+        "link": "https://www.instiz.net/name_enter/100314376&category=644",
+        "view_count": 137,
+        "reply_count": 5,
+        "score": 0.1437
+      },
+      {
+        "title": "사실 옷 디자인자체는 평범해 다만 색 조합이",
+        "link": "https://www.instiz.net/name_enter/100316140&category=644",
+        "view_count": 212,
+        "reply_count": 3,
+        "score": 0.1415
+      },
+      {
+        "title": "갑자기 이게 떠서 읽어봤는데 봉...봉구야!!",
+        "link": "https://www.instiz.net/name_enter/100314232&category=644",
+        "view_count": 203,
+        "reply_count": 3,
+        "score": 0.1376
+      },
+      {
+        "title": "휴 요리 하느라 힘들었당",
+        "link": "https://www.instiz.net/name_enter/100312861&category=644",
+        "view_count": 203,
+        "reply_count": 3,
+        "score": 0.1376
+      },
+      {
+        "title": "안녕!!!",
+        "link": "https://www.instiz.net/name_enter/100313081&category=644",
+        "view_count": 162,
+        "reply_count": 4,
+        "score": 0.1371
+      },
+      {
+        "title": "오늘 내가 십카페에서 찍은 봉구 볼 사람",
+        "link": "https://www.instiz.net/name_enter/100318472&category=644",
+        "view_count": 157,
+        "reply_count": 4,
+        "score": 0.1349
+      },
+      {
+        "title": "다이소 인형 옷 쇼핑했는데 므모 이케 됨",
+        "link": "https://www.instiz.net/name_enter/100314948&category=644",
+        "view_count": 154,
+        "reply_count": 4,
+        "score": 0.1336
+      },
+      {
+        "title": "은호가 밤비 말고 다른 형한테 반말 하는거 거의 첨보는 거 같은데",
+        "link": "https://www.instiz.net/name_enter/100312888&category=644",
+        "view_count": 234,
+        "reply_count": 2,
+        "score": 0.1336
+      },
+      {
+        "title": "우리 약간 세미 응원법 뭐뭐있지?",
+        "link": "https://www.instiz.net/name_enter/100316815&category=644",
+        "view_count": 142,
+        "reply_count": 4,
+        "score": 0.1283
+      },
+      {
+        "title": "집사람이 왜 둘이야",
+        "link": "https://www.instiz.net/name_enter/100316125&category=644",
+        "view_count": 221,
+        "reply_count": 2,
+        "score": 0.1279
+      },
+      {
+        "title": "개머싯다",
+        "link": "https://www.instiz.net/name_enter/100312588&category=644",
+        "view_count": 177,
+        "reply_count": 3,
+        "score": 0.1261
+      },
+      {
+        "title": "막콘 온콘 뜨면 공유기차도 오겠지?",
+        "link": "https://www.instiz.net/name_enter/100313034&category=644",
+        "view_count": 166,
+        "reply_count": 3,
+        "score": 0.1213
+      },
+      {
+        "title": "쁜라 갸웃긴 포인트. 둘이 어색하던 기다릴게 초반에도",
+        "link": "https://www.instiz.net/name_enter/100312863&category=644",
+        "view_count": 204,
+        "reply_count": 2,
+        "score": 0.1204
+      },
+      {
+        "title": "노아가 씻기 전에 스쿼트 몇개 하라 했더라",
+        "link": "https://www.instiz.net/name_enter/100312974&category=644",
+        "view_count": 113,
+        "reply_count": 4,
+        "score": 0.1156
+      },
+      {
+        "title": "저장명이 엄마사랑해인부분에서 압도적 효자재능을 느껴버림....",
+        "link": "https://www.instiz.net/name_enter/100317504&category=644",
+        "view_count": 151,
+        "reply_count": 3,
+        "score": 0.1147
+      },
+      {
+        "title": "사첵 나갔다가 공연 시작 전에만 들어오면 되는 거지??",
+        "link": "https://www.instiz.net/name_enter/100316135&category=644",
+        "view_count": 103,
+        "reply_count": 4,
+        "score": 0.1112
+      },
+      {
+        "title": "우리집 몌무 꼬리 삐죽털 볼래?",
+        "link": "https://www.instiz.net/name_enter/100315076&category=644",
+        "view_count": 141,
+        "reply_count": 3,
+        "score": 0.1103
+      },
+      {
+        "title": "시어머니도 나랑 알고리즘 공유하네",
+        "link": "https://www.instiz.net/name_enter/100316129&category=644",
+        "view_count": 115,
+        "reply_count": 3,
+        "score": 0.0989
+      },
+      {
+        "title": "혹시 일콘 지금 예매가능해??",
+        "link": "https://www.instiz.net/name_enter/100315224&category=644",
+        "view_count": 115,
+        "reply_count": 3,
+        "score": 0.0989
+      },
+      {
+        "title": "너네 모해에",
+        "link": "https://www.instiz.net/name_enter/100315611&category=644",
+        "view_count": 71,
+        "reply_count": 4,
+        "score": 0.0971
+      },
+      {
+        "title": "그니까 코코넛라떼를 코코아 라떼라고 잘못 말할 수 있는거야",
+        "link": "https://www.instiz.net/name_enter/100315901&category=644",
+        "view_count": 109,
+        "reply_count": 3,
+        "score": 0.0962
+      },
+      {
+        "title": "집사람 한명 더 추가할게요",
+        "link": "https://www.instiz.net/name_enter/100316128&category=644",
+        "view_count": 101,
+        "reply_count": 3,
+        "score": 0.0927
+      },
+      {
+        "title": "북클럽에서 이런거 나눠주면 재밌겠다",
+        "link": "https://www.instiz.net/name_enter/100318986&category=644",
+        "view_count": 149,
+        "reply_count": 1,
+        "score": 0.0787
+      },
+      {
+        "title": "베이비몌무잃어버렷다....",
+        "link": "https://www.instiz.net/name_enter/100315420&category=644",
+        "view_count": 99,
+        "reply_count": 2,
+        "score": 0.0743
+      },
+      {
+        "title": "주말에 스밍체크도 잊지 말자!",
+        "link": "https://www.instiz.net/name_enter/100315717&category=644",
+        "view_count": 16,
+        "reply_count": 4,
+        "score": 0.0729
+      },
+      {
+        "title": "플둥이들 맛점!!",
+        "link": "https://www.instiz.net/name_enter/100314191&category=644",
+        "view_count": 50,
+        "reply_count": 3,
+        "score": 0.0703
+      },
+      {
+        "title": "요리 진짜 힘들었나봐 평소라면 끼웅거리면서 뚱쭝후기 남겼을텐데",
+        "link": "https://www.instiz.net/name_enter/100312871&category=644",
+        "view_count": 129,
+        "reply_count": 1,
+        "score": 0.0699
+      },
+      {
+        "title": "아 영상 진짜 다 보시는구나ㅋㅋㅋㅋ",
+        "link": "https://www.instiz.net/name_enter/100316126&category=644",
+        "view_count": 113,
+        "reply_count": 1,
+        "score": 0.0629
+      },
+      {
+        "title": "ㄱ퍄핑 닮아가네...",
+        "link": "https://www.instiz.net/name_enter/100315693&category=644",
+        "view_count": 101,
+        "reply_count": 1,
+        "score": 0.0576
+      },
+      {
+        "title": "💗먹을줄알지 입이 있으니까",
+        "link": "https://www.instiz.net/name_enter/100314737&category=644",
+        "view_count": 60,
+        "reply_count": 2,
+        "score": 0.0571
+      },
+      {
+        "title": "은호 이모티콘 귀엽다",
+        "link": "https://www.instiz.net/name_enter/100318073&category=644",
+        "view_count": 59,
+        "reply_count": 2,
+        "score": 0.0567
+      },
+      {
+        "title": "퍼즐🧩",
+        "link": "https://www.instiz.net/name_enter/100312656&category=644",
+        "view_count": 18,
+        "reply_count": 3,
+        "score": 0.0562
+      },
+      {
+        "title": "엄마사랑해 이거 볼때마다 사랑스럽내진짜",
+        "link": "https://www.instiz.net/name_enter/100316221&category=644",
+        "view_count": 95,
+        "reply_count": 1,
+        "score": 0.0549
+      },
+      {
+        "title": "은호 손민수 했다",
+        "link": "https://www.instiz.net/name_enter/100314114&category=644",
+        "view_count": 87,
+        "reply_count": 1,
+        "score": 0.0514
+      },
+      {
+        "title": "슬퍼...",
+        "link": "https://www.instiz.net/name_enter/100312581&category=644",
+        "view_count": 111,
+        "reply_count": 0,
+        "score": 0.0444
+      },
+      {
+        "title": "봉구 입오타ㅜ진짜ㅜ너무 웃기다",
+        "link": "https://www.instiz.net/name_enter/100315878&category=644",
+        "view_count": 67,
+        "reply_count": 1,
+        "score": 0.0426
+      },
+      {
+        "title": "🧩🧩🧩🧩🧩퍼즐",
+        "link": "https://www.instiz.net/name_enter/100312436&category=644",
+        "view_count": 20,
+        "reply_count": 2,
+        "score": 0.0395
+      },
+      {
+        "title": "은호 피곤하고 힘든 와중에도",
+        "link": "https://www.instiz.net/name_enter/100314101&category=644",
+        "view_count": 54,
+        "reply_count": 1,
+        "score": 0.0369
+      },
+      {
+        "title": "아니 개웃기네 감성 보이스인척하는데 겁나 부스럭거림ㅋㅋㅋㅋㅋㅋ",
+        "link": "https://www.instiz.net/name_enter/100315847&category=644",
+        "view_count": 50,
+        "reply_count": 1,
+        "score": 0.0352
+      },
+      {
+        "title": "아 우리 믐깅이들도 뚠뚠한데",
+        "link": "https://www.instiz.net/name_enter/100312795&category=644",
+        "view_count": 85,
+        "reply_count": 0,
+        "score": 0.033
+      },
+      {
+        "title": "뽀시락 뽀시락 봉또먹",
+        "link": "https://www.instiz.net/name_enter/100315849&category=644",
+        "view_count": 41,
+        "reply_count": 1,
+        "score": 0.0312
+      },
+      {
+        "title": "ㅋㅋㅋㅋ으뜨케 노아라 불렀어",
+        "link": "https://www.instiz.net/name_enter/100312876&category=644",
+        "view_count": 81,
+        "reply_count": 0,
+        "score": 0.0312
+      },
+      {
+        "title": "장터므모 먀미 인형 + 모자, 뿌인형 은호하민 원가이하 일괄",
+        "link": "https://www.instiz.net/name_enter/100313252&category=644",
+        "view_count": 79,
+        "reply_count": 0,
+        "score": 0.0303
+      },
+      {
+        "title": "나중에 은호씨 요즘은 왜 요리 안해주세요",
+        "link": "https://www.instiz.net/name_enter/100312873&category=644",
+        "view_count": 72,
+        "reply_count": 0,
+        "score": 0.0273
+      },
+      {
+        "title": "작년 대쉬콘 1주년 기념으로 방금 영상들 좀 보고 왔는데",
+        "link": "https://www.instiz.net/name_enter/100317888&category=644",
+        "view_count": 69,
+        "reply_count": 0,
+        "score": 0.0259
+      },
+      {
+        "title": "요즘 다이어트 식품 짜장보면 은호 생각남",
+        "link": "https://www.instiz.net/name_enter/100318847&category=644",
+        "view_count": 24,
+        "reply_count": 1,
+        "score": 0.0237
+      },
+      {
+        "title": "아니 충신이 노아래",
+        "link": "https://www.instiz.net/name_enter/100312860&category=644",
+        "view_count": 59,
+        "reply_count": 0,
+        "score": 0.0215
+      },
+      {
+        "title": "칠오아 퍼즐 노라인(ㅅㅍ)",
+        "link": "https://www.instiz.net/name_enter/100315443&category=644",
+        "view_count": 18,
+        "reply_count": 1,
+        "score": 0.0211
+      },
+      {
+        "title": "퍼즐 칠오아(ㅅㅍ)",
+        "link": "https://www.instiz.net/name_enter/100315014&category=644",
+        "view_count": 18,
+        "reply_count": 1,
+        "score": 0.0211
+      },
+      {
+        "title": "ㅋㅋㅋㅋㅋ쁜라가 너무하긴했어",
+        "link": "https://www.instiz.net/name_enter/100312859&category=644",
+        "view_count": 58,
+        "reply_count": 0,
+        "score": 0.0211
+      },
+      {
+        "title": "믐 퍼즐🧩",
+        "link": "https://www.instiz.net/name_enter/100318961&category=644",
+        "view_count": 10,
+        "reply_count": 1,
+        "score": 0.0176
+      },
+      {
+        "title": "난 코코아 라떼라길래",
+        "link": "https://www.instiz.net/name_enter/100315953&category=644",
+        "view_count": 48,
+        "reply_count": 0,
+        "score": 0.0167
+      },
+      {
+        "title": "은호 지쳐서 푸데데 하러 갔나바",
+        "link": "https://www.instiz.net/name_enter/100312877&category=644",
+        "view_count": 47,
+        "reply_count": 0,
+        "score": 0.0163
+      },
+      {
+        "title": "앜ㅋㅋㅋㅋ 엄돌께서 플리로그 보시는구낰ㅋㅋㅋ",
+        "link": "https://www.instiz.net/name_enter/100316124&category=644",
+        "view_count": 41,
+        "reply_count": 0,
+        "score": 0.0136
+      },
+      {
+        "title": "쁜라 얼마나 뭐라고 한거냐곸ㅋㅋㅋㅋ",
+        "link": "https://www.instiz.net/name_enter/100312858&category=644",
+        "view_count": 41,
+        "reply_count": 0,
+        "score": 0.0136
+      },
+      {
+        "title": "아 빨리 방송에서 후기 듣고싶다",
+        "link": "https://www.instiz.net/name_enter/100312892&category=644",
+        "view_count": 39,
+        "reply_count": 0,
+        "score": 0.0128
+      },
+      {
+        "title": "파란바지만 구해오면 되겠다",
+        "link": "https://www.instiz.net/name_enter/100316137&category=644",
+        "view_count": 37,
+        "reply_count": 0,
+        "score": 0.0119
+      },
+      {
+        "title": "장터링거티 s 양도합니둥",
+        "link": "https://www.instiz.net/name_enter/100316192&category=644",
+        "view_count": 35,
+        "reply_count": 0,
+        "score": 0.011
+      },
+      {
+        "title": "장터뿌 md 5만원 포카 교환 원해요 ❤️🖤 > 💜",
+        "link": "https://www.instiz.net/name_enter/100319180&category=644",
+        "view_count": 33,
+        "reply_count": 0,
+        "score": 0.0101
+      },
+      {
+        "title": "연락할게!",
+        "link": "https://www.instiz.net/name_enter/100312872&category=644",
+        "view_count": 33,
+        "reply_count": 0,
+        "score": 0.0101
+      },
+      {
+        "title": "ㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋ 쁜라 어뚜께 이제 안해준대",
+        "link": "https://www.instiz.net/name_enter/100312857&category=644",
+        "view_count": 30,
+        "reply_count": 0,
+        "score": 0.0088
+      },
+      {
+        "title": "봉구 심심하면 뭐 먹는 것도 햄찌같음",
+        "link": "https://www.instiz.net/name_enter/100315945&category=644",
+        "view_count": 27,
+        "reply_count": 0,
+        "score": 0.0075
+      },
+      {
+        "title": "비오는날 브금 틀어두고 코코넛커피에 치즈케이크 먹는 다람쥐",
+        "link": "https://www.instiz.net/name_enter/100315939&category=644",
+        "view_count": 24,
+        "reply_count": 0,
+        "score": 0.0062
+      },
+      {
+        "title": "쁜라 잡도리에 지친 가나디",
+        "link": "https://www.instiz.net/name_enter/100312856&category=644",
+        "view_count": 23,
+        "reply_count": 0,
+        "score": 0.0057
+      },
+      {
+        "title": "나도 바치케에 아아 먹어야겠다",
+        "link": "https://www.instiz.net/name_enter/100315860&category=644",
+        "view_count": 20,
+        "reply_count": 0,
+        "score": 0.0044
+      },
+      {
+        "title": "가사단장 요리를 얼마나 한거얔ㅋㅋㅋㅋ",
+        "link": "https://www.instiz.net/name_enter/100312854&category=644",
+        "view_count": 18,
+        "reply_count": 0,
+        "score": 0.0035
+      },
+      {
+        "title": "1년전 오늘..",
+        "link": "https://www.instiz.net/name_enter/100314959&category=644",
+        "view_count": 17,
+        "reply_count": 0,
+        "score": 0.0031
+      },
+      {
+        "title": "ㅠㅋㅋㅋㅋ으노야 고생많았어",
+        "link": "https://www.instiz.net/name_enter/100312855&category=644",
+        "view_count": 11,
+        "reply_count": 0,
+        "score": 0.0004
+      }
+    ],
+    "complete": true
   },
   "summary": {
     "issues": [
       {
         "rank": 1,
+        "title": "콘서트 준비 열기",
+        "summary": "팬들이 콘서트를 앞두고 슬로건, 응원봉, 티켓 팔찌 수령 등 준비물에 대해 활발히 논의하고 있습니다. 여러 커뮤니티에서 지속적으로 언급되며 높은 관심을 보이고 있습니다.",
+        "keywords": [
+          "콘서트",
+          "슬로건",
+          "응원봉",
+          "티켓팔찌"
+        ],
+        "hot_level": "hot",
+        "sources": [
+          "디시",
+          "더쿠",
+          "뉴덕",
+          "인스티즈"
+        ]
+      },
+      {
+        "rank": 2,
         "title": "수영복 굿즈 구매 열풍",
-        "summary": "플레이브 수영복 굿즈가 팬들 사이에서 큰 인기를 얻고 있습니다. 디시와 더쿠, 뉴덕 등 여러 커뮤니티에서 수영복 구매 후기와 구매 계획 글이 다수 올라오고 있으며, 팬들의 높은 관심도를 보이고 있습니다.",
+        "summary": "플레이브 수영복 굿즈가 출시되었으며, 팬들 사이에서 구매 경험담과 후기가 활발하게 공유되고 있습니다. 디시와 더쿠에서 지속적으로 언급되고 있습니다.",
         "keywords": [
           "수영복",
           "굿즈",
@@ -576,91 +1281,77 @@
         "hot_level": "hot",
         "sources": [
           "디시",
-          "더쿠",
-          "뉴덕"
-        ]
-      },
-      {
-        "rank": 2,
-        "title": "콘서트 준비 및 응원용품",
-        "summary": "플레이브 콘서트를 앞두고 팬들이 슬로건, 배너, 응원용품 구매 및 준비에 관심을 보이고 있습니다. 지방 오리들의 교통편 예매, 슬로건 구매 계획 등 콘서트 참석 준비 논의가 활발합니다.",
-        "keywords": [
-          "콘서트",
-          "슬로건",
-          "응원용품"
-        ],
-        "hot_level": "hot",
-        "sources": [
-          "디시",
-          "더쿠",
-          "뉴덕"
+          "더쿠"
         ]
       },
       {
         "rank": 3,
-        "title": "탄믐(탄생일 미트) 배송 이슈",
-        "summary": "탄믐 굿즈 배송 중 제품이 뒤집혀진 채로 도착하는 문제가 발생했습니다. 팬들 사이에서 배송 상태 관련 불만 글이 올라오고 있으며, 십캎 배송 일정 및 경험담도 함께 공유되고 있습니다.",
+        "title": "멤버 버블·콘텐츠 반응",
+        "summary": "멤버들의 버블 메시지와 라이브 방송 콘텐츠에 대한 팬들의 반응이 활발합니다. 특히 은호의 호칭 변화, 노아와 밤비의 상호작용 등이 주목받고 있습니다.",
         "keywords": [
-          "탄믐",
-          "배송",
-          "굿즈"
+          "버블",
+          "라이브",
+          "멤버반응",
+          "호칭변화"
         ],
-        "hot_level": "warm",
+        "hot_level": "hot",
         "sources": [
           "더쿠",
-          "디시"
+          "인스티즈"
         ]
       },
       {
         "rank": 4,
-        "title": "멤버 버블 및 일상 공유",
-        "summary": "은호, 하민, 노아 등 멤버들의 버블 활동과 형 호칭 변화, 개인적 사진 공유 등이 팬들 사이에서 화제가 되고 있습니다. 팬들이 멤버들의 소소한 일상과 관계 변화에 특히 관심을 보이고 있습니다.",
-        "keywords": [
-          "버블",
-          "멤버",
-          "일상"
-        ],
-        "hot_level": "warm",
-        "sources": [
-          "더쿠",
-          "뉴덕"
-        ]
-      },
-      {
-        "rank": 5,
-        "title": "북클럽 최종 단계 진행",
-        "summary": "플레이브 북클럽 파트 4가 시작되었으며, 팬들이 권장 기간 내에 완독을 서두르고 있습니다. 취소표 미출현 등 북클럽 진행 현황과 관련된 논의가 나타나고 있습니다.",
+        "title": "북클럽 파트4 진행",
+        "summary": "플레이브 북클럽의 파트4 권장 기간이 시작되었으며, 팬들이 읽기와 관련된 정보를 공유하고 있습니다. 취소표가 나오지 않는 현상도 화제가 되고 있습니다.",
         "keywords": [
           "북클럽",
           "파트4",
           "취소표"
         ],
-        "hot_level": "normal",
+        "hot_level": "warm",
         "sources": [
           "뉴덕",
-          "디시"
+          "더쿠"
+        ]
+      },
+      {
+        "rank": 5,
+        "title": "1년전 오늘 추억 회상",
+        "summary": "팬들이 1년 전 오늘의 기억들을 되짚어보고 있습니다. 뉴헤어 첫 공개, 체조 관련 사건 등 다양한 추억들이 언급되고 있습니다.",
+        "keywords": [
+          "1년전",
+          "뉴헤어",
+          "추억",
+          "기념일"
+        ],
+        "hot_level": "warm",
+        "sources": [
+          "뉴덕",
+          "인스티즈"
         ]
       },
       {
         "rank": 6,
-        "title": "다이소 굿즈 및 외부 아이템 공유",
-        "summary": "팬들이 다이소에서 플레이브와 어울릴 만한 이타백, 살구맛 과자 등 외부 굿즈를 구매하며 공유하고 있습니다. 팬덤 문화 내에서 일상용품을 활용한 응원 방식이 확산되고 있습니다.",
+        "title": "일상 공유 및 커뮤니티 활동",
+        "summary": "팬들이 일상 속의 소소한 순간들(요리, 반려동물, 쇼핑 등)을 함께 공유하며 커뮤니티 결속을 다지고 있습니다. 인스티즈에서 특히 활발한 참여가 보입니다.",
         "keywords": [
-          "다이소",
-          "아이템",
-          "응원"
+          "일상공유",
+          "커뮤니티",
+          "팬문화"
         ],
-        "hot_level": "normal",
+        "hot_level": "warm",
         "sources": [
-          "더쿠",
+          "인스티즈",
           "뉴덕"
         ]
       }
     ],
-    "overall_mood": "플레이브 팬들이 콘서트 준비와 다양한 굿즈 구매로 활발한 활동을 보이고 있으며, 멤버들의 일상 공유에 따뜻한 반응을 나타내고 있습니다."
+    "overall_mood": "콘서트 준비로 설레는 분위기 속에서 수영복 굿즈 열풍과 멤버 콘텐츠에 대한 높은 관심이 이어지고 있으며, 팬들이 활발하게 소통하고 일상을 공유하는 긍정적인 커뮤니티 분위기가 보입니다."
   },
   "summary_sources": [
     "dcinside",
+    "instiz",
     "newduck",
     "theqoo"
   ]

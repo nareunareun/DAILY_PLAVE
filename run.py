@@ -90,11 +90,15 @@ def main():
 
     existing = None if args.force else load_data(target)
     pending = [(k, l, m) for k, l, _, m in SOURCES if not source_ok(existing, k)]
+    retry_summary = bool(existing) and not ((existing.get("summary") or {}).get("issues"))
 
-    if not pending:
+    if not pending and not retry_summary:
         print(f"이미 {target} 네 소스 모두 수집 완료. 재시도를 건너뜁니다.")
         write_status(target, existing, changed=False)
         return
+
+    if not pending:
+        print(f"{target} 수집은 완료됐지만 요약이 없어 AI 요약만 다시 시도합니다.")
 
     print("=" * 60)
     print(" DAILY PLAVE - 커뮤니티 이슈 요약기")
@@ -129,6 +133,10 @@ def main():
             "posts": posts,
             "complete": bool(posts) and complete,
         }
+        if not posts and existing and (existing.get(key) or {}).get("posts"):
+            # 요약만 복구할 수도 있으므로 재수집 실패가 기존 부분 데이터를 지우지 않게 한다.
+            posts_data[key] = {**existing[key], "complete": False}
+            print(f"  -> {label} 기존 부분 수집분 보존")
         if posts:
             changed = True
 
@@ -139,7 +147,7 @@ def main():
             f"{target} 전 소스 수집 실패 — 게시할 데이터가 없어 빌드를 중단합니다."
         )
 
-    if not changed:
+    if not changed and not retry_summary:
         # 부족한 소스를 재시도했지만 아무것도 새로 얻지 못했다.
         # 기존 페이지를 타임스탬프만 바꿔 다시 커밋하는 낭비를 막고,
         # 워크플로를 실패시켜 GitHub 실패 메일로 상황을 알린다.
@@ -148,7 +156,10 @@ def main():
             f"{target} 미수집 소스 재시도 실패(여전히 누락: {', '.join(status['missing'])}) — 변경 없음."
         )
 
-    status = write_status(target, posts_data, changed=True)
+    if not changed:
+        # 요약만 복구할 때 원래 수집 시각을 유지한다.
+        posts_data["collected_at"] = existing.get("collected_at", posts_data["collected_at"])
+    status = write_status(target, posts_data, changed=changed)
     print(f"\n  -> 수집 현황: " + ", ".join(f"{l} {status['counts'][l]}개" for _, l, *_ in SOURCES))
     if status["missing"]:
         print(f"  -> [경고] 미완료 소스(다음 실행에서 재시도): {', '.join(status['missing'])}")
@@ -179,6 +190,18 @@ def main():
             print(f"  -> [경고] AI 요약 생략(이번 빌드는 요약 없이 진행): {e}")
             summary = prev_summary if (prev_summary and prev_summary.get("issues")) else empty_summary()
     save_summary(summary)
+
+    if not changed:
+        if not summary.get("issues"):
+            # 크레딧 부족 등이 계속되면 기존 게시물·아카이브를 그대로 둔다.
+            # 미수집 소스가 있으면 기존 실패 알림 동작도 유지한다.
+            if status["missing"]:
+                raise RuntimeError(
+                    f"{target} 미수집 소스 재시도 실패(여전히 누락: {', '.join(status['missing'])}) — 변경 없음."
+                )
+            print("기존 수집·게시 결과 유지 — AI 요약은 다음 실행에서 다시 시도합니다.")
+            return
+        status = write_status(target, posts_data, changed=True)
 
     for issue in summary.get("issues", []):
         sources = "/".join(issue.get("sources", []))

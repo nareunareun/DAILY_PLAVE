@@ -6,3 +6,6 @@ posts.json
 summary.json
 *.egg-info/
 .last_run_status.json
+
+# Local maintenance evidence; never publish private review artifacts.
+/maintenance/local-review/

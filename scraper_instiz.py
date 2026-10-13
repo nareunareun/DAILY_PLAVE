@@ -38,11 +38,28 @@ def fetch_page(scraper, page=1, retries=3, backoff=2.0):
             return resp.text
         except Exception as e:
             last_err = e
+            if getattr(getattr(e, "response", None), "status_code", None) == 403:
+                print("  -> [접근 제한] HTTP 403 — 우회하거나 같은 요청을 반복하지 않습니다.")
+                break
             if attempt < retries:
                 wait = backoff * attempt
                 print(f"  -> [재시도] 페이지 {page} 요청 실패({e}), {wait:.0f}s 후 재시도 ({attempt}/{retries})")
                 time.sleep(wait)
     raise last_err
+
+def extract_date_text(text):
+    """시각의 한 자리 시와 날짜+시각 표기를 모두 지원한다.
+
+    날짜가 있으면 시각보다 우선한다. '10.12 19:48'을 오늘 19:48로
+    오인하면 과거 글을 찾지 못해 페이지 탐색이 계속되기 때문이다.
+    """
+    match = re.search(
+        r"(?<![\d.])(?:(?:\d{4}|\d{2})\.)?\d{1,2}\.\d{1,2}(?![\d.])"
+        r"|(?<!\d)\d{1,2}:\d{2}(?!\d)",
+        text,
+    )
+    return match.group(0) if match else ""
+
 
 def parse_posts(html, target_date, seen_links):
     soup = BeautifulSoup(html, "html.parser")
@@ -71,18 +88,15 @@ def parse_posts(html, target_date, seen_links):
         subtitle = row.select_one(".list_subtitle")
         if subtitle:
             sub_txt = subtitle.get_text(strip=True)
-            date_match = re.search(r"(\d{2}\.\d{2}\.\d{2}|\d{2}\.\d{2}|\d{2}:\d{2})", sub_txt)
-            if date_match:
-                date_text = date_match.group(1)
+            date_text = extract_date_text(sub_txt)
             view_match = re.search(r"조회\s*([\d,]+)", sub_txt)
             if view_match:
                 view_count = int(view_match.group(1).replace(",", ""))
         else:
             listno_tds = row.select("td.listno")
             for td in listno_tds:
-                txt = td.get_text(strip=True).replace(" ", "")
-                if ":" in txt or "." in txt:
-                    date_text = txt
+                date_text = extract_date_text(td.get_text(" ", strip=True))
+                if date_text:
                     break
             if listno_tds:
                 try: view_count = int(listno_tds[-1].get_text(strip=True).replace(",", ""))

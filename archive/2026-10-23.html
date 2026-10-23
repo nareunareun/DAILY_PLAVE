@@ -1,0 +1,725 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DAILY PLAVE</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css">
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+<div class="hero">
+  <h1>DAILY PLAVE</h1>
+  <div class="hero-badge">2026년 10월 23일 · 디시인사이드 72개 · 더쿠 507개 · 뉴덕 159개 · 인스티즈 466개</div>
+  <div class="mood-bar">
+    <strong>DAILY RECAP · </strong>오늘은 AI 요약을 생성하지 못했습니다. (수집 데이터는 정상입니다.)
+  </div>
+
+  <div class="archive-nav">
+    <select id="archive-sel">
+      <option value="../index.html">LATEST</option>
+      <option value="2026-10-23.html" selected>2026-10-23</option>
+      <option value="2026-10-22.html">2026-10-22</option>
+      <option value="2026-10-21.html">2026-10-21</option>
+      <option value="2026-10-20.html">2026-10-20</option>
+      <option value="2026-10-19.html">2026-10-19</option>
+      <option value="2026-10-18.html">2026-10-18</option>
+      <option value="2026-10-17.html">2026-10-17</option>
+      <option value="2026-10-16.html">2026-10-16</option>
+      <option value="2026-10-15.html">2026-10-15</option>
+      <option value="2026-10-14.html">2026-10-14</option>
+      <option value="2026-10-13.html">2026-10-13</option>
+      <option value="2026-10-12.html">2026-10-12</option>
+      <option value="2026-10-11.html">2026-10-11</option>
+      <option value="2026-10-10.html">2026-10-10</option>
+      <option value="2026-10-09.html">2026-10-09</option>
+      <option value="2026-10-08.html">2026-10-08</option>
+      <option value="2026-10-07.html">2026-10-07</option>
+      <option value="2026-10-06.html">2026-10-06</option>
+      <option value="2026-10-05.html">2026-10-05</option>
+      <option value="2026-10-04.html">2026-10-04</option>
+      <option value="2026-10-03.html">2026-10-03</option>
+      <option value="2026-10-02.html">2026-10-02</option>
+      <option value="2026-10-01.html">2026-10-01</option>
+      <option value="2026-09-30.html">2026-09-30</option>
+      <option value="2026-09-29.html">2026-09-29</option>
+      <option value="2026-09-28.html">2026-09-28</option>
+      <option value="2026-09-27.html">2026-09-27</option>
+      <option value="2026-09-26.html">2026-09-26</option>
+      <option value="2026-09-25.html">2026-09-25</option>
+      <option value="2026-09-24.html">2026-09-24</option>
+      <option value="2026-09-23.html">2026-09-23</option>
+      <option value="2026-09-22.html">2026-09-22</option>
+      <option value="2026-09-21.html">2026-09-21</option>
+      <option value="2026-09-20.html">2026-09-20</option>
+      <option value="2026-09-19.html">2026-09-19</option>
+      <option value="2026-09-18.html">2026-09-18</option>
+      <option value="2026-09-17.html">2026-09-17</option>
+      <option value="2026-09-16.html">2026-09-16</option>
+      <option value="2026-09-15.html">2026-09-15</option>
+      <option value="2026-09-14.html">2026-09-14</option>
+      <option value="2026-09-13.html">2026-09-13</option>
+      <option value="2026-09-12.html">2026-09-12</option>
+      <option value="2026-09-11.html">2026-09-11</option>
+      <option value="2026-09-10.html">2026-09-10</option>
+      <option value="2026-09-09.html">2026-09-09</option>
+      <option value="2026-09-08.html">2026-09-08</option>
+      <option value="2026-09-07.html">2026-09-07</option>
+      <option value="2026-09-06.html">2026-09-06</option>
+      <option value="2026-09-05.html">2026-09-05</option>
+      <option value="2026-09-04.html">2026-09-04</option>
+      <option value="2026-09-03.html">2026-09-03</option>
+      <option value="2026-09-02.html">2026-09-02</option>
+      <option value="2026-09-01.html">2026-09-01</option>
+      <option value="2026-08-31.html">2026-08-31</option>
+      <option value="2026-08-30.html">2026-08-30</option>
+      <option value="2026-08-29.html">2026-08-29</option>
+      <option value="2026-08-28.html">2026-08-28</option>
+      <option value="2026-08-27.html">2026-08-27</option>
+      <option value="2026-08-26.html">2026-08-26</option>
+      <option value="2026-08-25.html">2026-08-25</option>
+      <option value="2026-08-24.html">2026-08-24</option>
+      <option value="2026-08-23.html">2026-08-23</option>
+      <option value="2026-08-22.html">2026-08-22</option>
+      <option value="2026-08-21.html">2026-08-21</option>
+      <option value="2026-08-20.html">2026-08-20</option>
+      <option value="2026-08-19.html">2026-08-19</option>
+      <option value="2026-08-18.html">2026-08-18</option>
+      <option value="2026-08-17.html">2026-08-17</option>
+      <option value="2026-08-16.html">2026-08-16</option>
+      <option value="2026-08-15.html">2026-08-15</option>
+      <option value="2026-08-14.html">2026-08-14</option>
+      <option value="2026-08-13.html">2026-08-13</option>
+      <option value="2026-08-12.html">2026-08-12</option>
+      <option value="2026-08-11.html">2026-08-11</option>
+      <option value="2026-08-10.html">2026-08-10</option>
+      <option value="2026-08-09.html">2026-08-09</option>
+      <option value="2026-08-08.html">2026-08-08</option>
+      <option value="2026-08-07.html">2026-08-07</option>
+      <option value="2026-08-06.html">2026-08-06</option>
+      <option value="2026-08-05.html">2026-08-05</option>
+      <option value="2026-08-04.html">2026-08-04</option>
+      <option value="2026-08-03.html">2026-08-03</option>
+      <option value="2026-08-02.html">2026-08-02</option>
+      <option value="2026-08-01.html">2026-08-01</option>
+      <option value="2026-07-31.html">2026-07-31</option>
+      <option value="2026-07-30.html">2026-07-30</option>
+      <option value="2026-07-29.html">2026-07-29</option>
+      <option value="2026-07-28.html">2026-07-28</option>
+      <option value="2026-07-27.html">2026-07-27</option>
+      <option value="2026-07-26.html">2026-07-26</option>
+      <option value="2026-07-25.html">2026-07-25</option>
+      <option value="2026-07-24.html">2026-07-24</option>
+      <option value="2026-07-23.html">2026-07-23</option>
+      <option value="2026-07-22.html">2026-07-22</option>
+      <option value="2026-07-21.html">2026-07-21</option>
+      <option value="2026-07-20.html">2026-07-20</option>
+      <option value="2026-07-19.html">2026-07-19</option>
+      <option value="2026-07-18.html">2026-07-18</option>
+      <option value="2026-07-17.html">2026-07-17</option>
+      <option value="2026-07-16.html">2026-07-16</option>
+      <option value="2026-07-15.html">2026-07-15</option>
+      <option value="2026-07-14.html">2026-07-14</option>
+      <option value="2026-07-13.html">2026-07-13</option>
+      <option value="2026-07-12.html">2026-07-12</option>
+      <option value="2026-07-11.html">2026-07-11</option>
+      <option value="2026-07-10.html">2026-07-10</option>
+      <option value="2026-07-09.html">2026-07-09</option>
+      <option value="2026-07-08.html">2026-07-08</option>
+      <option value="2026-07-07.html">2026-07-07</option>
+      <option value="2026-07-06.html">2026-07-06</option>
+      <option value="2026-07-05.html">2026-07-05</option>
+      <option value="2026-07-04.html">2026-07-04</option>
+      <option value="2026-07-03.html">2026-07-03</option>
+      <option value="2026-07-02.html">2026-07-02</option>
+      <option value="2026-07-01.html">2026-07-01</option>
+      <option value="2026-06-30.html">2026-06-30</option>
+      <option value="2026-06-29.html">2026-06-29</option>
+      <option value="2026-06-28.html">2026-06-28</option>
+      <option value="2026-06-27.html">2026-06-27</option>
+      <option value="2026-06-26.html">2026-06-26</option>
+      <option value="2026-06-25.html">2026-06-25</option>
+      <option value="2026-06-24.html">2026-06-24</option>
+      <option value="2026-06-23.html">2026-06-23</option>
+      <option value="2026-06-22.html">2026-06-22</option>
+      <option value="2026-06-21.html">2026-06-21</option>
+      <option value="2026-06-20.html">2026-06-20</option>
+      <option value="2026-06-19.html">2026-06-19</option>
+      <option value="2026-06-18.html">2026-06-18</option>
+      <option value="2026-06-17.html">2026-06-17</option>
+      <option value="2026-06-16.html">2026-06-16</option>
+      <option value="2026-06-15.html">2026-06-15</option>
+      <option value="2026-06-14.html">2026-06-14</option>
+      <option value="2026-06-13.html">2026-06-13</option>
+      <option value="2026-06-12.html">2026-06-12</option>
+      <option value="2026-06-11.html">2026-06-11</option>
+      <option value="2026-06-10.html">2026-06-10</option>
+      <option value="2026-06-09.html">2026-06-09</option>
+      <option value="2026-06-08.html">2026-06-08</option>
+      <option value="2026-06-07.html">2026-06-07</option>
+      <option value="2026-06-06.html">2026-06-06</option>
+      <option value="2026-06-05.html">2026-06-05</option>
+      <option value="2026-06-04.html">2026-06-04</option>
+      <option value="2026-06-03.html">2026-06-03</option>
+      <option value="2026-06-02.html">2026-06-02</option>
+      <option value="2026-06-01.html">2026-06-01</option>
+      <option value="2026-05-31.html">2026-05-31</option>
+      <option value="2026-05-30.html">2026-05-30</option>
+      <option value="2026-05-29.html">2026-05-29</option>
+      <option value="2026-05-28.html">2026-05-28</option>
+      <option value="2026-05-27.html">2026-05-27</option>
+      <option value="2026-05-26.html">2026-05-26</option>
+      <option value="2026-05-25.html">2026-05-25</option>
+      <option value="2026-05-24.html">2026-05-24</option>
+      <option value="2026-05-23.html">2026-05-23</option>
+      <option value="2026-05-22.html">2026-05-22</option>
+      <option value="2026-05-21.html">2026-05-21</option>
+      <option value="2026-05-20.html">2026-05-20</option>
+      <option value="2026-05-19.html">2026-05-19</option>
+      <option value="2026-05-18.html">2026-05-18</option>
+      <option value="2026-05-17.html">2026-05-17</option>
+      <option value="2026-05-16.html">2026-05-16</option>
+      <option value="2026-05-15.html">2026-05-15</option>
+      <option value="2026-05-14.html">2026-05-14</option>
+    </select>
+  </div>
+</div>
+
+<div class="container">
+
+  <div class="section-title">이슈 요약</div>
+  <div class="issues-grid">
+    
+        <div class="issue-card">
+          <p class="issue-summary">오늘은 AI 이슈 요약을 생성하지 못했습니다. 아래 커뮤니티별 인기글을 확인해 주세요.</p>
+        </div>
+  </div>
+
+  <div class="section-title">커뮤니티별 인기글 TOP 15</div>
+  <div class="tables-grid">
+
+    <div class="table-block">
+      <div class="table-header dc">💙 디시인사이드</div>
+      <table class="posts-table">
+        <thead><tr>
+          <th class="rank">#</th><th>제목</th><th class="stat">조회</th><th class="stat">댓글</th>
+        </tr></thead>
+        <tbody>
+        <tr>
+          <td class="rank">1</td>
+          <td class="post-title"><a class="post-link" href="https://gall.dcinside.com/mgallery/board/view/?id=plave&amp;no=126806&amp;page=1" target="_blank" rel="noopener">The Answer Is Yes 💐</a></td>
+          <td class="stat">676</td>
+          <td class="stat">9</td>
+        </tr>
+        <tr>
+          <td class="rank">2</td>
+          <td class="post-title"><a class="post-link" href="https://gall.dcinside.com/mgallery/board/view/?id=plave&amp;no=126757&amp;page=2" target="_blank" rel="noopener">밤버라 불판</a></td>
+          <td class="stat">351</td>
+          <td class="stat">27</td>
+        </tr>
+        <tr>
+          <td class="rank">3</td>
+          <td class="post-title"><a class="post-link" href="https://gall.dcinside.com/mgallery/board/view/?id=plave&amp;no=126784&amp;page=2" target="_blank" rel="noopener">위버스 매거진-HYPERDRIVE 컴백 인터뷰 1</a></td>
+          <td class="stat">289</td>
+          <td class="stat">10</td>
+        </tr>
+        <tr>
+          <td class="rank">4</td>
+          <td class="post-title"><a class="post-link" href="https://gall.dcinside.com/mgallery/board/view/?id=plave&amp;no=126761&amp;page=2" target="_blank" rel="noopener">&#x27;The Answer Is Yes&#x27; Special Video</a></td>
+          <td class="stat">175</td>
+          <td class="stat">7</td>
+        </tr>
+        <tr>
+          <td class="rank">5</td>
+          <td class="post-title"><a class="post-link" href="https://gall.dcinside.com/mgallery/board/view/?id=plave&amp;no=126811&amp;page=1" target="_blank" rel="noopener">StarTrace 🏎️ with P1Harmony 인.탁</a></td>
+          <td class="stat">428</td>
+          <td class="stat">4</td>
+        </tr>
+        <tr>
+          <td class="rank">6</td>
+          <td class="post-title"><a class="post-link" href="https://gall.dcinside.com/mgallery/board/view/?id=plave&amp;no=126776&amp;page=2" target="_blank" rel="noopener">ㅎㅌ 월드차트 미국 1위</a></td>
+          <td class="stat">672</td>
+          <td class="stat">12</td>
+        </tr>
+        <tr>
+          <td class="rank">7</td>
+          <td class="post-title"><a class="post-link" href="https://gall.dcinside.com/mgallery/board/view/?id=plave&amp;no=126828&amp;page=1" target="_blank" rel="noopener">ㅅㅊ 예측</a></td>
+          <td class="stat">613</td>
+          <td class="stat">12</td>
+        </tr>
+        <tr>
+          <td class="rank">8</td>
+          <td class="post-title"><a class="post-link" href="https://gall.dcinside.com/mgallery/board/view/?id=plave&amp;no=126820&amp;page=1" target="_blank" rel="noopener">ㅊㅈ 막주 대관 풀렸던데</a></td>
+          <td class="stat">622</td>
+          <td class="stat">11</td>
+        </tr>
+        <tr>
+          <td class="rank">9</td>
+          <td class="post-title"><a class="post-link" href="https://gall.dcinside.com/mgallery/board/view/?id=plave&amp;no=126773&amp;page=2" target="_blank" rel="noopener">지금 도착한 새기덜 쥔에어탓구만</a></td>
+          <td class="stat">811</td>
+          <td class="stat">7</td>
+        </tr>
+        <tr>
+          <td class="rank">10</td>
+          <td class="post-title"><a class="post-link" href="https://gall.dcinside.com/mgallery/board/view/?id=plave&amp;no=126803&amp;page=2" target="_blank" rel="noopener">머만상황</a></td>
+          <td class="stat">611</td>
+          <td class="stat">9</td>
+        </tr>
+        <tr>
+          <td class="rank">11</td>
+          <td class="post-title"><a class="post-link" href="https://gall.dcinside.com/mgallery/board/view/?id=plave&amp;no=126832&amp;page=1" target="_blank" rel="noopener">사과우드 공지 보고 지금 뇌정지 오는디</a></td>
+          <td class="stat">735</td>
+          <td class="stat">7</td>
+        </tr>
+        <tr>
+          <td class="rank">12</td>
+          <td class="post-title"><a class="post-link" href="https://gall.dcinside.com/mgallery/board/view/?id=plave&amp;no=126787&amp;page=2" target="_blank" rel="noopener">스밍 놓으면 안된다</a></td>
+          <td class="stat">352</td>
+          <td class="stat">12</td>
+        </tr>
+        <tr>
+          <td class="rank">13</td>
+          <td class="post-title"><a class="post-link" href="https://gall.dcinside.com/mgallery/board/view/?id=plave&amp;no=126825&amp;page=1" target="_blank" rel="noopener">시발 내가 오늘 뭐하러 우육면먹고 마사지받은 거야</a></td>
+          <td class="stat">641</td>
+          <td class="stat">6</td>
+        </tr>
+        <tr>
+          <td class="rank">14</td>
+          <td class="post-title"><a class="post-link" href="https://gall.dcinside.com/mgallery/board/view/?id=plave&amp;no=126774&amp;page=2" target="_blank" rel="noopener">십캎후기</a></td>
+          <td class="stat">550</td>
+          <td class="stat">7</td>
+        </tr>
+        <tr>
+          <td class="rank">15</td>
+          <td class="post-title"><a class="post-link" href="https://gall.dcinside.com/mgallery/board/view/?id=plave&amp;no=126829&amp;page=1" target="_blank" rel="noopener">ㅁㅂ 예측</a></td>
+          <td class="stat">494</td>
+          <td class="stat">7</td>
+        </tr></tbody>
+      </table>
+    </div>
+
+    <div class="table-block">
+      <div class="table-header theqoo">💜 더쿠</div>
+      <table class="posts-table">
+        <thead><tr>
+          <th class="rank">#</th><th>제목</th><th class="stat">조회</th><th class="stat">댓글</th>
+        </tr></thead>
+        <tbody>
+        <tr>
+          <td class="rank">1</td>
+          <td class="post-title"><a class="post-link" href="https://theqoo.net/plave/4383906624?page=33" target="_blank" rel="noopener">한터 국가별 차트 미국 1위, 플레이브</a></td>
+          <td class="stat">1,211</td>
+          <td class="stat">51</td>
+        </tr>
+        <tr>
+          <td class="rank">2</td>
+          <td class="post-title"><a class="post-link" href="https://theqoo.net/plave/4384649074?page=11" target="_blank" rel="noopener">콘서트 공지 떴다</a></td>
+          <td class="stat">1,293</td>
+          <td class="stat">46</td>
+        </tr>
+        <tr>
+          <td class="rank">3</td>
+          <td class="post-title"><a class="post-link" href="https://theqoo.net/plave/4384316688?page=24" target="_blank" rel="noopener">뮤뱅 3위🎉</a></td>
+          <td class="stat">889</td>
+          <td class="stat">43</td>
+        </tr>
+        <tr>
+          <td class="rank">4</td>
+          <td class="post-title"><a class="post-link" href="https://theqoo.net/plave/4384546993?page=16" target="_blank" rel="noopener">안녕 딴방 덬인데</a></td>
+          <td class="stat">1,101</td>
+          <td class="stat">34</td>
+        </tr>
+        <tr>
+          <td class="rank">5</td>
+          <td class="post-title"><a class="post-link" href="https://theqoo.net/plave/4384232226?page=26" target="_blank" rel="noopener">앙콘 혹시 몰라서 일단 숙소잡고왔어</a></td>
+          <td class="stat">1,001</td>
+          <td class="stat">32</td>
+        </tr>
+        <tr>
+          <td class="rank">6</td>
+          <td class="post-title"><a class="post-link" href="https://theqoo.net/plave/4384183419?page=26" target="_blank" rel="noopener">우리 내년 4주년에 앙콘 어때</a></td>
+          <td class="stat">1,078</td>
+          <td class="stat">29</td>
+        </tr>
+        <tr>
+          <td class="rank">7</td>
+          <td class="post-title"><a class="post-link" href="https://theqoo.net/plave/4384498505?page=20" target="_blank" rel="noopener">내일 타이베이 휴교휴업령같다</a></td>
+          <td class="stat">901</td>
+          <td class="stat">32</td>
+        </tr>
+        <tr>
+          <td class="rank">8</td>
+          <td class="post-title"><a class="post-link" href="https://theqoo.net/plave/4384501724?page=19" target="_blank" rel="noopener">하루더 연장하지말껄</a></td>
+          <td class="stat">1,034</td>
+          <td class="stat">29</td>
+        </tr>
+        <tr>
+          <td class="rank">9</td>
+          <td class="post-title"><a class="post-link" href="https://theqoo.net/plave/4384017271?page=30" target="_blank" rel="noopener">댄라즈 답변 보다가 눈물고임</a></td>
+          <td class="stat">1,312</td>
+          <td class="stat">22</td>
+        </tr>
+        <tr>
+          <td class="rank">10</td>
+          <td class="post-title"><a class="post-link" href="https://theqoo.net/plave/4384253618?page=25" target="_blank" rel="noopener">근데 앙콘 1월 넷째주일 수 밖에 없는게</a></td>
+          <td class="stat">986</td>
+          <td class="stat">28</td>
+        </tr>
+        <tr>
+          <td class="rank">11</td>
+          <td class="post-title"><a class="post-link" href="https://theqoo.net/plave/4383855173?page=34" target="_blank" rel="noopener">타항공사 결항이라도 환불수수료 발생한대</a></td>
+          <td class="stat">1,260</td>
+          <td class="stat">21</td>
+        </tr>
+        <tr>
+          <td class="rank">12</td>
+          <td class="post-title"><a class="post-link" href="https://theqoo.net/plave/4384227611?page=26" target="_blank" rel="noopener">내일 대만에 있을 플리들</a></td>
+          <td class="stat">917</td>
+          <td class="stat">27</td>
+        </tr>
+        <tr>
+          <td class="rank">13</td>
+          <td class="post-title"><a class="post-link" href="https://theqoo.net/plave/4384385115?page=22" target="_blank" rel="noopener">구경할래...?</a></td>
+          <td class="stat">1,267</td>
+          <td class="stat">20</td>
+        </tr>
+        <tr>
+          <td class="rank">14</td>
+          <td class="post-title"><a class="post-link" href="https://theqoo.net/plave/4384333501?page=23" target="_blank" rel="noopener">풀리야 야단났다 24위</a></td>
+          <td class="stat">746</td>
+          <td class="stat">29</td>
+        </tr>
+        <tr>
+          <td class="rank">15</td>
+          <td class="post-title"><a class="post-link" href="https://theqoo.net/plave/4383759921?page=35" target="_blank" rel="noopener">본인 피셜 굳은살 많아서 테스토스테론 향기가 나는 손</a></td>
+          <td class="stat">1,386</td>
+          <td class="stat">14</td>
+        </tr></tbody>
+      </table>
+    </div>
+
+    <div class="table-block">
+      <div class="table-header newduck">🩷 뉴덕</div>
+      <table class="posts-table">
+        <thead><tr>
+          <th class="rank">#</th><th>제목</th><th class="stat">조회</th><th class="stat">댓글</th>
+        </tr></thead>
+        <tbody>
+        <tr>
+          <td class="rank">1</td>
+          <td class="post-title"><a class="post-link" href="https://newduck.net/board_gLxy54/129261357?page=14" target="_blank" rel="noopener">오리들은 기분 나쁜 얘기 들으면 어떻게 넘겨</a></td>
+          <td class="stat">295</td>
+          <td class="stat">17</td>
+        </tr>
+        <tr>
+          <td class="rank">2</td>
+          <td class="post-title"><a class="post-link" href="https://newduck.net/board_gLxy54/129270245?page=10" target="_blank" rel="noopener">친구랑 저녁 먹으려고 평소에 안타던 버스 탔는데</a></td>
+          <td class="stat">249</td>
+          <td class="stat">18</td>
+        </tr>
+        <tr>
+          <td class="rank">3</td>
+          <td class="post-title"><a class="post-link" href="https://newduck.net/board_gLxy54/129273858?page=9" target="_blank" rel="noopener">엠디 양도</a></td>
+          <td class="stat">279</td>
+          <td class="stat">16</td>
+        </tr>
+        <tr>
+          <td class="rank">4</td>
+          <td class="post-title"><a class="post-link" href="https://newduck.net/board_gLxy54/129256685?page=15" target="_blank" rel="noopener">나 공항 산책하고 집에 가는중</a></td>
+          <td class="stat">351</td>
+          <td class="stat">14</td>
+        </tr>
+        <tr>
+          <td class="rank">5</td>
+          <td class="post-title"><a class="post-link" href="https://newduck.net/board_gLxy54/129274802?page=9" target="_blank" rel="noopener">(완) 플뿌 💗💗 -&gt; 💜🖤</a></td>
+          <td class="stat">134</td>
+          <td class="stat">19</td>
+        </tr>
+        <tr>
+          <td class="rank">6</td>
+          <td class="post-title"><a class="post-link" href="https://newduck.net/board_gLxy54/129277049?page=8" target="_blank" rel="noopener">일요일에 두 번 한다고...?</a></td>
+          <td class="stat">277</td>
+          <td class="stat">12</td>
+        </tr>
+        <tr>
+          <td class="rank">7</td>
+          <td class="post-title"><a class="post-link" href="https://newduck.net/board_gLxy54/129262881?page=13" target="_blank" rel="noopener">대만소식</a></td>
+          <td class="stat">270</td>
+          <td class="stat">12</td>
+        </tr>
+        <tr>
+          <td class="rank">8</td>
+          <td class="post-title"><a class="post-link" href="https://newduck.net/board_gLxy54/129262759?page=13" target="_blank" rel="noopener">픽오들 결혼 성공 했어?</a></td>
+          <td class="stat">184</td>
+          <td class="stat">14</td>
+        </tr>
+        <tr>
+          <td class="rank">9</td>
+          <td class="post-title"><a class="post-link" href="https://newduck.net/board_gLxy54/129273634?page=9" target="_blank" rel="noopener">타이베이 휴업령 뜸 24일 ㅠ</a></td>
+          <td class="stat">275</td>
+          <td class="stat">10</td>
+        </tr>
+        <tr>
+          <td class="rank">10</td>
+          <td class="post-title"><a class="post-link" href="https://newduck.net/board_gLxy54/129257809?page=15" target="_blank" rel="noopener">ㅎㅌ 월드차트</a></td>
+          <td class="stat">192</td>
+          <td class="stat">11</td>
+        </tr>
+        <tr>
+          <td class="rank">11</td>
+          <td class="post-title"><a class="post-link" href="https://newduck.net/board_gLxy54/129255250?page=15" target="_blank" rel="noopener">대만 일요일 연기한거</a></td>
+          <td class="stat">387</td>
+          <td class="stat">5</td>
+        </tr>
+        <tr>
+          <td class="rank">12</td>
+          <td class="post-title"><a class="post-link" href="https://newduck.net/board_gLxy54/129273097?page=9" target="_blank" rel="noopener">이것저것 엠디양도</a></td>
+          <td class="stat">228</td>
+          <td class="stat">9</td>
+        </tr>
+        <tr>
+          <td class="rank">13</td>
+          <td class="post-title"><a class="post-link" href="https://newduck.net/board_gLxy54/129275442?page=9" target="_blank" rel="noopener">대만인데 바람 소리 진짜 무섭다 ㅠㅠ</a></td>
+          <td class="stat">185</td>
+          <td class="stat">10</td>
+        </tr>
+        <tr>
+          <td class="rank">14</td>
+          <td class="post-title"><a class="post-link" href="https://newduck.net/board_gLxy54/129259566?page=14" target="_blank" rel="noopener">항공권 티켓 다 취소하고옴 ㅠㅠ</a></td>
+          <td class="stat">242</td>
+          <td class="stat">8</td>
+        </tr>
+        <tr>
+          <td class="rank">15</td>
+          <td class="post-title"><a class="post-link" href="https://newduck.net/board_gLxy54/129260308?page=14" target="_blank" rel="noopener">유튭 미공포 사길 잘했다 (ㅅㅍ)</a></td>
+          <td class="stat">191</td>
+          <td class="stat">9</td>
+        </tr></tbody>
+      </table>
+    </div>
+
+    <div class="table-block">
+      <div class="table-header instiz">❤️ 인스티즈</div>
+      <table class="posts-table">
+        <thead><tr>
+          <th class="rank">#</th><th>제목</th><th class="stat">조회</th><th class="stat">댓글</th>
+        </tr></thead>
+        <tbody>
+        <tr>
+          <td class="rank">1</td>
+          <td class="post-title"><a class="post-link" href="https://www.instiz.net/name_enter/100847520&amp;category=644" target="_blank" rel="noopener">정보/소식한터 미국 차트 1위</a></td>
+          <td class="stat">6,554</td>
+          <td class="stat">104</td>
+        </tr>
+        <tr>
+          <td class="rank">2</td>
+          <td class="post-title"><a class="post-link" href="https://www.instiz.net/name_enter/100847520?category=644&amp;green=1" target="_blank" rel="noopener">한터 미국 차트 1위</a></td>
+          <td class="stat">40</td>
+          <td class="stat">104</td>
+        </tr>
+        <tr>
+          <td class="rank">3</td>
+          <td class="post-title"><a class="post-link" href="https://www.instiz.net/name_enter/100851171&amp;category=644" target="_blank" rel="noopener">지금 스밍 돌려도 안 늦었나...???</a></td>
+          <td class="stat">594</td>
+          <td class="stat">66</td>
+        </tr>
+        <tr>
+          <td class="rank">4</td>
+          <td class="post-title"><a class="post-link" href="https://www.instiz.net/name_enter/100851834&amp;category=644" target="_blank" rel="noopener">얘들아 밤빌이 ㅁㅂ 오스트차트 1위했다</a></td>
+          <td class="stat">752</td>
+          <td class="stat">60</td>
+        </tr>
+        <tr>
+          <td class="rank">5</td>
+          <td class="post-title"><a class="post-link" href="https://www.instiz.net/name_enter/100851171?category=644&amp;green=1" target="_blank" rel="noopener">지금 스밍 돌려도 안 늦었나...???</a></td>
+          <td class="stat">8</td>
+          <td class="stat">66</td>
+        </tr>
+        <tr>
+          <td class="rank">6</td>
+          <td class="post-title"><a class="post-link" href="https://www.instiz.net/name_enter/100852064&amp;category=644" target="_blank" rel="noopener">하미니 아기vs오빠?</a></td>
+          <td class="stat">300</td>
+          <td class="stat">58</td>
+        </tr>
+        <tr>
+          <td class="rank">7</td>
+          <td class="post-title"><a class="post-link" href="https://www.instiz.net/name_enter/100851834?category=644&amp;green=1" target="_blank" rel="noopener">얘들아 밤빌이 ㅁㅂ 오스트차트 1위했다</a></td>
+          <td class="stat">0</td>
+          <td class="stat">60</td>
+        </tr>
+        <tr>
+          <td class="rank">8</td>
+          <td class="post-title"><a class="post-link" href="https://www.instiz.net/name_enter/100849327&amp;category=644" target="_blank" rel="noopener">우리 이제 체조는 다시 안 가려나?</a></td>
+          <td class="stat">405</td>
+          <td class="stat">55</td>
+        </tr>
+        <tr>
+          <td class="rank">9</td>
+          <td class="post-title"><a class="post-link" href="https://www.instiz.net/name_enter/100853669&amp;category=644" target="_blank" rel="noopener">24일도 휴업령.</a></td>
+          <td class="stat">973</td>
+          <td class="stat">50</td>
+        </tr>
+        <tr>
+          <td class="rank">10</td>
+          <td class="post-title"><a class="post-link" href="https://www.instiz.net/name_enter/100850847&amp;category=644" target="_blank" rel="noopener">우리 뮤뱅 3위다!!</a></td>
+          <td class="stat">568</td>
+          <td class="stat">48</td>
+        </tr>
+        <tr>
+          <td class="rank">11</td>
+          <td class="post-title"><a class="post-link" href="https://www.instiz.net/name_enter/100854150&amp;category=644" target="_blank" rel="noopener">본인표출뉴플리인데 우리 또 뭐 할 거 있어...??</a></td>
+          <td class="stat">413</td>
+          <td class="stat">49</td>
+        </tr>
+        <tr>
+          <td class="rank">12</td>
+          <td class="post-title"><a class="post-link" href="https://www.instiz.net/name_enter/100853669?category=644&amp;green=1&amp;grnpage=2" target="_blank" rel="noopener">24일도 휴업령.</a></td>
+          <td class="stat">0</td>
+          <td class="stat">50</td>
+        </tr>
+        <tr>
+          <td class="rank">13</td>
+          <td class="post-title"><a class="post-link" href="https://www.instiz.net/name_enter/100854150?category=644&amp;green=1&amp;grnpage=2" target="_blank" rel="noopener">본인표출뉴플리인데 우리 또 뭐 할 거 있어...??</a></td>
+          <td class="stat">0</td>
+          <td class="stat">49</td>
+        </tr>
+        <tr>
+          <td class="rank">14</td>
+          <td class="post-title"><a class="post-link" href="https://www.instiz.net/name_enter/100850847?category=644&amp;green=1" target="_blank" rel="noopener">우리 뮤뱅 3위다!!</a></td>
+          <td class="stat">0</td>
+          <td class="stat">48</td>
+        </tr>
+        <tr>
+          <td class="rank">15</td>
+          <td class="post-title"><a class="post-link" href="https://www.instiz.net/name_enter/100848970&amp;category=644" target="_blank" rel="noopener">근데 우리 뉴플리 기준이 어떻게 돼?</a></td>
+          <td class="stat">419</td>
+          <td class="stat">43</td>
+        </tr></tbody>
+      </table>
+    </div>
+
+  </div>
+</div>
+
+<footer>
+  <span class="hero-badge" style="margin-bottom:0">UPDATE <time id="update-time" datetime="2026-10-24T04:29:27+09:00">2026년 10월 24일 04:29</time><span id="time-ago"></span></span>
+</footer>
+
+<button id="top-btn" aria-label="맨 위로">🖤</button>
+
+<script src="dates.js"></script>
+<script>
+  const STORAGE_KEY = 'plave_read_posts';
+
+  function getReadSet() {
+    try { return new Set(JSON.parse(localStorage.getItem(STORAGE_KEY) || '[]')); }
+    catch { return new Set(); }
+  }
+
+  function saveReadSet(set) {
+    localStorage.setItem(STORAGE_KEY, JSON.stringify([...set]));
+  }
+
+  document.addEventListener('DOMContentLoaded', function () {
+
+    /* ── 읽은 글 표시 ── */
+    const readSet = getReadSet();
+    document.querySelectorAll('.post-link').forEach(function (a) {
+      const url = a.href;
+      const row = a.closest('tr');
+      if (readSet.has(url)) row.classList.add('read');
+      a.addEventListener('click', function () {
+        readSet.add(url);
+        saveReadSet(readSet);
+        row.classList.add('read');
+      });
+    });
+
+    /* ── 상대 시간 ── */
+    const timeEl  = document.getElementById('update-time');
+    const agoEl   = document.getElementById('time-ago');
+    if (timeEl && agoEl) {
+      const diff = Math.round((Date.now() - new Date(timeEl.getAttribute('datetime')).getTime()) / 60000);
+      let label;
+      if      (diff < 1)    label = '방금 전';
+      else if (diff < 60)   label = diff + '분 전';
+      else if (diff < 1440) label = Math.round(diff / 60) + '시간 전';
+      else                  label = Math.round(diff / 1440) + '일 전';
+      agoEl.textContent = ' (' + label + ')';
+    }
+
+    /* ── 맨 위로 버튼 ── */
+    const topBtn = document.getElementById('top-btn');
+    window.addEventListener('scroll', function () {
+      topBtn.classList.toggle('visible', window.scrollY > 300);
+    });
+    topBtn.addEventListener('click', function () {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+
+    /* ── 이슈 카드 필터링 ── */
+    const allRows = Array.from(document.querySelectorAll('.posts-table tbody tr'));
+    let activeCard = null;
+
+    function applyFilter(keywords) {
+      allRows.forEach(function (row) {
+        const titleEl = row.querySelector('.post-title a');
+        if (!titleEl) return;
+        const text  = titleEl.textContent;
+        const match = keywords.some(function (kw) { return text.includes(kw.trim()); });
+        row.classList.toggle('dimmed', !match);
+        row.classList.toggle('match',  match);
+      });
+    }
+
+    function resetFilter() {
+      allRows.forEach(function (row) {
+        row.classList.remove('dimmed', 'match');
+      });
+    }
+
+    document.querySelectorAll('.issue-card').forEach(function (card) {
+      card.addEventListener('click', function () {
+        if (activeCard === card) {
+          card.classList.remove('selected');
+          activeCard = null;
+          resetFilter();
+        } else {
+          if (activeCard) activeCard.classList.remove('selected');
+          activeCard = card;
+          card.classList.add('selected');
+          const keywords = (card.dataset.keywords || '').split(',').filter(Boolean);
+          applyFilter(keywords);
+        }
+      });
+    });
+
+    /* ── 아카이브 내비 ── */
+    const archiveSel = document.getElementById('archive-sel');
+    if (archiveSel) {
+      /* dates.js의 전체 날짜 목록으로 옵션을 보강한다 — 과거에 생성된
+         페이지에서도 이후에 추가된 날짜로 이동할 수 있게. */
+      if (window.ARCHIVE_DATES) {
+        const have = new Set(Array.from(archiveSel.options, function (o) { return o.textContent.trim(); }));
+        window.ARCHIVE_DATES.forEach(function (d) {
+          if (have.has(d)) return;
+          let idx = 1;  /* 0번은 LATEST — 이후는 날짜 내림차순 유지 */
+          while (idx < archiveSel.options.length && archiveSel.options[idx].textContent.trim() > d) idx++;
+          archiveSel.add(new Option(d, '' + d + '.html'), idx);
+        });
+      }
+      archiveSel.addEventListener('change', function () {
+        if (this.value) {
+          location.href = this.value;
+        } else {
+          location.href = 'index.html';
+        }
+      });
+    }
+
+  });
+</script>
+
+</body>
+</html>

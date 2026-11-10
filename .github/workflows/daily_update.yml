@@ -50,9 +50,8 @@ jobs:
         if: steps.dependencies.outcome == 'success'
         continue-on-error: true
         env:
-          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
           PYTHONUNBUFFERED: "1"
-        run: python run.py --date "${{ steps.target.outputs.date }}"
+        run: python run.py --date "${{ steps.target.outputs.date }}" --summary-provider codex
         timeout-minutes: 10
 
       - name: Validate publish candidate

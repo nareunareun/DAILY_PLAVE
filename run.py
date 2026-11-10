@@ -77,6 +77,8 @@ def main():
     ap = argparse.ArgumentParser(description="DAILY PLAVE 커뮤니티 수집·페이지 생성")
     ap.add_argument("--date", help="수집 날짜 YYYY-MM-DD (기본: 어제 KST)")
     ap.add_argument("--force", action="store_true", help="완료된 소스도 전부 다시 수집")
+    ap.add_argument("--summary-provider", choices=("anthropic", "codex"), default="anthropic",
+                    help="codex: 수집만 진행하고 구독 Codex가 별도로 요약")
     args = ap.parse_args()
 
     if args.date:
@@ -90,7 +92,7 @@ def main():
 
     existing = None if args.force else load_data(target)
     pending = [(k, l, m) for k, l, _, m in SOURCES if not source_ok(existing, k)]
-    retry_summary = bool(existing) and not ((existing.get("summary") or {}).get("issues"))
+    retry_summary = args.summary_provider == "anthropic" and bool(existing) and not ((existing.get("summary") or {}).get("issues"))
 
     if not pending and not retry_summary:
         print(f"이미 {target} 네 소스 모두 수집 완료. 재시도를 건너뜁니다.")
@@ -167,7 +169,7 @@ def main():
     with open("posts.json", "w", encoding="utf-8") as f:
         json.dump(posts_data, f, ensure_ascii=False, indent=2)
 
-    print("\n[요약] AI 이슈 요약 생성 중...")
+    print("\n[요약] 저장된 요약 확인 중...")
     from summarizer import summarize, save_summary
     # 유일한 유료(API) 단계. 크레딧 소진·인증 오류 등으로 실패해도 빌드 전체를
     # 멈추지 않는다. 소스 구성이 같으면 기존 요약을 재사용해 호출을 아낀다.
@@ -180,7 +182,14 @@ def main():
         ((existing or {}).get(k) or {}).get("total") == posts_data[k].get("total")
         for k in nonempty
     )
-    if prev_summary and prev_summary.get("issues") and prev_sources == set(nonempty) and same_counts:
+    if args.summary_provider == "codex":
+        summary = prev_summary if prev_summary and prev_summary.get("issues") else {
+            "issues": [], "overall_mood": "게시글 수집이 완료되었습니다. 오늘의 이슈 요약을 준비 중입니다."
+        }
+        if (existing or {}).get("summary_meta"):
+            posts_data["summary_meta"] = existing["summary_meta"]
+        print("  -> Codex 구독 요약 사용 — 외부 요약 API를 호출하지 않습니다.")
+    elif prev_summary and prev_summary.get("issues") and prev_sources == set(nonempty) and same_counts:
         print("  -> 소스 구성·개수가 같아 기존 요약을 재사용합니다.")
         summary = prev_summary
     else:

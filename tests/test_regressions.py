@@ -131,7 +131,7 @@ class PipelineTests(OfflineTest):
     def sample_post(self):
         return {'title': 'offline sample <post>', 'link': 'https://example.invalid/post', 'view_count': 123, 'reply_count': 5, 'recommend_count': 2}
 
-    def exercise(self, directory, missing=False, existing=None, ai_fails=False):
+    def exercise(self, directory, missing=False, existing=None, ai_fails=False, provider='anthropic'):
         modules = {}
         for key, _, _, module_name in scrape_utils.SOURCES:
             posts = [] if missing and key == 'instiz' else [self.sample_post()]
@@ -143,8 +143,10 @@ class PipelineTests(OfflineTest):
                 Path('archive/data').mkdir(parents=True, exist_ok=True)
                 Path('archive/data/2026-10-12.json').write_text(json.dumps(existing), encoding='utf-8')
             summary = {'issues': [{'title': 'offline issue', 'summary': 'offline summary', 'sources': ['인스티즈']}], 'overall_mood': 'offline mood'}
-            with patch.dict('sys.modules', modules), patch('sys.argv', ['run', '--date', '2026-10-12']), patch.dict(os.environ, {'ANTHROPIC_API_KEY': 'unused-test-placeholder'}), patch.object(summarizer, 'summarize', side_effect=RuntimeError('credit balance too low') if ai_fails else None, return_value=summary), contextlib.redirect_stdout(io.StringIO()):
+            with patch.dict('sys.modules', modules), patch('sys.argv', ['run', '--date', '2026-10-12', '--summary-provider', provider]), patch.dict(os.environ, {'ANTHROPIC_API_KEY': 'unused-test-placeholder'}), patch.object(summarizer, 'summarize', side_effect=RuntimeError('credit balance too low') if ai_fails else None, return_value=summary) as api, contextlib.redirect_stdout(io.StringIO()):
                 run.main()
+                if provider == 'codex':
+                    api.assert_not_called()
             return modules
         finally:
             os.chdir(old)
@@ -155,6 +157,15 @@ class PipelineTests(OfflineTest):
             result = summarizer.summarize({'collected_at': '2026-10-13T09:00:00+09:00', 'date': '2026-10-12'})
             self.assertEqual(result['issues'][0]['title'], 'ok')
             client.return_value.messages.create.assert_called_once()
+
+    def test_codex_collection_never_calls_summary_api(self):
+        with tempfile.TemporaryDirectory() as directory:
+            self.exercise(directory, provider='codex')
+            data = json.loads(Path(directory, 'archive/data/2026-10-12.json').read_text(encoding='utf-8'))
+            self.assertEqual(data['summary']['issues'], [])
+            modules = self.exercise(directory, existing=data, provider='codex')
+            for module in modules.values():
+                module.collect_posts.assert_not_called()
 
     def test_full_pipeline_survives_credit_failure(self):
         with tempfile.TemporaryDirectory() as directory:

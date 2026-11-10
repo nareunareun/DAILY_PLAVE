@@ -1,4 +1,4 @@
-import cloudscraper
+from curl_cffi import requests
 from bs4 import BeautifulSoup
 import time
 from scrape_utils import (
@@ -21,9 +21,8 @@ def _parse_view(text):
         return 0
 
 def _make_scraper():
-    return cloudscraper.create_scraper(
-        browser={"browser": "chrome", "platform": "windows", "mobile": False}
-    )
+    # Use a consistent browser TLS fingerprint as well as browser headers.
+    return requests.Session(impersonate="chrome")
 
 def fetch_page(scraper, page=1):
     if page > 1:
@@ -107,7 +106,7 @@ def collect_posts(target_date=None, max_pages=999):
     target = resolve_target_date(target_date)
     full_date_str = target.strftime("%Y-%m-%d")
     all_posts = []
-    complete = True
+    complete = False
     no_date_streak = 0
 
     print(f"목표 수집 날짜: {full_date_str}")
@@ -120,6 +119,7 @@ def collect_posts(target_date=None, max_pages=999):
             all_posts.extend(posts)
             print(f"  -> {len(posts)}개 목표일 글 수집" + (" (이전 날짜 글 감지, 종료)" if older_found else ""))
             if older_found:
+                complete = True
                 break
 
             # 날짜를 인식한 행이 전혀 없는 페이지가 이어지면 사이트의 목록

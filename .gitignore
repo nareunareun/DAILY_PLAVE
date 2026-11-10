@@ -9,3 +9,5 @@ summary.json
 
 # Local maintenance evidence; never publish private review artifacts.
 /maintenance/local-review/
+/.runtime-packages/
+/newduck_probe.html
